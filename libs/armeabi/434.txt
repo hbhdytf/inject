@@ -1,0 +1,3646 @@
+ptrace_wait_for_signal: 48 1
+------regs old regs-----
+r[00]=fffffffc
+r[01]=bee732e8
+r[02]=10
+r[03]=ffffffff
+r[04]=116d38
+r[05]=ffffffff
+r[06]=bee732e8
+r[07]=fc
+r[08]=bee73450
+r[09]=4428ce1c
+r[10]=4428ce04
+r[11]=44f28bb8
+r[12]=a8127dd4
+r[13]=bee732b8
+r[14]=a81211b5
+r[15]=afd0c51c
+r[16]=80000010
+r[17]=1c
+waiting.. sigal...
+ptrace_wait_for_signal2: 72 1
+........00008000-00009000 r-xp 00000000 1f:00 618        /system/bin/app_process
+ <--
+........00009000-0000a000 rwxp 00001000 1f:00 618        /system/bin/app_process
+ <--
+........0000a000-00390000 rwxp 0000a000 00:00 0          [heap]
+ <--
+........10000000-10001000 ---p 10000000 00:00 0 
+ <--
+........10001000-10100000 rwxp 10001000 00:00 0 
+ <--
+........40000000-40008000 r-xs 00000000 00:0a 198        /dev/__properties__ (deleted)
+ <--
+........40008000-40009000 r-xp 40008000 00:00 0 
+ <--
+........40009000-405fb000 rwxp 00000000 00:07 350        /dev/ashmem/dalvik-heap (deleted)
+ <--
+........405fb000-44009000 ---p 005f2000 00:07 350        /dev/ashmem/dalvik-heap (deleted)
+ <--
+........44009000-44109000 rwxp 00000000 00:07 351        /dev/ashmem/dalvik-bitmap-1 (deleted)
+ <--
+........44109000-44209000 rwxp 00000000 00:07 352        /dev/ashmem/dalvik-bitmap-2 (deleted)
+ <--
+........44209000-4428a000 rwxp 00000000 00:07 353        /dev/ashmem/dalvik-card-table (deleted)
+ <--
+........4428a000-4428d000 rwxp 4428a000 00:00 0 
+ <--
+........4428d000-4428e000 ---p 00000000 00:07 354        /dev/ashmem/dalvik-LinearAlloc (deleted)
+ <--
+........4428e000-44479000 rwxp 00001000 00:07 354        /dev/ashmem/dalvik-LinearAlloc (deleted)
+ <--
+........44479000-4478d000 ---p 001ec000 00:07 354        /dev/ashmem/dalvik-LinearAlloc (deleted)
+ <--
+........4478d000-4478e000 r-xs 00002000 1f:00 662        /system/framework/core-junit.jar
+ <--
+........4478e000-44794000 r-xp 00000000 1f:01 299        /data/dalvik-cache/system@framework@core-junit.jar@classes.dex
+ <--
+........44794000-4479d000 rwxp 44794000 00:00 0 
+ <--
+........4479d000-4479e000 r-xs 00000000 00:07 416        /dev/ashmem/SurfaceFlinger read-only heap (deleted)
+ <--
+........4479e000-4479f000 r-xs 001c6000 1f:00 657        /system/framework/core.jar
+ <--
+........4479f000-44bc7000 r-xp 00000000 1f:01 293        /data/dalvik-cache/system@framework@core.jar@classes.dex
+ <--
+........44bc7000-44c06000 rwxp 44bc7000 00:00 0 
+ <--
+........44c06000-44c07000 r-xs 00046000 1f:00 672        /system/framework/bouncycastle.jar
+ <--
+........44c07000-44cb4000 r-xp 00000000 1f:01 294        /data/dalvik-cache/system@framework@bouncycastle.jar@classes.dex
+ <--
+........44cb4000-44cb5000 r-xs 0007d000 1f:00 663        /system/framework/ext.jar
+ <--
+........44cb5000-44dea000 r-xp 00000000 1f:01 295        /data/dalvik-cache/system@framework@ext.jar@classes.dex
+ <--
+........44dea000-44deb000 r-xs 002cc000 1f:00 658        /system/framework/framework.jar
+ <--
+........44deb000-4549b000 r-xp 00000000 1f:01 296        /data/dalvik-cache/system@framework@framework.jar@classes.dex
+ <--
+........4549b000-45528000 rwxp 4549b000 00:00 0 
+ <--
+........45528000-45529000 r-xs 00015000 1f:00 659        /system/framework/android.policy.jar
+ <--
+........45529000-45557000 r-xp 00000000 1f:01 297        /data/dalvik-cache/system@framework@android.policy.jar@classes.dex
+ <--
+........45557000-45558000 r-xs 00098000 1f:00 655        /system/framework/services.jar
+ <--
+........45558000-456a7000 r-xp 00000000 1f:01 298        /data/dalvik-cache/system@framework@services.jar@classes.dex
+ <--
+........456a7000-45c64000 r-xs 00000000 1f:00 524        /system/usr/icu/icudt44l.dat
+ <--
+........45c64000-45c75000 rwxp 45c64000 00:00 0 
+ <--
+........45c75000-45ca4000 r-xs 00000000 1f:00 474        /system/fonts/DroidSans.ttf
+ <--
+........45ca4000-45d1f000 r-xs 00000000 1f:00 492        /system/usr/share/zoneinfo/zoneinfo.dat
+ <--
+........45d1f000-45d58000 r-xs 0072e000 1f:00 669        /system/framework/framework-res.apk
+ <--
+........45d58000-460ce000 r-xs 003b9000 1f:00 669        /system/framework/framework-res.apk
+ <--
+........460ce000-4612f000 rwxp 460ce000 00:00 0 
+ <--
+........4612f000-46130000 ---p 4612f000 00:00 0 
+ <--
+........46130000-4622f000 rwxp 46130000 00:00 0 
+ <--
+........4622f000-46230000 ---p 4622f000 00:00 0 
+ <--
+........46230000-4632f000 rwxp 46230000 00:00 0 
+ <--
+........4632f000-46330000 ---p 4632f000 00:00 0 
+ <--
+........46330000-4642f000 rwxp 46330000 00:00 0 
+ <--
+........4642f000-46432000 rwxp 4642f000 00:00 0 
+ <--
+........46432000-46433000 ---p 46432000 00:00 0 
+ <--
+........46433000-46532000 rwxp 46433000 00:00 0 
+ <--
+........46532000-46535000 rwxp 46532000 00:00 0 
+ <--
+........46535000-46633000 r-xp 00000000 00:0a 61         /dev/binder
+ <--
+........46633000-46634000 ---p 46633000 00:00 0 
+ <--
+........46634000-46733000 rwxp 46634000 00:00 0 
+ <--
+........46733000-46736000 rwxp 46733000 00:00 0 
+ <--
+........46736000-46737000 ---p 46736000 00:00 0 
+ <--
+........46737000-46836000 rwxp 46737000 00:00 0 
+ <--
+........46836000-46839000 rwxp 46836000 00:00 0 
+ <--
+........46839000-4683b000 r-xs 00064000 1f:01 516        /data/app/com.speedsoftware.rootexplorer-1.apk
+ <--
+........4683b000-46842000 r-xs 00019000 1f:01 516        /data/app/com.speedsoftware.rootexplorer-1.apk
+ <--
+........46842000-46846000 rwxs 00000000 00:07 1467       /dev/ashmem/40772928 com.speedsoftware.rootexplorer/com.speedsoftware.rootexplorer.RootExplorerPhone (deleted)
+ <--
+........46846000-46849000 rwxp 46846000 00:00 0 
+ <--
+........4684a000-4684c000 r-xs 00064000 1f:01 516        /data/app/com.speedsoftware.rootexplorer-1.apk
+ <--
+........4684c000-468ec000 r-xp 00000000 1f:01 557        /data/dalvik-cache/data@app@com.speedsoftware.rootexplorer-1.apk@classes.dex
+ <--
+........468ec000-468f5000 rwxp 468ec000 00:00 0 
+ <--
+........468fa000-46951000 rwxp 468fa000 00:00 0 
+ <--
+........46951000-46952000 ---p 46951000 00:00 0 
+ <--
+........46952000-46a51000 rwxp 46952000 00:00 0 
+ <--
+........46a51000-46a52000 ---p 46a51000 00:00 0 
+ <--
+........46a52000-46b51000 rwxp 46a52000 00:00 0 
+ <--
+........46b51000-46b52000 ---p 46b51000 00:00 0 
+ <--
+........46b52000-46c51000 rwxp 46b52000 00:00 0 
+ <--
+........46c51000-46c52000 ---p 46c51000 00:00 0 
+ <--
+........46c52000-46d51000 rwxp 46c52000 00:00 0 
+ <--
+........46d51000-46dd1000 r-xp 00000000 00:07 1484       /dev/ashmem/dalvik-jit-code-cache (deleted)
+ <--
+........46e51000-46e80000 r-xs 00000000 1f:00 478        /system/fonts/DroidSans-Bold.ttf
+ <--
+........46e80000-46e88000 rwxs 00000000 00:07 1478       /dev/ashmem/SurfaceFlinger Client control-block (deleted)
+ <--
+........46e88000-46f88000 rwxs 00000000 00:07 1481       /dev/ashmem/CursorWindow (deleted)
+ <--
+........46f88000-470ff000 rwxs 00000000 00:07 1483       /dev/ashmem/gralloc-buffer (deleted)
+ <--
+........470ff000-47276000 rwxs 00000000 00:07 1485       /dev/ashmem/gralloc-buffer (deleted)
+ <--
+........80000000-800a2000 r-xp 00000000 1f:00 311        /system/lib/libdvm.so
+ <--
+........800a2000-800a9000 rwxp 000a2000 1f:00 311        /system/lib/libdvm.so
+ <--
+........800a9000-800ab000 rwxp 800a9000 00:00 0 
+ <--
+........80100000-80101000 r-xp 00000000 1f:00 350        /system/lib/libnfc_ndef.so
+ <--
+........80101000-80102000 rwxp 00001000 1f:00 350        /system/lib/libnfc_ndef.so
+ <--
+........80200000-80201000 r-xp 00000000 1f:00 353        /system/lib/libstagefright_enc_common.so
+ <--
+........80201000-80202000 rwxp 00001000 1f:00 353        /system/lib/libstagefright_enc_common.so
+ <--
+........80300000-80309000 r-xp 00000000 1f:00 343        /system/lib/libstagefright_foundation.so
+ <--
+........80309000-8030a000 rwxp 00009000 1f:00 343        /system/lib/libstagefright_foundation.so
+ <--
+........80400000-80402000 r-xp 00000000 1f:00 366        /system/lib/hw/gralloc.default.so
+ <--
+........80402000-80403000 rwxp 00002000 1f:00 366        /system/lib/hw/gralloc.default.so
+ <--
+........9d100000-9d139000 r-xp 00000000 1f:00 361        /system/lib/libstlport.so
+ <--
+........9d139000-9d13b000 rwxp 00039000 1f:00 361        /system/lib/libstlport.so
+ <--
+........9d700000-9d732000 r-xp 00000000 1f:00 370        /system/lib/libjpeg.so
+ <--
+........9d732000-9d733000 rwxp 00032000 1f:00 370        /system/lib/libjpeg.so
+ <--
+........a2f00000-a3060000 r-xp 00000000 1f:00 403        /system/lib/libstagefright.so
+ <--
+........a3060000-a306a000 rwxp 00160000 1f:00 403        /system/lib/libstagefright.so
+ <--
+........a306a000-a306b000 rwxp a306a000 00:00 0 
+ <--
+........a3500000-a3503000 r-xp 00000000 1f:00 388        /system/lib/libstagefright_color_conversion.so
+ <--
+........a3503000-a3504000 rwxp 00003000 1f:00 388        /system/lib/libstagefright_color_conversion.so
+ <--
+........a3600000-a3605000 r-xp 00000000 1f:00 387        /system/lib/libstagefright_avc_common.so
+ <--
+........a3605000-a3606000 rwxp 00005000 1f:00 387        /system/lib/libstagefright_avc_common.so
+ <--
+........a3700000-a370c000 r-xp 00000000 1f:00 382        /system/lib/libstagefright_amrnb_common.so
+ <--
+........a370c000-a370d000 rwxp 0000c000 1f:00 382        /system/lib/libstagefright_amrnb_common.so
+ <--
+........a7500000-a7502000 r-xp 00000000 1f:00 401        /system/lib/libemoji.so
+ <--
+........a7502000-a7503000 rwxp 00002000 1f:00 401        /system/lib/libemoji.so
+ <--
+........a7e00000-a7e04000 r-xp 00000000 1f:00 323        /system/lib/libhardware_legacy.so
+ <--
+........a7e04000-a7e05000 rwxp 00004000 1f:00 323        /system/lib/libhardware_legacy.so
+ <--
+........a7f00000-a7f01000 r-xp 00000000 1f:00 322        /system/lib/libhardware.so
+ <--
+........a7f01000-a7f02000 rwxp 00001000 1f:00 322        /system/lib/libhardware.so
+ <--
+........a8100000-a8127000 r-xp 00000000 1f:00 360        /system/lib/libutils.so
+ <--
+........a8127000-a8128000 rwxp 00027000 1f:00 360        /system/lib/libutils.so
+ <--
+........a8200000-a821e000 r-xp 00000000 1f:00 316        /system/lib/libbinder.so
+ <--
+........a821e000-a8224000 rwxp 0001e000 1f:00 316        /system/lib/libbinder.so
+ <--
+........a8300000-a8682000 r-xp 00000000 1f:00 349        /system/lib/libwebcore.so
+ <--
+........a8682000-a86dc000 rwxp 00382000 1f:00 349        /system/lib/libwebcore.so
+ <--
+........a86dc000-a86de000 rwxp a86dc000 00:00 0 
+ <--
+........a8a00000-a8a13000 r-xp 00000000 1f:00 344        /system/lib/libexpat.so
+ <--
+........a8a13000-a8a15000 rwxp 00013000 1f:00 344        /system/lib/libexpat.so
+ <--
+........a8b00000-a8b4d000 r-xp 00000000 1f:00 332        /system/lib/libsqlite.so
+ <--
+........a8b4d000-a8b4f000 rwxp 0004d000 1f:00 332        /system/lib/libsqlite.so
+ <--
+........a9000000-a9053000 r-xp 00000000 1f:00 319        /system/lib/libmedia.so
+ <--
+........a9053000-a9062000 rwxp 00053000 1f:00 319        /system/lib/libmedia.so
+ <--
+........a9300000-a930c000 r-xp 00000000 1f:00 384        /system/lib/libmedia_jni.so
+ <--
+........a930c000-a930d000 rwxp 0000c000 1f:00 384        /system/lib/libmedia_jni.so
+ <--
+........a9400000-a941c000 r-xp 00000000 1f:00 389        /system/lib/libvorbisidec.so
+ <--
+........a941c000-a941d000 rwxp 0001c000 1f:00 389        /system/lib/libvorbisidec.so
+ <--
+........a9500000-a9551000 r-xp 00000000 1f:00 395        /system/lib/libsonivox.so
+ <--
+........a9551000-a9552000 rwxp 00051000 1f:00 395        /system/lib/libsonivox.so
+ <--
+........a9552000-a9557000 rwxp a9552000 00:00 0 
+ <--
+........a9800000-a9806000 r-xp 00000000 1f:00 338        /system/lib/libsoundpool.so
+ <--
+........a9806000-a9807000 rwxp 00006000 1f:00 338        /system/lib/libsoundpool.so
+ <--
+........a9c00000-a9c0a000 r-xp 00000000 1f:00 315        /system/lib/libskiagl.so
+ <--
+........a9c0a000-a9c0b000 rwxp 0000a000 1f:00 315        /system/lib/libskiagl.so
+ <--
+........ab100000-ab210000 r-xp 00000000 1f:00 373        /system/lib/libskia.so
+ <--
+........ab210000-ab214000 rwxp 00110000 1f:00 373        /system/lib/libskia.so
+ <--
+........ab214000-ab217000 rwxp ab214000 00:00 0 
+ <--
+........ab800000-ab80a000 r-xp 00000000 1f:00 376        /system/lib/libgui.so
+ <--
+........ab80a000-ab80c000 rwxp 0000a000 1f:00 376        /system/lib/libgui.so
+ <--
+........ab900000-ab930000 r-xp 00000000 1f:00 398        /system/lib/libui.so
+ <--
+........ab930000-ab933000 rwxp 00030000 1f:00 398        /system/lib/libui.so
+ <--
+........aba80000-aba90000 r-xp 00000000 1f:00 329        /system/lib/libcamera_client.so
+ <--
+........aba90000-aba93000 rwxp 00010000 1f:00 329        /system/lib/libcamera_client.so
+ <--
+........abb00000-abb09000 r-xp 00000000 1f:00 369        /system/lib/libexif.so
+ <--
+........abb09000-abb0a000 rwxp 00009000 1f:00 369        /system/lib/libexif.so
+ <--
+........abb0a000-abb0c000 rwxp abb0a000 00:00 0 
+ <--
+........abd00000-abd02000 r-xp 00000000 1f:00 383        /system/lib/libETC1.so
+ <--
+........abd02000-abd03000 rwxp 00002000 1f:00 383        /system/lib/libETC1.so
+ <--
+........abe00000-abe08000 r-xp 00000000 1f:00 385        /system/lib/libEGL.so
+ <--
+........abe08000-abe09000 rwxp 00008000 1f:00 385        /system/lib/libEGL.so
+ <--
+........abe09000-abe0b000 rwxp abe09000 00:00 0 
+ <--
+........ac100000-ac104000 r-xp 00000000 1f:00 347        /system/lib/libGLESv2.so
+ <--
+........ac104000-ac105000 rwxp 00004000 1f:00 347        /system/lib/libGLESv2.so
+ <--
+........ac200000-ac205000 r-xp 00000000 1f:00 314        /system/lib/libGLESv1_CM.so
+ <--
+........ac205000-ac206000 rwxp 00005000 1f:00 314        /system/lib/libGLESv1_CM.so
+ <--
+........ac700000-ac717000 r-xp 00000000 1f:00 358        /system/lib/libsurfaceflinger_client.so
+ <--
+........ac717000-ac71a000 rwxp 00017000 1f:00 358        /system/lib/libsurfaceflinger_client.so
+ <--
+........ac900000-ac919000 r-xp 00000000 1f:00 352        /system/lib/libpixelflinger.so
+ <--
+........ac919000-ac91b000 rwxp 00019000 1f:00 352        /system/lib/libpixelflinger.so
+ <--
+........ad100000-ad12c000 r-xp 00000000 1f:00 312        /system/lib/libnativehelper.so
+ <--
+........ad12c000-ad12f000 rwxp 0002c000 1f:00 312        /system/lib/libnativehelper.so
+ <--
+........ad300000-ad375000 r-xp 00000000 1f:00 391        /system/lib/libandroid_runtime.so
+ <--
+........ad375000-ad37d000 rwxp 00075000 1f:00 391        /system/lib/libandroid_runtime.so
+ <--
+........ad37d000-ad37e000 rwxp ad37d000 00:00 0 
+ <--
+........ad900000-ad9f5000 r-xp 00000000 1f:00 309        /system/lib/libicui18n.so
+ <--
+........ad9f5000-ad9fa000 rwxp 000f5000 1f:00 309        /system/lib/libicui18n.so
+ <--
+........ade00000-adec1000 r-xp 00000000 1f:00 317        /system/lib/libicuuc.so
+ <--
+........adec1000-adec9000 rwxp 000c1000 1f:00 317        /system/lib/libicuuc.so
+ <--
+........adec9000-adecc000 rwxp adec9000 00:00 0 
+ <--
+........ae300000-ae304000 r-xp 00000000 1f:00 357        /system/lib/libnetutils.so
+ <--
+........ae304000-ae305000 rwxp 00004000 1f:00 357        /system/lib/libnetutils.so
+ <--
+........ae400000-ae402000 r-xp 00000000 1f:00 325        /system/lib/libwpa_client.so
+ <--
+........ae402000-ae403000 rwxp 00002000 1f:00 325        /system/lib/libwpa_client.so
+ <--
+........af000000-af0af000 r-xp 00000000 1f:00 321        /system/lib/libcrypto.so
+ <--
+........af0af000-af0bf000 rwxp 000af000 1f:00 321        /system/lib/libcrypto.so
+ <--
+........af0bf000-af0c1000 rwxp af0bf000 00:00 0 
+ <--
+........af400000-af42a000 r-xp 00000000 1f:00 333        /system/lib/libssl.so
+ <--
+........af42a000-af42e000 rwxp 0002a000 1f:00 333        /system/lib/libssl.so
+ <--
+........af700000-af714000 r-xp 00000000 1f:00 320        /system/lib/libz.so
+ <--
+........af714000-af715000 rwxp 00014000 1f:00 320        /system/lib/libz.so
+ <--
+........af900000-af90e000 r-xp 00000000 1f:00 310        /system/lib/libcutils.so
+ <--
+........af90e000-af90f000 rwxp 0000e000 1f:00 310        /system/lib/libcutils.so
+ <--
+........af90f000-af91e000 rwxp af90f000 00:00 0 
+ <--
+........afa00000-afa03000 r-xp 00000000 1f:00 380        /system/lib/liblog.so
+ <--
+........afa03000-afa04000 rwxp 00003000 1f:00 380        /system/lib/liblog.so
+ <--
+........afb00000-afb20000 r-xp 00000000 1f:00 348        /system/lib/libm.so
+ <--
+........afb20000-afb21000 rwxp 00020000 1f:00 348        /system/lib/libm.so
+ <--
+........afc00000-afc01000 r-xp 00000000 1f:00 326        /system/lib/libstdc++.so
+ <--
+........afc01000-afc02000 rwxp 00001000 1f:00 326        /system/lib/libstdc++.so
+ <--
+........afd00000-afd40000 r-xp 00000000 1f:00 351        /system/lib/libc.so
+ <--
+........afd40000-afd43000 rwxp 00040000 1f:00 351        /system/lib/libc.so
+ <--
+........afd43000-afd4e000 rwxp afd43000 00:00 0 
+ <--
+........b0001000-b0009000 r-xp 00001000 1f:00 606        /system/bin/linker
+ <--
+........b0009000-b000a000 rwxp 00009000 1f:00 606        /system/bin/linker
+ <--
+........b000a000-b0013000 rwxp b000a000 00:00 0 
+ <--
+........bee5f000-bee74000 rw-p befeb000 00:00 0          [stack]
+ <--
+search libdl.so from 2952794112 to 2952830976
+soinfo found at 2952828124
+symtab: 0x0
+dlopen addr 0xb00059bd
+dlclose addr 0xb0005849
+dlsym addr 0xb0005915
+------regs before call to ptrace_dlopen
+-----
+r[00]=fffffffc
+r[01]=bee732e8
+r[02]=10
+r[03]=ffffffff
+r[04]=116d38
+r[05]=ffffffff
+r[06]=bee732e8
+r[07]=fc
+r[08]=bee73450
+r[09]=4428ce1c
+r[10]=4428ce04
+r[11]=44f28bb8
+r[12]=a8127dd4
+r[13]=bee732b8
+r[14]=a81211b5
+r[15]=10
+r[16]=80000030
+r[17]=ffffffff
+ptrace_write failed	 -1092144472
+ptrace_write failed	 -1092144468
+ptrace_write failed	 -1092144464
+ptrace_write failed	 -1092144460
+ptrace_write failed	 -1092144456
+done 1
+------regs before return ptrace_call
+-----
+r[00]=b000d198
+r[01]=0
+r[02]=b0012064
+r[03]=1
+r[04]=116d38
+r[05]=ffffffff
+r[06]=bee732e8
+r[07]=fc
+r[08]=bee73450
+r[09]=4428ce1c
+r[10]=4428ce04
+r[11]=44f28bb8
+r[12]=80500000
+r[13]=bee732a4
+r[14]=b0006738
+r[15]=0
+r[16]=80000030
+r[17]=ffffffff
+ptrace_dlopen handle 0xb000d198
+------regs before call to ptrace_dlsym
+-----
+r[00]=b000d198
+r[01]=0
+r[02]=b0012064
+r[03]=1
+r[04]=116d38
+r[05]=ffffffff
+r[06]=bee732e8
+r[07]=fc
+r[08]=bee73450
+r[09]=4428ce1c
+r[10]=4428ce04
+r[11]=44f28bb8
+r[12]=80500000
+r[13]=bee732a4
+r[14]=b0006738
+r[15]=0
+r[16]=80000030
+r[17]=ffffffff
+ptrace_write failed	 -1092144484
+ptrace_write failed	 -1092144480
+ptrace_write failed	 -1092144476
+done 1
+------regs before return ptrace_dlsym
+-----
+r[00]=80500b99
+r[01]=0
+r[02]=b0012064
+r[03]=1
+r[04]=116d38
+r[05]=ffffffff
+r[06]=bee732e8
+r[07]=fc
+r[08]=bee73450
+r[09]=4428ce1c
+r[10]=4428ce04
+r[11]=44f28bb8
+r[12]=80500000
+r[13]=bee73298
+r[14]=b0006738
+r[15]=0
+r[16]=80000030
+r[17]=ffffffff
+my_connect = 80500b99
+#### ad100000 r-xp /system/lib/libnativehelper.so
+[    replace_all_rels( 0226 )]  base                           = 2903506944 (0xad100000)
+[        get_elf_info( 0035 )]  einfo->phdr_addr               = 2903506996 (0xad100034)
+[        get_elf_info( 0036 )]  einfo->ehdr.e_type             = 3 (0x00000003)
+dump 6 phdr
+[        get_elf_info( 0065 )]  einfo->dynaddr                 = -1391280096 (0xad12c020)
+[        get_elf_info( 0073 )]  einfo->got                     = -1391271432 (0xad12e1f8)
+[        get_elf_info( 0075 )]  einfo->map_addr                = 1143710348 (0x442ba28c)
+find sym in rel 0xad100000 connect 
+get_dyn_info 0xad12c020...
+DT_PLTRELSZ
+totalrelsize 4080
+DT_JMPREL
+jmprel	 ad1083a8
+DT_RELENT
+relsize2 8
+DT_SYMTAB
+DT_STRTAB
+[     find_sym_in_rel( 0096 )]  dinfo.nrels                    = 510 (0x000001fe)
+[     find_sym_in_rel( 0097 )]  dinfo.jmprel                   = -1391426648 (0xad1083a8)
+[     find_sym_in_rel( 0098 )]  dinfo.relsize                  = 8 (0x00000008)
+[     find_sym_in_rel( 0099 )]  dinfo.totalrelsize             = 4080 (0x00000ff0)
+rel addr 0xbea3aa10
+   str-> strerror_r
+rel addr 0xbea3aa10
+   str-> snprintf
+rel addr 0xbea3aa10
+   str-> strncpy
+rel addr 0xbea3aa10
+   str-> __android_log_print
+rel addr 0xbea3aa10
+   str-> __stack_chk_fail
+rel addr 0xbea3aa10
+   str-> __android_log_write
+rel addr 0xbea3aa10
+   str-> __cxa_finalize
+rel addr 0xbea3aa10
+   str-> _ZN6icu_4413UnicodeStringD1Ev
+rel addr 0xbea3aa10
+   str-> _ZN6icu_4413UnicodeStringC1Ev
+rel addr 0xbea3aa10
+   str-> _ZN6icu_4413UnicodeString5setToEaPKti
+rel addr 0xbea3aa10
+   str-> _ZN6icu_448TimeZone14createTimeZoneERKNS_13UnicodeStringE
+rel addr 0xbea3aa10
+   str-> _ZNK6icu_4410DateFormat6formatEdRNS_13UnicodeStringE
+rel addr 0xbea3aa10
+   str-> _ZN6icu_4413UnicodeStringC1EPKcS2_
+rel addr 0xbea3aa10
+   str-> _ZN6icu_4416SimpleDateFormatC1ERKNS_13UnicodeStringERKNS_6Locale
+rel addr 0xbea3aa10
+   str-> _ZN6icu_4410DateFormat11setTimeZoneERKNS_8TimeZoneE
+rel addr 0xbea3aa10
+   str-> _ZN6icu_4416SimpleDateFormatD1Ev
+rel addr 0xbea3aa10
+   str-> _ZN6icu_446LocaleD1Ev
+rel addr 0xbea3aa10
+   str-> _ZN6icu_448TimeZone17createEnumerationEPKc
+rel addr 0xbea3aa10
+   str-> _ZNK6icu_448TimeZone14getDisplayNameEaNS0_12EDisplayTypeERKNS_6L
+rel addr 0xbea3aa10
+   str-> ioctl
+rel addr 0xbea3aa10
+   str-> __errno
+rel addr 0xbea3aa10
+   str-> isatty
+rel addr 0xbea3aa10
+   str-> stat
+rel addr 0xbea3aa10
+   str-> chmod
+rel addr 0xbea3aa10
+   str-> __aeabi_lmul
+rel addr 0xbea3aa10
+   str-> __aeabi_ldivmod
+rel addr 0xbea3aa10
+   str-> utime
+rel addr 0xbea3aa10
+   str-> rename
+rel addr 0xbea3aa10
+   str-> _Znaj
+rel addr 0xbea3aa10
+   str-> readlink
+rel addr 0xbea3aa10
+   str-> _ZdaPv
+rel addr 0xbea3aa10
+   str-> mkdir
+rel addr 0xbea3aa10
+   str-> strlen
+rel addr 0xbea3aa10
+   str-> strcpy
+rel addr 0xbea3aa10
+   str-> _Znwj
+rel addr 0xbea3aa10
+   str-> opendir
+rel addr 0xbea3aa10
+   str-> strcmp
+rel addr 0xbea3aa10
+   str-> readdir_r
+rel addr 0xbea3aa10
+   str-> closedir
+rel addr 0xbea3aa10
+   str-> _ZdlPv
+rel addr 0xbea3aa10
+   str-> statfs
+rel addr 0xbea3aa10
+   str-> access
+rel addr 0xbea3aa10
+   str-> remove
+rel addr 0xbea3aa10
+   str-> open
+rel addr 0xbea3aa10
+   str-> close
+rel addr 0xbea3aa10
+   str-> fsync
+rel addr 0xbea3aa10
+   str-> u_toupper_44
+rel addr 0xbea3aa10
+   str-> u_totitle_44
+rel addr 0xbea3aa10
+   str-> u_tolower_44
+rel addr 0xbea3aa10
+   str-> ublock_getCode_44
+rel addr 0xbea3aa10
+   str-> u_isWhitespace_44
+rel addr 0xbea3aa10
+   str-> u_isupper_44
+rel addr 0xbea3aa10
+   str-> u_isIDStart_44
+rel addr 0xbea3aa10
+   str-> u_isIDPart_44
+rel addr 0xbea3aa10
+   str-> u_istitle_44
+rel addr 0xbea3aa10
+   str-> u_isJavaSpaceChar_44
+rel addr 0xbea3aa10
+   str-> u_isMirrored_44
+rel addr 0xbea3aa10
+   str-> u_islower_44
+rel addr 0xbea3aa10
+   str-> u_isalnum_44
+rel addr 0xbea3aa10
+   str-> u_isalpha_44
+rel addr 0xbea3aa10
+   str-> u_isIDIgnorable_44
+rel addr 0xbea3aa10
+   str-> u_isdigit_44
+rel addr 0xbea3aa10
+   str-> u_isdefined_44
+rel addr 0xbea3aa10
+   str-> u_charType_44
+rel addr 0xbea3aa10
+   str-> u_getNumericValue_44
+rel addr 0xbea3aa10
+   str-> __aeabi_dcmpeq
+rel addr 0xbea3aa10
+   str-> __aeabi_dcmplt
+rel addr 0xbea3aa10
+   str-> __aeabi_dadd
+rel addr 0xbea3aa10
+   str-> floor
+rel addr 0xbea3aa10
+   str-> __aeabi_d2iz
+rel addr 0xbea3aa10
+   str-> u_charDirection_44
+rel addr 0xbea3aa10
+   str-> u_getPropertyValueEnum_44
+rel addr 0xbea3aa10
+   str-> u_digit_44
+rel addr 0xbea3aa10
+   str-> __aeabi_dcmpun
+rel addr 0xbea3aa10
+   str-> __aeabi_fcmpun
+rel addr 0xbea3aa10
+   str-> tanh
+rel addr 0xbea3aa10
+   str-> tan
+rel addr 0xbea3aa10
+   str-> sqrt
+rel addr 0xbea3aa10
+   str-> sinh
+rel addr 0xbea3aa10
+   str-> sin
+rel addr 0xbea3aa10
+   str-> rint
+rel addr 0xbea3aa10
+   str-> pow
+rel addr 0xbea3aa10
+   str-> nextafterf
+rel addr 0xbea3aa10
+   str-> nextafter
+rel addr 0xbea3aa10
+   str-> log1p
+rel addr 0xbea3aa10
+   str-> log10
+rel addr 0xbea3aa10
+   str-> log
+rel addr 0xbea3aa10
+   str-> hypot
+rel addr 0xbea3aa10
+   str-> expm1
+rel addr 0xbea3aa10
+   str-> exp
+rel addr 0xbea3aa10
+   str-> cosh
+rel addr 0xbea3aa10
+   str-> cos
+rel addr 0xbea3aa10
+   str-> ceil
+rel addr 0xbea3aa10
+   str-> cbrt
+rel addr 0xbea3aa10
+   str-> atan2
+rel addr 0xbea3aa10
+   str-> atan
+rel addr 0xbea3aa10
+   str-> asin
+rel addr 0xbea3aa10
+   str-> acos
+rel addr 0xbea3aa10
+   str-> remainder
+rel addr 0xbea3aa10
+   str-> getrlimit
+rel addr 0xbea3aa10
+   str-> pipe
+rel addr 0xbea3aa10
+   str-> fork
+rel addr 0xbea3aa10
+   str-> dup2
+rel addr 0xbea3aa10
+   str-> fcntl
+rel addr 0xbea3aa10
+   str-> chdir
+rel addr 0xbea3aa10
+   str-> execvp
+rel addr 0xbea3aa10
+   str-> write
+rel addr 0xbea3aa10
+   str-> exit
+rel addr 0xbea3aa10
+   str-> read
+rel addr 0xbea3aa10
+   str-> waitpid
+rel addr 0xbea3aa10
+   str-> strerror
+rel addr 0xbea3aa10
+   str-> getenv
+rel addr 0xbea3aa10
+   str-> atoi
+rel addr 0xbea3aa10
+   str-> kill
+rel addr 0xbea3aa10
+   str-> memset
+rel addr 0xbea3aa10
+   str-> __aeabi_i2d
+rel addr 0xbea3aa10
+   str-> __aeabi_dmul
+rel addr 0xbea3aa10
+   str-> __aeabi_dsub
+rel addr 0xbea3aa10
+   str-> memcpy
+rel addr 0xbea3aa10
+   str-> __cxa_guard_acquire
+rel addr 0xbea3aa10
+   str-> __cxa_guard_release
+rel addr 0xbea3aa10
+   str-> strchr
+rel addr 0xbea3aa10
+   str-> memmove
+rel addr 0xbea3aa10
+   str-> getaddrinfo
+rel addr 0xbea3aa10
+   str-> inet_aton
+rel addr 0xbea3aa10
+   str-> freeaddrinfo
+rel addr 0xbea3aa10
+   str-> gai_strerror
+rel addr 0xbea3aa10
+   str-> getnameinfo
+rel addr 0xbea3aa10
+   str-> gethostname
+rel addr 0xbea3aa10
+   str-> socket
+rel addr 0xbea3aa10
+   str-> send
+rel addr 0xbea3aa10
+   str-> if_indextoname
+rel addr 0xbea3aa10
+   str-> recv
+rel addr 0xbea3aa10
+   str-> if_nametoindex
+rel addr 0xbea3aa10
+   str-> utext_close_44
+rel addr 0xbea3aa10
+   str-> utext_openUChars_44
+rel addr 0xbea3aa10
+   str-> u_errorName_44
+rel addr 0xbea3aa10
+   str-> _ZN6icu_4412RegexPattern7compileERKNS_13UnicodeStringEjR11UParse
+rel addr 0xbea3aa10
+   str-> adler32
+rel addr 0xbea3aa10
+   str-> crc32
+rel addr 0xbea3aa10
+   str-> zError
+rel addr 0xbea3aa10
+   str-> deflateParams
+rel addr 0xbea3aa10
+   str-> deflateReset
+rel addr 0xbea3aa10
+   str-> deflateEnd
+rel addr 0xbea3aa10
+   str-> deflate
+rel addr 0xbea3aa10
+   str-> deflateInit2_
+rel addr 0xbea3aa10
+   str-> deflateSetDictionary
+rel addr 0xbea3aa10
+   str-> lseek
+rel addr 0xbea3aa10
+   str-> inflateReset
+rel addr 0xbea3aa10
+   str-> inflate
+rel addr 0xbea3aa10
+   str-> inflateEnd
+rel addr 0xbea3aa10
+   str-> inflateInit2_
+rel addr 0xbea3aa10
+   str-> inflateSetDictionary
+rel addr 0xbea3aa10
+   str-> writev
+rel addr 0xbea3aa10
+   str-> ftruncate
+rel addr 0xbea3aa10
+   str-> sendfile
+rel addr 0xbea3aa10
+   str-> readv
+rel addr 0xbea3aa10
+   str-> fstat
+rel addr 0xbea3aa10
+   str-> munmap
+rel addr 0xbea3aa10
+   str-> mmap
+rel addr 0xbea3aa10
+   str-> malloc
+rel addr 0xbea3aa10
+   str-> mlock
+rel addr 0xbea3aa10
+   str-> munlock
+rel addr 0xbea3aa10
+   str-> __aeabi_idivmod
+rel addr 0xbea3aa10
+   str-> mincore
+rel addr 0xbea3aa10
+   str-> free
+rel addr 0xbea3aa10
+   str-> msync
+rel addr 0xbea3aa10
+   str-> getsockname
+rel addr 0xbea3aa10
+   str-> setsockopt
+rel addr 0xbea3aa10
+   str-> shutdown
+rel addr 0xbea3aa10
+   str-> sendto
+rel addr 0xbea3aa10
+   str-> __aeabi_idiv
+rel addr 0xbea3aa10
+   str-> select
+rel addr 0xbea3aa10
+   str-> recvfrom
+rel addr 0xbea3aa10
+   str-> listen
+rel addr 0xbea3aa10
+   str-> getsockopt
+rel addr 0xbea3aa10
+   str-> connect
+[     find_sym_in_rel( 0121 )]  ret                            = -1391278908 (0xad12c4c4)
+[    replace_all_rels( 0230 )]  tmpaddr                        = 2903688388 (0xad12c4c4)
+ptrace_write failed	 -1391278904
+base of /system/lib/libnativehelper.so               ad100000  ad12c4c4 80500b99
+#### ad300000 r-xp /system/lib/libandroid_runtime.so
+[    replace_all_rels( 0226 )]  base                           = 2905604096 (0xad300000)
+[        get_elf_info( 0035 )]  einfo->phdr_addr               = 2905604148 (0xad300034)
+[        get_elf_info( 0036 )]  einfo->ehdr.e_type             = 3 (0x00000003)
+dump 6 phdr
+[        get_elf_info( 0065 )]  einfo->dynaddr                 = -1388878984 (0xad376378)
+[        get_elf_info( 0073 )]  einfo->got                     = -1388833164 (0xad381674)
+[        get_elf_info( 0075 )]  einfo->map_addr                = -1 (0xffffffff)
+find sym in rel 0xad300000 connect 
+get_dyn_info 0xad376378...
+DT_PLTRELSZ
+totalrelsize 10776
+DT_JMPREL
+jmprel	 ad31b25c
+DT_RELENT
+relsize2 8
+DT_SYMTAB
+DT_STRTAB
+[     find_sym_in_rel( 0096 )]  dinfo.nrels                    = 1347 (0x00000543)
+[     find_sym_in_rel( 0097 )]  dinfo.jmprel                   = -1389252004 (0xad31b25c)
+[     find_sym_in_rel( 0098 )]  dinfo.relsize                  = 8 (0x00000008)
+[     find_sym_in_rel( 0099 )]  dinfo.totalrelsize             = 10776 (0x00002a18)
+rel addr 0xbea3aa10
+   str-> glGetString
+rel addr 0xbea3aa10
+   str-> glWeightPointerOES
+rel addr 0xbea3aa10
+   str-> glMatrixIndexPointerOES
+rel addr 0xbea3aa10
+   str-> glLoadPaletteFromModelViewMatrixOES
+rel addr 0xbea3aa10
+   str-> glDrawTexxOES
+rel addr 0xbea3aa10
+   str-> glDrawTexsOES
+rel addr 0xbea3aa10
+   str-> glDrawTexiOES
+rel addr 0xbea3aa10
+   str-> glDrawTexfOES
+rel addr 0xbea3aa10
+   str-> glCurrentPaletteMatrixOES
+rel addr 0xbea3aa10
+   str-> glVertexPointer
+rel addr 0xbea3aa10
+   str-> glTexParameteri
+rel addr 0xbea3aa10
+   str-> glTexEnvi
+rel addr 0xbea3aa10
+   str-> glTexCoordPointer
+rel addr 0xbea3aa10
+   str-> glPointParameterx
+rel addr 0xbea3aa10
+   str-> glPointParameterf
+rel addr 0xbea3aa10
+   str-> glNormalPointer
+rel addr 0xbea3aa10
+   str-> glIsTexture
+rel addr 0xbea3aa10
+   str-> glIsEnabled
+rel addr 0xbea3aa10
+   str-> glIsBuffer
+rel addr 0xbea3aa10
+   str-> glDrawElements
+rel addr 0xbea3aa10
+   str-> glColorPointer
+rel addr 0xbea3aa10
+   str-> glColor4ub
+rel addr 0xbea3aa10
+   str-> glBindBuffer
+rel addr 0xbea3aa10
+   str-> glViewport
+rel addr 0xbea3aa10
+   str-> glTranslatex
+rel addr 0xbea3aa10
+   str-> glTranslatef
+rel addr 0xbea3aa10
+   str-> glTexParameterx
+rel addr 0xbea3aa10
+   str-> glTexParameterf
+rel addr 0xbea3aa10
+   str-> glTexEnvx
+rel addr 0xbea3aa10
+   str-> glTexEnvf
+rel addr 0xbea3aa10
+   str-> glStencilOp
+rel addr 0xbea3aa10
+   str-> glStencilMask
+rel addr 0xbea3aa10
+   str-> glStencilFunc
+rel addr 0xbea3aa10
+   str-> glShadeModel
+rel addr 0xbea3aa10
+   str-> glScissor
+rel addr 0xbea3aa10
+   str-> glScalex
+rel addr 0xbea3aa10
+   str-> glScalef
+rel addr 0xbea3aa10
+   str-> glSampleCoveragex
+rel addr 0xbea3aa10
+   str-> glSampleCoverage
+rel addr 0xbea3aa10
+   str-> glRotatex
+rel addr 0xbea3aa10
+   str-> glRotatef
+rel addr 0xbea3aa10
+   str-> glPushMatrix
+rel addr 0xbea3aa10
+   str-> glPopMatrix
+rel addr 0xbea3aa10
+   str-> glPolygonOffsetx
+rel addr 0xbea3aa10
+   str-> glPolygonOffset
+rel addr 0xbea3aa10
+   str-> glPointSizex
+rel addr 0xbea3aa10
+   str-> glPointSize
+rel addr 0xbea3aa10
+   str-> glPixelStorei
+rel addr 0xbea3aa10
+   str-> glOrthox
+rel addr 0xbea3aa10
+   str-> glOrthof
+rel addr 0xbea3aa10
+   str-> glNormal3x
+rel addr 0xbea3aa10
+   str-> glNormal3f
+rel addr 0xbea3aa10
+   str-> glMultiTexCoord4x
+rel addr 0xbea3aa10
+   str-> glMultiTexCoord4f
+rel addr 0xbea3aa10
+   str-> glMatrixMode
+rel addr 0xbea3aa10
+   str-> glMaterialx
+rel addr 0xbea3aa10
+   str-> glMaterialf
+rel addr 0xbea3aa10
+   str-> glLogicOp
+rel addr 0xbea3aa10
+   str-> glLoadIdentity
+rel addr 0xbea3aa10
+   str-> glLineWidthx
+rel addr 0xbea3aa10
+   str-> glLineWidth
+rel addr 0xbea3aa10
+   str-> glLightx
+rel addr 0xbea3aa10
+   str-> glLightf
+rel addr 0xbea3aa10
+   str-> glLightModelx
+rel addr 0xbea3aa10
+   str-> glLightModelf
+rel addr 0xbea3aa10
+   str-> glHint
+rel addr 0xbea3aa10
+   str-> glGetError
+rel addr 0xbea3aa10
+   str-> glFrustumx
+rel addr 0xbea3aa10
+   str-> glFrustumf
+rel addr 0xbea3aa10
+   str-> glFrontFace
+rel addr 0xbea3aa10
+   str-> glFogx
+rel addr 0xbea3aa10
+   str-> glFogf
+rel addr 0xbea3aa10
+   str-> glFlush
+rel addr 0xbea3aa10
+   str-> glFinish
+rel addr 0xbea3aa10
+   str-> glEnableClientState
+rel addr 0xbea3aa10
+   str-> glEnable
+rel addr 0xbea3aa10
+   str-> glDrawArrays
+rel addr 0xbea3aa10
+   str-> glDisableClientState
+rel addr 0xbea3aa10
+   str-> glDisable
+rel addr 0xbea3aa10
+   str-> glDepthRangex
+rel addr 0xbea3aa10
+   str-> glDepthRangef
+rel addr 0xbea3aa10
+   str-> glDepthMask
+rel addr 0xbea3aa10
+   str-> glDepthFunc
+rel addr 0xbea3aa10
+   str-> glCullFace
+rel addr 0xbea3aa10
+   str-> glCopyTexSubImage2D
+rel addr 0xbea3aa10
+   str-> glCopyTexImage2D
+rel addr 0xbea3aa10
+   str-> glColorMask
+rel addr 0xbea3aa10
+   str-> glColor4x
+rel addr 0xbea3aa10
+   str-> glColor4f
+rel addr 0xbea3aa10
+   str-> glClientActiveTexture
+rel addr 0xbea3aa10
+   str-> glClearStencil
+rel addr 0xbea3aa10
+   str-> glClearDepthx
+rel addr 0xbea3aa10
+   str-> glClearDepthf
+rel addr 0xbea3aa10
+   str-> glClearColorx
+rel addr 0xbea3aa10
+   str-> glClearColor
+rel addr 0xbea3aa10
+   str-> glClear
+rel addr 0xbea3aa10
+   str-> glBlendFunc
+rel addr 0xbea3aa10
+   str-> glBindTexture
+rel addr 0xbea3aa10
+   str-> glAlphaFuncx
+rel addr 0xbea3aa10
+   str-> glAlphaFunc
+rel addr 0xbea3aa10
+   str-> glActiveTexture
+rel addr 0xbea3aa10
+   str-> glGetClipPlanex
+rel addr 0xbea3aa10
+   str-> glReadPixels
+rel addr 0xbea3aa10
+   str-> glTexSubImage2D
+rel addr 0xbea3aa10
+   str-> glGetBooleanv
+rel addr 0xbea3aa10
+   str-> glMultMatrixf
+rel addr 0xbea3aa10
+   str-> glGetFloatv
+rel addr 0xbea3aa10
+   str-> glLoadMatrixf
+rel addr 0xbea3aa10
+   str-> glGetClipPlanef
+rel addr 0xbea3aa10
+   str-> glMultMatrixx
+rel addr 0xbea3aa10
+   str-> glTexImage2D
+rel addr 0xbea3aa10
+   str-> glLoadMatrixx
+rel addr 0xbea3aa10
+   str-> glGetFixedv
+rel addr 0xbea3aa10
+   str-> glMaterialfv
+rel addr 0xbea3aa10
+   str-> glLightxv
+rel addr 0xbea3aa10
+   str-> glLightfv
+rel addr 0xbea3aa10
+   str-> glLightModelxv
+rel addr 0xbea3aa10
+   str-> glLightModelfv
+rel addr 0xbea3aa10
+   str-> glGetIntegerv
+rel addr 0xbea3aa10
+   str-> glGenBuffers
+rel addr 0xbea3aa10
+   str-> glDeleteBuffers
+rel addr 0xbea3aa10
+   str-> glClipPlanex
+rel addr 0xbea3aa10
+   str-> glClipPlanef
+rel addr 0xbea3aa10
+   str-> glBufferSubData
+rel addr 0xbea3aa10
+   str-> glTexEnvxv
+rel addr 0xbea3aa10
+   str-> glTexEnvfv
+rel addr 0xbea3aa10
+   str-> glMaterialxv
+rel addr 0xbea3aa10
+   str-> glBindRenderbufferOES
+rel addr 0xbea3aa10
+   str-> glBindFramebufferOES
+rel addr 0xbea3aa10
+   str-> glTexGenivOES
+rel addr 0xbea3aa10
+   str-> glTexGeniOES
+rel addr 0xbea3aa10
+   str-> glTexGenfvOES
+rel addr 0xbea3aa10
+   str-> glTexGenfOES
+rel addr 0xbea3aa10
+   str-> glRenderbufferStorageOES
+rel addr 0xbea3aa10
+   str-> glIsRenderbufferOES
+rel addr 0xbea3aa10
+   str-> glIsFramebufferOES
+rel addr 0xbea3aa10
+   str-> glGetTexGenxvOES
+rel addr 0xbea3aa10
+   str-> glGetTexGenivOES
+rel addr 0xbea3aa10
+   str-> glGetTexGenfvOES
+rel addr 0xbea3aa10
+   str-> glGetRenderbufferParameterivOES
+rel addr 0xbea3aa10
+   str-> glGetFramebufferAttachmentParameterivOES
+rel addr 0xbea3aa10
+   str-> glGenerateMipmapOES
+rel addr 0xbea3aa10
+   str-> glFramebufferTexture2DOES
+rel addr 0xbea3aa10
+   str-> glFramebufferRenderbufferOES
+rel addr 0xbea3aa10
+   str-> glCheckFramebufferStatusOES
+rel addr 0xbea3aa10
+   str-> glBlendFuncSeparateOES
+rel addr 0xbea3aa10
+   str-> glBlendEquationSeparateOES
+rel addr 0xbea3aa10
+   str-> glBlendEquationOES
+rel addr 0xbea3aa10
+   str-> glTexGenxvOES
+rel addr 0xbea3aa10
+   str-> glTexGenxOES
+rel addr 0xbea3aa10
+   str-> glDeleteFramebuffersOES
+rel addr 0xbea3aa10
+   str-> glGenFramebuffersOES
+rel addr 0xbea3aa10
+   str-> glGenRenderbuffersOES
+rel addr 0xbea3aa10
+   str-> glDeleteRenderbuffersOES
+rel addr 0xbea3aa10
+   str-> glQueryMatrixxOES
+rel addr 0xbea3aa10
+   str-> glDrawTexxvOES
+rel addr 0xbea3aa10
+   str-> glGetTexEnviv
+rel addr 0xbea3aa10
+   str-> glGetMaterialxv
+rel addr 0xbea3aa10
+   str-> glDrawTexsvOES
+rel addr 0xbea3aa10
+   str-> glDrawTexivOES
+rel addr 0xbea3aa10
+   str-> glTexEnviv
+rel addr 0xbea3aa10
+   str-> glGenTextures
+rel addr 0xbea3aa10
+   str-> glFogfv
+rel addr 0xbea3aa10
+   str-> glFogxv
+rel addr 0xbea3aa10
+   str-> glGetLightxv
+rel addr 0xbea3aa10
+   str-> glGetLightfv
+rel addr 0xbea3aa10
+   str-> glDeleteTextures
+rel addr 0xbea3aa10
+   str-> glGetMaterialfv
+rel addr 0xbea3aa10
+   str-> glDrawTexfvOES
+rel addr 0xbea3aa10
+   str-> glGetTexEnvxv
+rel addr 0xbea3aa10
+   str-> glBufferData
+rel addr 0xbea3aa10
+   str-> glPointParameterxv
+rel addr 0xbea3aa10
+   str-> glPointParameterfv
+rel addr 0xbea3aa10
+   str-> glTexParameteriv
+rel addr 0xbea3aa10
+   str-> glTexParameterxv
+rel addr 0xbea3aa10
+   str-> glGetTexParameterxv
+rel addr 0xbea3aa10
+   str-> glGetTexParameterfv
+rel addr 0xbea3aa10
+   str-> glTexParameterfv
+rel addr 0xbea3aa10
+   str-> glGetTexParameteriv
+rel addr 0xbea3aa10
+   str-> glWeightPointerOESBounds
+rel addr 0xbea3aa10
+   str-> glMatrixIndexPointerOESBounds
+rel addr 0xbea3aa10
+   str-> glPointSizePointerOESBounds
+rel addr 0xbea3aa10
+   str-> glVertexPointerBounds
+rel addr 0xbea3aa10
+   str-> glTexCoordPointerBounds
+rel addr 0xbea3aa10
+   str-> glNormalPointerBounds
+rel addr 0xbea3aa10
+   str-> glColorPointerBounds
+rel addr 0xbea3aa10
+   str-> glCompressedTexSubImage2D
+rel addr 0xbea3aa10
+   str-> glCompressedTexImage2D
+rel addr 0xbea3aa10
+   str-> __aeabi_fmul
+rel addr 0xbea3aa10
+   str-> __aeabi_fsub
+rel addr 0xbea3aa10
+   str-> __aeabi_fcmple
+rel addr 0xbea3aa10
+   str-> __aeabi_fdiv
+rel addr 0xbea3aa10
+   str-> __aeabi_fadd
+rel addr 0xbea3aa10
+   str-> __aeabi_fcmplt
+rel addr 0xbea3aa10
+   str-> __aeabi_fcmpgt
+rel addr 0xbea3aa10
+   str-> memcpy
+rel addr 0xbea3aa10
+   str-> etc1_get_encoded_data_size
+rel addr 0xbea3aa10
+   str-> malloc
+rel addr 0xbea3aa10
+   str-> free
+rel addr 0xbea3aa10
+   str-> __android_log_print
+rel addr 0xbea3aa10
+   str-> _ZNK8SkBitmap10lockPixelsEv
+rel addr 0xbea3aa10
+   str-> _ZNK8SkBitmap12unlockPixelsEv
+rel addr 0xbea3aa10
+   str-> _ZN12SkColorTable12unlockColorsEb
+rel addr 0xbea3aa10
+   str-> sqrtf
+rel addr 0xbea3aa10
+   str-> __aeabi_fcmpge
+rel addr 0xbea3aa10
+   str-> etc1_pkm_is_valid
+rel addr 0xbea3aa10
+   str-> etc1_pkm_format_header
+rel addr 0xbea3aa10
+   str-> etc1_pkm_get_height
+rel addr 0xbea3aa10
+   str-> etc1_pkm_get_width
+rel addr 0xbea3aa10
+   str-> etc1_decode_image
+rel addr 0xbea3aa10
+   str-> etc1_decode_block
+rel addr 0xbea3aa10
+   str-> etc1_encode_block
+rel addr 0xbea3aa10
+   str-> etc1_encode_image
+rel addr 0xbea3aa10
+   str-> _ZN7android21defaultServiceManagerEv
+rel addr 0xbea3aa10
+   str-> _ZN7android8String16C1EPKc
+rel addr 0xbea3aa10
+   str-> _ZN7android8String16D1Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android6ParcelC1Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android6Parcel19writeInterfaceTokenERKNS_8String16E
+rel addr 0xbea3aa10
+   str-> _ZN7android6Parcel13writeString16ERKNS_8String16E
+rel addr 0xbea3aa10
+   str-> _ZNK7android6Parcel17readExceptionCodeEv
+rel addr 0xbea3aa10
+   str-> _ZNK7android6Parcel9readInt32Ev
+rel addr 0xbea3aa10
+   str-> _ZNK7android6Parcel18readFileDescriptorEv
+rel addr 0xbea3aa10
+   str-> dup
+rel addr 0xbea3aa10
+   str-> _ZN7android7String8C1ERKNS_8String16E
+rel addr 0xbea3aa10
+   str-> _ZN7android7String8D1Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android6ParcelD1Ev
+rel addr 0xbea3aa10
+   str-> _ZNK7android7RefBase9decStrongEPKv
+rel addr 0xbea3aa10
+   str-> strdup
+rel addr 0xbea3aa10
+   str-> androidCreateRawThreadEtc
+rel addr 0xbea3aa10
+   str-> exit
+rel addr 0xbea3aa10
+   str-> sigprocmask
+rel addr 0xbea3aa10
+   str-> getenv
+rel addr 0xbea3aa10
+   str-> strcmp
+rel addr 0xbea3aa10
+   str-> property_get
+rel addr 0xbea3aa10
+   str-> strncat
+rel addr 0xbea3aa10
+   str-> __stack_chk_fail
+rel addr 0xbea3aa10
+   str-> _ZN7android10VectorImpl3addEPKv
+rel addr 0xbea3aa10
+   str-> strcpy
+rel addr 0xbea3aa10
+   str-> strstr
+rel addr 0xbea3aa10
+   str-> strcat
+rel addr 0xbea3aa10
+   str-> strlen
+rel addr 0xbea3aa10
+   str-> _ZN7android10VectorImpl13editArrayImplEv
+rel addr 0xbea3aa10
+   str-> JNI_CreateJavaVM
+rel addr 0xbea3aa10
+   str-> __android_log_vprint
+rel addr 0xbea3aa10
+   str-> jniRegisterNativeMethods
+rel addr 0xbea3aa10
+   str-> _ZN7android10VectorImpl13finish_vectorEv
+rel addr 0xbea3aa10
+   str-> _ZN7android10VectorImplD2Ev
+rel addr 0xbea3aa10
+   str-> _ZN10SkGraphics4TermEv
+rel addr 0xbea3aa10
+   str-> _ZdlPv
+rel addr 0xbea3aa10
+   str-> _ZN7android10VectorImplC2Ejj
+rel addr 0xbea3aa10
+   str-> _ZN10SkGraphics4InitEv
+rel addr 0xbea3aa10
+   str-> _ZN14SkImageDecoder15SetDeviceConfigEN8SkBitmap6ConfigE
+rel addr 0xbea3aa10
+   str-> _ZN21SkImageRef_GlobalPool12SetRAMBudgetEj
+rel addr 0xbea3aa10
+   str-> _ZN7android10VectorImpl11setCapacityEj
+rel addr 0xbea3aa10
+   str-> androidSetCreateThreadFunc
+rel addr 0xbea3aa10
+   str-> systemTime
+rel addr 0xbea3aa10
+   str-> __aeabi_ldivmod
+rel addr 0xbea3aa10
+   str-> __android_log_btwrite
+rel addr 0xbea3aa10
+   str-> stat
+rel addr 0xbea3aa10
+   str-> setenv
+rel addr 0xbea3aa10
+   str-> _ZN7android10VectorImpl19reservedVectorImpl1Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android10VectorImpl19reservedVectorImpl2Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android10VectorImpl19reservedVectorImpl3Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android10VectorImpl19reservedVectorImpl4Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android10VectorImpl19reservedVectorImpl5Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android10VectorImpl19reservedVectorImpl6Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android10VectorImpl19reservedVectorImpl7Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android10VectorImpl19reservedVectorImpl8Ev
+rel addr 0xbea3aa10
+   str-> __cxa_pure_virtual
+rel addr 0xbea3aa10
+   str-> memset
+rel addr 0xbea3aa10
+   str-> _ZNK7android7RefBase9incStrongEPKv
+rel addr 0xbea3aa10
+   str-> _Znwj
+rel addr 0xbea3aa10
+   str-> _ZN7android14MemoryHeapBaseC1EjjPKc
+rel addr 0xbea3aa10
+   str-> _ZN7android10MemoryBaseC1ERKNS_2spINS_11IMemoryHeapEEElj
+rel addr 0xbea3aa10
+   str-> _ZNK7android7IMemory7pointerEv
+rel addr 0xbea3aa10
+   str-> _ZNK7android7IMemory4sizeEv
+rel addr 0xbea3aa10
+   str-> __aeabi_idiv
+rel addr 0xbea3aa10
+   str-> __aeabi_idivmod
+rel addr 0xbea3aa10
+   str-> localtime_tz
+rel addr 0xbea3aa10
+   str-> mktime_tz
+rel addr 0xbea3aa10
+   str-> __aeabi_lmul
+rel addr 0xbea3aa10
+   str-> time
+rel addr 0xbea3aa10
+   str-> _ZN7android7String8C1Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android7String810lockBufferEj
+rel addr 0xbea3aa10
+   str-> sprintf
+rel addr 0xbea3aa10
+   str-> _ZN7android7String812unlockBufferEv
+rel addr 0xbea3aa10
+   str-> strftime_tz
+rel addr 0xbea3aa10
+   str-> _ZN7android7String8C1EPKc
+rel addr 0xbea3aa10
+   str-> eglSwapBuffers
+rel addr 0xbea3aa10
+   str-> eglQueryString
+rel addr 0xbea3aa10
+   str-> eglMakeCurrent
+rel addr 0xbea3aa10
+   str-> android_atomic_dec
+rel addr 0xbea3aa10
+   str-> _ZN10SkPixelRef12unlockPixelsEv
+rel addr 0xbea3aa10
+   str-> eglDestroySurface
+rel addr 0xbea3aa10
+   str-> eglDestroyContext
+rel addr 0xbea3aa10
+   str-> eglCreateWindowSurface
+rel addr 0xbea3aa10
+   str-> android_atomic_inc
+rel addr 0xbea3aa10
+   str-> _ZN10SkPixelRef10lockPixelsEv
+rel addr 0xbea3aa10
+   str-> eglCreatePixmapSurface
+rel addr 0xbea3aa10
+   str-> eglCreatePbufferSurface
+rel addr 0xbea3aa10
+   str-> eglGetCurrentSurface
+rel addr 0xbea3aa10
+   str-> eglGetCurrentDisplay
+rel addr 0xbea3aa10
+   str-> eglGetCurrentContext
+rel addr 0xbea3aa10
+   str-> eglGetDisplay
+rel addr 0xbea3aa10
+   str-> eglGetConfigAttrib
+rel addr 0xbea3aa10
+   str-> eglGetError
+rel addr 0xbea3aa10
+   str-> eglWaitNative
+rel addr 0xbea3aa10
+   str-> eglTerminate
+rel addr 0xbea3aa10
+   str-> eglGetConfigs
+rel addr 0xbea3aa10
+   str-> eglCreateContext
+rel addr 0xbea3aa10
+   str-> eglChooseConfig
+rel addr 0xbea3aa10
+   str-> eglQuerySurface
+rel addr 0xbea3aa10
+   str-> eglQueryContext
+rel addr 0xbea3aa10
+   str-> eglInitialize
+rel addr 0xbea3aa10
+   str-> eglWaitGL
+rel addr 0xbea3aa10
+   str-> _ZN7android6Looper8removeFdEi
+rel addr 0xbea3aa10
+   str-> _ZN7android6Looper5addFdEiiiPFiiiPvES1_
+rel addr 0xbea3aa10
+   str-> read
+rel addr 0xbea3aa10
+   str-> __errno
+rel addr 0xbea3aa10
+   str-> strerror
+rel addr 0xbea3aa10
+   str-> jniLogException
+rel addr 0xbea3aa10
+   str-> write
+rel addr 0xbea3aa10
+   str-> pthread_mutex_lock
+rel addr 0xbea3aa10
+   str-> _ZN7android10VectorImpl16editItemLocationEj
+rel addr 0xbea3aa10
+   str-> pthread_mutex_unlock
+rel addr 0xbea3aa10
+   str-> memmove
+rel addr 0xbea3aa10
+   str-> _ZN7android10VectorImpl3popEv
+rel addr 0xbea3aa10
+   str-> _ZN7android10VectorImpl13removeItemsAtEjj
+rel addr 0xbea3aa10
+   str-> _ZNK7android8KeyEvent16hasDefaultActionEv
+rel addr 0xbea3aa10
+   str-> _ZN7android13InputConsumer18sendFinishedSignalEv
+rel addr 0xbea3aa10
+   str-> _ZN7android7String8C1ERKS0_
+rel addr 0xbea3aa10
+   str-> _ZN7android10VectorImpl4pushEPKv
+rel addr 0xbea3aa10
+   str-> _ZNK7android8KeyEvent11isSystemKeyEv
+rel addr 0xbea3aa10
+   str-> _ZN7android13InputConsumer21receiveDispatchSignalEv
+rel addr 0xbea3aa10
+   str-> _ZN7android13InputConsumer7consumeEPNS_26InputEventFactoryInterf
+rel addr 0xbea3aa10
+   str-> poll
+rel addr 0xbea3aa10
+   str-> close
+rel addr 0xbea3aa10
+   str-> pthread_mutex_destroy
+rel addr 0xbea3aa10
+   str-> _ZN7android13InputConsumerD1Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android13InputConsumerC1ERKNS_2spINS_12InputChannelEEE
+rel addr 0xbea3aa10
+   str-> pthread_mutex_init
+rel addr 0xbea3aa10
+   str-> pipe
+rel addr 0xbea3aa10
+   str-> fcntl
+rel addr 0xbea3aa10
+   str-> __android_log_buf_print
+rel addr 0xbea3aa10
+   str-> _ZN7android13InputConsumer10initializeEv
+rel addr 0xbea3aa10
+   str-> jniThrowException
+rel addr 0xbea3aa10
+   str-> dlopen
+rel addr 0xbea3aa10
+   str-> dlsym
+rel addr 0xbea3aa10
+   str-> _ZN7android7String85setToEPKc
+rel addr 0xbea3aa10
+   str-> glGetTexEnvfv
+rel addr 0xbea3aa10
+   str-> glClearDepthfOES
+rel addr 0xbea3aa10
+   str-> glOrthofOES
+rel addr 0xbea3aa10
+   str-> glFrustumfOES
+rel addr 0xbea3aa10
+   str-> glDepthRangefOES
+rel addr 0xbea3aa10
+   str-> glTranslatexOES
+rel addr 0xbea3aa10
+   str-> glTexParameterxOES
+rel addr 0xbea3aa10
+   str-> glTexEnvxOES
+rel addr 0xbea3aa10
+   str-> glScalexOES
+rel addr 0xbea3aa10
+   str-> glSampleCoveragexOES
+rel addr 0xbea3aa10
+   str-> glRotatexOES
+rel addr 0xbea3aa10
+   str-> glPolygonOffsetxOES
+rel addr 0xbea3aa10
+   str-> glPointSizexOES
+rel addr 0xbea3aa10
+   str-> glPointParameterxOES
+rel addr 0xbea3aa10
+   str-> glOrthoxOES
+rel addr 0xbea3aa10
+   str-> glNormal3xOES
+rel addr 0xbea3aa10
+   str-> glMultiTexCoord4xOES
+rel addr 0xbea3aa10
+   str-> glMaterialxOES
+rel addr 0xbea3aa10
+   str-> glLineWidthxOES
+rel addr 0xbea3aa10
+   str-> glLightxOES
+rel addr 0xbea3aa10
+   str-> glLightModelxOES
+rel addr 0xbea3aa10
+   str-> glFrustumxOES
+rel addr 0xbea3aa10
+   str-> glFogxOES
+rel addr 0xbea3aa10
+   str-> glDepthRangexOES
+rel addr 0xbea3aa10
+   str-> glColor4xOES
+rel addr 0xbea3aa10
+   str-> glClearDepthxOES
+rel addr 0xbea3aa10
+   str-> glClearColorxOES
+rel addr 0xbea3aa10
+   str-> glAlphaFuncxOES
+rel addr 0xbea3aa10
+   str-> glClipPlanexOES
+rel addr 0xbea3aa10
+   str-> glFogxvOES
+rel addr 0xbea3aa10
+   str-> glGetClipPlanexOES
+rel addr 0xbea3aa10
+   str-> glGetFixedvOES
+rel addr 0xbea3aa10
+   str-> glGetLightxvOES
+rel addr 0xbea3aa10
+   str-> glGetMaterialxvOES
+rel addr 0xbea3aa10
+   str-> glGetTexEnvxvOES
+rel addr 0xbea3aa10
+   str-> glGetTexParameterxvOES
+rel addr 0xbea3aa10
+   str-> glLightModelxvOES
+rel addr 0xbea3aa10
+   str-> glLightxvOES
+rel addr 0xbea3aa10
+   str-> glLoadMatrixxOES
+rel addr 0xbea3aa10
+   str-> glMaterialxvOES
+rel addr 0xbea3aa10
+   str-> glMultMatrixxOES
+rel addr 0xbea3aa10
+   str-> glPointParameterxvOES
+rel addr 0xbea3aa10
+   str-> glTexEnvxvOES
+rel addr 0xbea3aa10
+   str-> glTexParameterxvOES
+rel addr 0xbea3aa10
+   str-> glClipPlanefOES
+rel addr 0xbea3aa10
+   str-> glGetClipPlanefOES
+rel addr 0xbea3aa10
+   str-> glEGLImageTargetRenderbufferStorageOES
+rel addr 0xbea3aa10
+   str-> glEGLImageTargetTexture2DOES
+rel addr 0xbea3aa10
+   str-> glVertexAttribPointer
+rel addr 0xbea3aa10
+   str-> glVertexAttrib4f
+rel addr 0xbea3aa10
+   str-> glVertexAttrib3f
+rel addr 0xbea3aa10
+   str-> glVertexAttrib2f
+rel addr 0xbea3aa10
+   str-> glVertexAttrib1f
+rel addr 0xbea3aa10
+   str-> glValidateProgram
+rel addr 0xbea3aa10
+   str-> glUseProgram
+rel addr 0xbea3aa10
+   str-> glUniform4i
+rel addr 0xbea3aa10
+   str-> glUniform4f
+rel addr 0xbea3aa10
+   str-> glUniform3i
+rel addr 0xbea3aa10
+   str-> glUniform3f
+rel addr 0xbea3aa10
+   str-> glUniform2i
+rel addr 0xbea3aa10
+   str-> glUniform2f
+rel addr 0xbea3aa10
+   str-> glUniform1i
+rel addr 0xbea3aa10
+   str-> glUniform1f
+rel addr 0xbea3aa10
+   str-> glStencilOpSeparate
+rel addr 0xbea3aa10
+   str-> glStencilMaskSeparate
+rel addr 0xbea3aa10
+   str-> glStencilFuncSeparate
+rel addr 0xbea3aa10
+   str-> glShaderSource
+rel addr 0xbea3aa10
+   str-> glRenderbufferStorage
+rel addr 0xbea3aa10
+   str-> glReleaseShaderCompiler
+rel addr 0xbea3aa10
+   str-> glLinkProgram
+rel addr 0xbea3aa10
+   str-> glIsShader
+rel addr 0xbea3aa10
+   str-> glIsRenderbuffer
+rel addr 0xbea3aa10
+   str-> glIsProgram
+rel addr 0xbea3aa10
+   str-> glIsFramebuffer
+rel addr 0xbea3aa10
+   str-> glGetUniformLocation
+rel addr 0xbea3aa10
+   str-> glGetShaderiv
+rel addr 0xbea3aa10
+   str-> glGetShaderInfoLog
+rel addr 0xbea3aa10
+   str-> glGetProgramiv
+rel addr 0xbea3aa10
+   str-> glGetProgramInfoLog
+rel addr 0xbea3aa10
+   str-> glGetAttribLocation
+rel addr 0xbea3aa10
+   str-> glGenerateMipmap
+rel addr 0xbea3aa10
+   str-> glFramebufferTexture2D
+rel addr 0xbea3aa10
+   str-> glFramebufferRenderbuffer
+rel addr 0xbea3aa10
+   str-> glEnableVertexAttribArray
+rel addr 0xbea3aa10
+   str-> glDisableVertexAttribArray
+rel addr 0xbea3aa10
+   str-> glDetachShader
+rel addr 0xbea3aa10
+   str-> glDeleteShader
+rel addr 0xbea3aa10
+   str-> glDeleteProgram
+rel addr 0xbea3aa10
+   str-> glCreateShader
+rel addr 0xbea3aa10
+   str-> glCreateProgram
+rel addr 0xbea3aa10
+   str-> glCompileShader
+rel addr 0xbea3aa10
+   str-> glCheckFramebufferStatus
+rel addr 0xbea3aa10
+   str-> glBlendColor
+rel addr 0xbea3aa10
+   str-> glBindRenderbuffer
+rel addr 0xbea3aa10
+   str-> glBindFramebuffer
+rel addr 0xbea3aa10
+   str-> glBindAttribLocation
+rel addr 0xbea3aa10
+   str-> glAttachShader
+rel addr 0xbea3aa10
+   str-> glDeleteFramebuffers
+rel addr 0xbea3aa10
+   str-> glDeleteRenderbuffers
+rel addr 0xbea3aa10
+   str-> glGenFramebuffers
+rel addr 0xbea3aa10
+   str-> glGenRenderbuffers
+rel addr 0xbea3aa10
+   str-> glGetActiveAttrib
+rel addr 0xbea3aa10
+   str-> glGetActiveUniform
+rel addr 0xbea3aa10
+   str-> glGetAttachedShaders
+rel addr 0xbea3aa10
+   str-> glGetFramebufferAttachmentParameteriv
+rel addr 0xbea3aa10
+   str-> glGetRenderbufferParameteriv
+rel addr 0xbea3aa10
+   str-> glGetShaderPrecisionFormat
+rel addr 0xbea3aa10
+   str-> glGetShaderSource
+rel addr 0xbea3aa10
+   str-> glGetUniformfv
+rel addr 0xbea3aa10
+   str-> glGetUniformiv
+rel addr 0xbea3aa10
+   str-> glGetVertexAttribfv
+rel addr 0xbea3aa10
+   str-> glGetVertexAttribiv
+rel addr 0xbea3aa10
+   str-> glUniform1fv
+rel addr 0xbea3aa10
+   str-> glUniform1iv
+rel addr 0xbea3aa10
+   str-> glUniform2fv
+rel addr 0xbea3aa10
+   str-> glUniform2iv
+rel addr 0xbea3aa10
+   str-> glUniform3fv
+rel addr 0xbea3aa10
+   str-> glUniform3iv
+rel addr 0xbea3aa10
+   str-> glUniform4fv
+rel addr 0xbea3aa10
+   str-> glUniform4iv
+rel addr 0xbea3aa10
+   str-> glUniformMatrix2fv
+rel addr 0xbea3aa10
+   str-> glUniformMatrix3fv
+rel addr 0xbea3aa10
+   str-> glUniformMatrix4fv
+rel addr 0xbea3aa10
+   str-> glVertexAttrib1fv
+rel addr 0xbea3aa10
+   str-> glVertexAttrib2fv
+rel addr 0xbea3aa10
+   str-> glVertexAttrib3fv
+rel addr 0xbea3aa10
+   str-> glVertexAttrib4fv
+rel addr 0xbea3aa10
+   str-> glShaderBinary
+rel addr 0xbea3aa10
+   str-> snprintf
+rel addr 0xbea3aa10
+   str-> strtod
+rel addr 0xbea3aa10
+   str-> __aeabi_l2d
+rel addr 0xbea3aa10
+   str-> _ZN7android8String16C1EPKcj
+rel addr 0xbea3aa10
+   str-> strtoll
+rel addr 0xbea3aa10
+   str-> __aeabi_d2lz
+rel addr 0xbea3aa10
+   str-> _ZN7android10IInterface8asBinderEv
+rel addr 0xbea3aa10
+   str-> _ZN7android7IMemory11asInterfaceERKNS_2spINS_7IBinderEEE
+rel addr 0xbea3aa10
+   str-> sqlite3_finalize
+rel addr 0xbea3aa10
+   str-> sqlite3_prepare16_v2
+rel addr 0xbea3aa10
+   str-> fgets
+rel addr 0xbea3aa10
+   str-> strtoul
+rel addr 0xbea3aa10
+   str-> strncmp
+rel addr 0xbea3aa10
+   str-> sscanf
+rel addr 0xbea3aa10
+   str-> fopen
+rel addr 0xbea3aa10
+   str-> fclose
+rel addr 0xbea3aa10
+   str-> getpid
+rel addr 0xbea3aa10
+   str-> sqlite3_memory_used
+rel addr 0xbea3aa10
+   str-> sqlite3_status
+rel addr 0xbea3aa10
+   str-> sqlite3_errcode
+rel addr 0xbea3aa10
+   str-> sqlite3_errmsg
+rel addr 0xbea3aa10
+   str-> __aeabi_ul2d
+rel addr 0xbea3aa10
+   str-> __aeabi_ddiv
+rel addr 0xbea3aa10
+   str-> sqlite3_release_memory
+rel addr 0xbea3aa10
+   str-> sqlite3_db_status
+rel addr 0xbea3aa10
+   str-> sqlite3_changes
+rel addr 0xbea3aa10
+   str-> sqlite3_last_insert_rowid
+rel addr 0xbea3aa10
+   str-> strncpy
+rel addr 0xbea3aa10
+   str-> sqlite3_trace
+rel addr 0xbea3aa10
+   str-> sqlite3_profile
+rel addr 0xbea3aa10
+   str-> sqlite3_close
+rel addr 0xbea3aa10
+   str-> sqlite3_config
+rel addr 0xbea3aa10
+   str-> sqlite3_open_v2
+rel addr 0xbea3aa10
+   str-> sqlite3_soft_heap_limit
+rel addr 0xbea3aa10
+   str-> sqlite3_busy_timeout
+rel addr 0xbea3aa10
+   str-> register_android_functions
+rel addr 0xbea3aa10
+   str-> sqlite3_step
+rel addr 0xbea3aa10
+   str-> sqlite3_exec
+rel addr 0xbea3aa10
+   str-> sqlite3_get_table
+rel addr 0xbea3aa10
+   str-> register_localized_collators
+rel addr 0xbea3aa10
+   str-> sqlite3_prepare_v2
+rel addr 0xbea3aa10
+   str-> sqlite3_bind_text
+rel addr 0xbea3aa10
+   str-> sqlite3_free_table
+rel addr 0xbea3aa10
+   str-> sqlite3_clear_bindings
+rel addr 0xbea3aa10
+   str-> sqlite3_bind_blob
+rel addr 0xbea3aa10
+   str-> sqlite3_bind_text16
+rel addr 0xbea3aa10
+   str-> sqlite3_bind_double
+rel addr 0xbea3aa10
+   str-> sqlite3_bind_int64
+rel addr 0xbea3aa10
+   str-> sqlite3_bind_null
+rel addr 0xbea3aa10
+   str-> sqlite3_column_name
+rel addr 0xbea3aa10
+   str-> sqlite3_column_count
+rel addr 0xbea3aa10
+   str-> usleep
+rel addr 0xbea3aa10
+   str-> sqlite3_reset
+rel addr 0xbea3aa10
+   str-> sqlite3_bind_int
+rel addr 0xbea3aa10
+   str-> sqlite3_column_type
+rel addr 0xbea3aa10
+   str-> sqlite3_column_text
+rel addr 0xbea3aa10
+   str-> sqlite3_column_bytes
+rel addr 0xbea3aa10
+   str-> sqlite3_column_int64
+rel addr 0xbea3aa10
+   str-> sqlite3_column_double
+rel addr 0xbea3aa10
+   str-> sqlite3_column_blob
+rel addr 0xbea3aa10
+   str-> sqlite3_column_bytes16
+rel addr 0xbea3aa10
+   str-> _ZN8SkBitmapC1Ev
+rel addr 0xbea3aa10
+   str-> _ZN14SkImageDecoder12DecodeMemoryEPKvjP8SkBitmapNS2_6ConfigENS_4
+rel addr 0xbea3aa10
+   str-> pthread_once
+rel addr 0xbea3aa10
+   str-> _ZN7android8String16C1ERKNS_7String8E
+rel addr 0xbea3aa10
+   str-> _ZN7android8String16C1EPKtj
+rel addr 0xbea3aa10
+   str-> dlclose
+rel addr 0xbea3aa10
+   str-> dlerror
+rel addr 0xbea3aa10
+   str-> _ZN7android21SurfaceComposerClient21getDisplayOrientationEi
+rel addr 0xbea3aa10
+   str-> _ZN7android21SurfaceComposerClient16getDisplayHeightEi
+rel addr 0xbea3aa10
+   str-> _ZN7android21SurfaceComposerClient15getDisplayWidthEi
+rel addr 0xbea3aa10
+   str-> _ZN7android21SurfaceComposerClient19getNumberOfDisplaysEv
+rel addr 0xbea3aa10
+   str-> _ZN7android21SurfaceComposerClient14getDisplayInfoEiPNS_11Displa
+rel addr 0xbea3aa10
+   str-> _ZN7android14SurfaceControl20writeSurfaceToParcelERKNS_2spIS0_EE
+rel addr 0xbea3aa10
+   str-> _ZN7android7Surface14readFromParcelERKNS_6ParcelE
+rel addr 0xbea3aa10
+   str-> _ZN7android14SurfaceControl13setFreezeTintEj
+rel addr 0xbea3aa10
+   str-> _ZN7android14SurfaceControl9setMatrixEffff
+rel addr 0xbea3aa10
+   str-> _ZN7android14SurfaceControl8setAlphaEf
+rel addr 0xbea3aa10
+   str-> _ZN7android6RegionC1ERKNS_4RectE
+rel addr 0xbea3aa10
+   str-> _ZN8SkRegion8IteratorC1ERKS_
+rel addr 0xbea3aa10
+   str-> _ZN7android6Region16addRectUncheckedEiiii
+rel addr 0xbea3aa10
+   str-> _ZN8SkRegion8Iterator4nextEv
+rel addr 0xbea3aa10
+   str-> _ZN7android14SurfaceControl24setTransparentRegionHintERKNS_6Regi
+rel addr 0xbea3aa10
+   str-> _ZN7android6RegionD1Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android14SurfaceControl8setFlagsEjj
+rel addr 0xbea3aa10
+   str-> _ZN7android14SurfaceControl8unfreezeEv
+rel addr 0xbea3aa10
+   str-> _ZN7android14SurfaceControl6freezeEv
+rel addr 0xbea3aa10
+   str-> _ZN7android14SurfaceControl4showEi
+rel addr 0xbea3aa10
+   str-> _ZN7android14SurfaceControl4hideEv
+rel addr 0xbea3aa10
+   str-> _ZN7android14SurfaceControl7setSizeEjj
+rel addr 0xbea3aa10
+   str-> _ZN7android14SurfaceControl11setPositionEii
+rel addr 0xbea3aa10
+   str-> _ZN7android14SurfaceControl8setLayerEi
+rel addr 0xbea3aa10
+   str-> _ZN7android21SurfaceComposerClient15unfreezeDisplayEij
+rel addr 0xbea3aa10
+   str-> _ZN7android21SurfaceComposerClient13freezeDisplayEij
+rel addr 0xbea3aa10
+   str-> _ZN7android21SurfaceComposerClient14setOrientationEiij
+rel addr 0xbea3aa10
+   str-> _ZN7android21SurfaceComposerClient22closeGlobalTransactionEv
+rel addr 0xbea3aa10
+   str-> _ZN7android21SurfaceComposerClient21openGlobalTransactionEv
+rel addr 0xbea3aa10
+   str-> _ZNK7android14SurfaceControl10getSurfaceEv
+rel addr 0xbea3aa10
+   str-> _ZN7android7Surface7isValidEv
+rel addr 0xbea3aa10
+   str-> _ZN8SkCanvas14restoreToCountEi
+rel addr 0xbea3aa10
+   str-> _ZN8SkBitmapD1Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android7Surface13unlockAndPostEv
+rel addr 0xbea3aa10
+   str-> _ZN7android6RegionC1Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android6Region3setERKNS_4RectE
+rel addr 0xbea3aa10
+   str-> _ZN7android7Surface4lockEPNS0_11SurfaceInfoEPNS_6RegionEb
+rel addr 0xbea3aa10
+   str-> _ZN7android13bytesPerPixelEi
+rel addr 0xbea3aa10
+   str-> _ZN8SkBitmap9setConfigENS_6ConfigEiii
+rel addr 0xbea3aa10
+   str-> _ZN8SkBitmap11setIsOpaqueEb
+rel addr 0xbea3aa10
+   str-> _ZN8SkBitmap9setPixelsEPvP12SkColorTable
+rel addr 0xbea3aa10
+   str-> _ZN8SkRegionC1Ev
+rel addr 0xbea3aa10
+   str-> _ZN8SkRegion7setRectEiiii
+rel addr 0xbea3aa10
+   str-> _ZNK7android6Region8getArrayEPj
+rel addr 0xbea3aa10
+   str-> _ZN8SkRegion2opERKS_RK7SkIRectNS_2OpE
+rel addr 0xbea3aa10
+   str-> _ZN8SkRegionD1Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android14SurfaceControl13isSameSurfaceERKNS_2spIS0_EES4_
+rel addr 0xbea3aa10
+   str-> _ZN7android14SurfaceControl5clearEv
+rel addr 0xbea3aa10
+   str-> _ZN7android21SurfaceComposerClient13createSurfaceEiijjij
+rel addr 0xbea3aa10
+   str-> _ZN7android7String8C1EPKtj
+rel addr 0xbea3aa10
+   str-> _ZN7android21SurfaceComposerClient13createSurfaceEiRKNS_7String8
+rel addr 0xbea3aa10
+   str-> _ZN7android21SurfaceComposerClient7disposeEv
+rel addr 0xbea3aa10
+   str-> _ZN7android21SurfaceComposerClientC1Ev
+rel addr 0xbea3aa10
+   str-> _ZN10SkGLCanvas18AbandonAllTexturesEv
+rel addr 0xbea3aa10
+   str-> _ZNK8SkCanvas9getDeviceEv
+rel addr 0xbea3aa10
+   str-> _ZN8SkDevice12accessBitmapEb
+rel addr 0xbea3aa10
+   str-> __aeabi_i2f
+rel addr 0xbea3aa10
+   str-> _ZN7SkPaintC1Ev
+rel addr 0xbea3aa10
+   str-> _ZN8SkMatrix5resetEv
+rel addr 0xbea3aa10
+   str-> _ZN7SkPaint12setAntiAliasEb
+rel addr 0xbea3aa10
+   str-> _ZN7SkPaint11setTextSizeEf
+rel addr 0xbea3aa10
+   str-> _ZN7SkPaint8setColorEj
+rel addr 0xbea3aa10
+   str-> _ZN7SkPaintD1Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android6Parcel10writeInt32Ei
+rel addr 0xbea3aa10
+   str-> _ZN7android6Parcel12writeString8ERKNS_7String8E
+rel addr 0xbea3aa10
+   str-> _ZN7android6Parcel22writeDupFileDescriptorEi
+rel addr 0xbea3aa10
+   str-> _ZNK7android6Parcel11readString8Ev
+rel addr 0xbea3aa10
+   str-> jniThrowRuntimeException
+rel addr 0xbea3aa10
+   str-> _ZN7android12InputChannelC1ERKNS_7String8Eiii
+rel addr 0xbea3aa10
+   str-> _ZN7android12InputChannel20openInputChannelPairERKNS_7String8ERN
+rel addr 0xbea3aa10
+   str-> _ZN7android7RefBaseD2Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android7RefBaseC2Ev
+rel addr 0xbea3aa10
+   str-> _ZNK7android16SortedVectorImpl7indexOfEPKv
+rel addr 0xbea3aa10
+   str-> _ZN7android16SortedVectorImpl3addEPKv
+rel addr 0xbea3aa10
+   str-> _ZN7android16SortedVectorImplD2Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android16SortedVectorImplC2Ejj
+rel addr 0xbea3aa10
+   str-> __aeabi_atexit
+rel addr 0xbea3aa10
+   str-> _ZN7android16SortedVectorImpl25reservedSortedVectorImpl1Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android16SortedVectorImpl25reservedSortedVectorImpl2Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android16SortedVectorImpl25reservedSortedVectorImpl3Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android16SortedVectorImpl25reservedSortedVectorImpl4Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android16SortedVectorImpl25reservedSortedVectorImpl5Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android16SortedVectorImpl25reservedSortedVectorImpl6Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android16SortedVectorImpl25reservedSortedVectorImpl7Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android16SortedVectorImpl25reservedSortedVectorImpl8Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android7RefBase10onFirstRefEv
+rel addr 0xbea3aa10
+   str-> _ZN7android7RefBase15onLastStrongRefEPKv
+rel addr 0xbea3aa10
+   str-> _ZN7android7RefBase20onIncStrongAttemptedEjPKv
+rel addr 0xbea3aa10
+   str-> _ZN7android7RefBase13onLastWeakRefEPKv
+rel addr 0xbea3aa10
+   str-> _ZN7android8KeyEvent16hasDefaultActionEi
+rel addr 0xbea3aa10
+   str-> _ZN7android8KeyEvent11isSystemKeyEi
+rel addr 0xbea3aa10
+   str-> _ZN7android8KeyEvent10initializeEiiiiiiiixx
+rel addr 0xbea3aa10
+   str-> _ZN7android11MotionEvent10initializeEiiiiiiffffxxjPKiPKNS_13Poin
+rel addr 0xbea3aa10
+   str-> _ZN7android11MotionEvent9addSampleExPKNS_13PointerCoordsE
+rel addr 0xbea3aa10
+   str-> u_charMirror_44
+rel addr 0xbea3aa10
+   str-> u_getIntPropertyValue_44
+rel addr 0xbea3aa10
+   str-> u_charDirection_44
+rel addr 0xbea3aa10
+   str-> ubidi_openSized_44
+rel addr 0xbea3aa10
+   str-> ubidi_setPara_44
+rel addr 0xbea3aa10
+   str-> ubidi_getLevelAt_44
+rel addr 0xbea3aa10
+   str-> ubidi_getParaLevel_44
+rel addr 0xbea3aa10
+   str-> ubidi_close_44
+rel addr 0xbea3aa10
+   str-> _ZN15KeyCharacterMap9getEventsEPtjPN7android6VectorIiEEPNS2_IjEE
+rel addr 0xbea3aa10
+   str-> _ZN15KeyCharacterMap10getKeyDataEiPtS0_S0_
+rel addr 0xbea3aa10
+   str-> _ZN15KeyCharacterMap15getDisplayLabelEi
+rel addr 0xbea3aa10
+   str-> _ZN15KeyCharacterMap8getMatchEiPKtij
+rel addr 0xbea3aa10
+   str-> _ZN15KeyCharacterMap9getNumberEi
+rel addr 0xbea3aa10
+   str-> _ZN15KeyCharacterMap3getEii
+rel addr 0xbea3aa10
+   str-> _ZN15KeyCharacterMapD1Ev
+rel addr 0xbea3aa10
+   str-> _ZN15KeyCharacterMap4loadEi
+rel addr 0xbea3aa10
+   str-> atoi
+rel addr 0xbea3aa10
+   str-> mallinfo
+rel addr 0xbea3aa10
+   str-> open
+rel addr 0xbea3aa10
+   str-> ioctl
+rel addr 0xbea3aa10
+   str-> _ZN7android7String85setToERKS0_
+rel addr 0xbea3aa10
+   str-> chown
+rel addr 0xbea3aa10
+   str-> chmod
+rel addr 0xbea3aa10
+   str-> jniGetFDFromFileDescriptor
+rel addr 0xbea3aa10
+   str-> ashmem_get_size_region
+rel addr 0xbea3aa10
+   str-> jniThrowIOException
+rel addr 0xbea3aa10
+   str-> ashmem_pin_region
+rel addr 0xbea3aa10
+   str-> ashmem_unpin_region
+rel addr 0xbea3aa10
+   str-> jniSetFileDescriptorOfFD
+rel addr 0xbea3aa10
+   str-> munmap
+rel addr 0xbea3aa10
+   str-> mmap
+rel addr 0xbea3aa10
+   str-> ashmem_create_region
+rel addr 0xbea3aa10
+   str-> jniCreateFileDescriptor
+rel addr 0xbea3aa10
+   str-> _ZN7android6Looper4wakeEv
+rel addr 0xbea3aa10
+   str-> _ZN7android6Looper8pollOnceEiPiS1_PPv
+rel addr 0xbea3aa10
+   str-> _ZN7android6Looper12getForThreadEv
+rel addr 0xbea3aa10
+   str-> _ZN7android6LooperC1Eb
+rel addr 0xbea3aa10
+   str-> _ZN7android6Looper12setForThreadERKNS_2spIS0_EE
+rel addr 0xbea3aa10
+   str-> lseek
+rel addr 0xbea3aa10
+   str-> fstat
+rel addr 0xbea3aa10
+   str-> sync
+rel addr 0xbea3aa10
+   str-> reboot
+rel addr 0xbea3aa10
+   str-> __reboot
+rel addr 0xbea3aa10
+   str-> set_screen_state
+rel addr 0xbea3aa10
+   str-> set_last_user_activity_timeout
+rel addr 0xbea3aa10
+   str-> acquire_wake_lock
+rel addr 0xbea3aa10
+   str-> release_wake_lock
+rel addr 0xbea3aa10
+   str-> statfs
+rel addr 0xbea3aa10
+   str-> clock_gettime
+rel addr 0xbea3aa10
+   str-> _ZN7android15elapsedRealtimeEv
+rel addr 0xbea3aa10
+   str-> _ZN7android12uptimeMillisEv
+rel addr 0xbea3aa10
+   str-> _ZN7android20setCurrentTimeMillisEx
+rel addr 0xbea3aa10
+   str-> property_set
+rel addr 0xbea3aa10
+   str-> uevent_next_event
+rel addr 0xbea3aa10
+   str-> uevent_init
+rel addr 0xbea3aa10
+   str-> getsockopt
+rel addr 0xbea3aa10
+   str-> sendmsg
+rel addr 0xbea3aa10
+   str-> recvmsg
+rel addr 0xbea3aa10
+   str-> shutdown
+rel addr 0xbea3aa10
+   str-> accept
+rel addr 0xbea3aa10
+   str-> listen
+rel addr 0xbea3aa10
+   str-> socket_local_server_bind
+rel addr 0xbea3aa10
+   str-> socket_local_client_connect
+rel addr 0xbea3aa10
+   str-> socket
+rel addr 0xbea3aa10
+   str-> setsockopt
+rel addr 0xbea3aa10
+   str-> dhcp_get_errmsg
+rel addr 0xbea3aa10
+   str-> ifc_enable
+rel addr 0xbea3aa10
+   str-> ifc_disable
+rel addr 0xbea3aa10
+   str-> ifc_add_host_route
+rel addr 0xbea3aa10
+   str-> ifc_remove_host_routes
+rel addr 0xbea3aa10
+   str-> ifc_set_default_route
+rel addr 0xbea3aa10
+   str-> ifc_get_default_route
+rel addr 0xbea3aa10
+   str-> ifc_remove_default_route
+rel addr 0xbea3aa10
+   str-> ifc_reset_connections
+rel addr 0xbea3aa10
+   str-> dhcp_do_request
+rel addr 0xbea3aa10
+   str-> dhcp_stop
+rel addr 0xbea3aa10
+   str-> dhcp_release_lease
+rel addr 0xbea3aa10
+   str-> ifc_configure
+rel addr 0xbea3aa10
+   str-> atoll
+rel addr 0xbea3aa10
+   str-> opendir
+rel addr 0xbea3aa10
+   str-> readdir
+rel addr 0xbea3aa10
+   str-> strlcpy
+rel addr 0xbea3aa10
+   str-> strlcat
+rel addr 0xbea3aa10
+   str-> closedir
+rel addr 0xbea3aa10
+   str-> get_dhcp_error_string
+rel addr 0xbea3aa10
+   str-> do_dhcp_request
+rel addr 0xbea3aa10
+   str-> wifi_command
+rel addr 0xbea3aa10
+   str-> strrchr
+rel addr 0xbea3aa10
+   str-> wifi_wait_for_event
+rel addr 0xbea3aa10
+   str-> wifi_close_supplicant_connection
+rel addr 0xbea3aa10
+   str-> wifi_connect_to_supplicant
+rel addr 0xbea3aa10
+   str-> wifi_stop_supplicant
+rel addr 0xbea3aa10
+   str-> wifi_start_supplicant
+rel addr 0xbea3aa10
+   str-> wifi_unload_driver
+rel addr 0xbea3aa10
+   str-> wifi_load_driver
+rel addr 0xbea3aa10
+   str-> phFriNfc_NdefRecord_GetRecords
+rel addr 0xbea3aa10
+   str-> phFriNfc_NdefRecord_Parse
+rel addr 0xbea3aa10
+   str-> phFriNfc_NdefRecord_Generate
+rel addr 0xbea3aa10
+   str-> _ZN7android15EventRecurrenceC1Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android15EventRecurrence5parseERKNS_8String16E
+rel addr 0xbea3aa10
+   str-> _ZN7android7String86appendERKS0_
+rel addr 0xbea3aa10
+   str-> _ZN7android7String86appendEPKc
+rel addr 0xbea3aa10
+   str-> _ZN7android15EventRecurrenceD1Ev
+rel addr 0xbea3aa10
+   str-> MD5_Final
+rel addr 0xbea3aa10
+   str-> MD5_Init
+rel addr 0xbea3aa10
+   str-> MD5_Update
+rel addr 0xbea3aa10
+   str-> _ZN7android5Asset19getAssetAllocationsEv
+rel addr 0xbea3aa10
+   str-> _ZN7android5Asset14getGlobalCountEv
+rel addr 0xbea3aa10
+   str-> _ZN7android12AssetManagerC1ENS0_9CacheModeE
+rel addr 0xbea3aa10
+   str-> _ZN7android12AssetManager16addDefaultAssetsEv
+rel addr 0xbea3aa10
+   str-> _ZNK7android12AssetManager12getResourcesEb
+rel addr 0xbea3aa10
+   str-> _ZNK7android8ResTable7lockBagEjPPKNS0_9bag_entryE
+rel addr 0xbea3aa10
+   str-> _ZNK7android8ResTable16resolveReferenceEPNS_9Res_valueElPjS3_PNS
+rel addr 0xbea3aa10
+   str-> _ZNK7android8ResTable9unlockBagEPKNS0_9bag_entryE
+rel addr 0xbea3aa10
+   str-> _ZNK7android8ResTable19getTableStringBlockEj
+rel addr 0xbea3aa10
+   str-> _ZNK7android13ResStringPool9string8AtEjPj
+rel addr 0xbea3aa10
+   str-> _ZNK7android13ResStringPool8stringAtEjPj
+rel addr 0xbea3aa10
+   str-> _ZNK7android8ResTable14getTableCookieEj
+rel addr 0xbea3aa10
+   str-> _ZNK7android8ResTable4lockEv
+rel addr 0xbea3aa10
+   str-> _ZNK7android8ResTable12getBagLockedEjPPKNS0_9bag_entryEPj
+rel addr 0xbea3aa10
+   str-> _ZNK7android8ResTable6unlockEv
+rel addr 0xbea3aa10
+   str-> _ZNK7android8ResTable5Theme12getAttributeEjPNS_9Res_valueEPj
+rel addr 0xbea3aa10
+   str-> _ZN7android8ResTable5Theme5setToERKS1_
+rel addr 0xbea3aa10
+   str-> _ZN7android8ResTable5Theme10applyStyleEjb
+rel addr 0xbea3aa10
+   str-> _ZN7android8ResTable5ThemeD1Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android8ResTable5ThemeC1ERKS0_
+rel addr 0xbea3aa10
+   str-> _ZNK7android12AssetManager12getAssetPathEPv
+rel addr 0xbea3aa10
+   str-> _ZNK7android8ResTable13getTableCountEv
+rel addr 0xbea3aa10
+   str-> _ZNK7android8ResTable11getResourceEjPNS_9Res_valueEbPjPNS_15ResT
+rel addr 0xbea3aa10
+   str-> _ZNK7android8ResTable15getResourceNameEjPNS0_13resource_nameE
+rel addr 0xbea3aa10
+   str-> _ZN7android8String16C1Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android8String165setToEPKtj
+rel addr 0xbea3aa10
+   str-> _ZN7android8String166appendEPKtj
+rel addr 0xbea3aa10
+   str-> _ZNK7android8ResTable17identifierForNameEPKtjS2_jS2_jPj
+rel addr 0xbea3aa10
+   str-> _ZNK7android12AssetManager10getLocalesEPNS_6VectorINS_7String8EE
+rel addr 0xbea3aa10
+   str-> _ZN7android12AssetManager10isUpToDateEv
+rel addr 0xbea3aa10
+   str-> _ZN7android12AssetManager4openEPKcNS_5Asset10AccessModeE
+rel addr 0xbea3aa10
+   str-> _ZN7android12AssetManager7openDirEPKc
+rel addr 0xbea3aa10
+   str-> _ZN7android12AssetManager12addAssetPathERKNS_7String8EPPv
+rel addr 0xbea3aa10
+   str-> _ZN7android12AssetManager9setLocaleEPKc
+rel addr 0xbea3aa10
+   str-> _ZN7android12AssetManager16setConfigurationERKNS_15ResTable_conf
+rel addr 0xbea3aa10
+   str-> _ZNK7android8ResTable5Theme9dumpToLogEv
+rel addr 0xbea3aa10
+   str-> _ZN7android12AssetManager12openNonAssetEPvPKcNS_5Asset10AccessMo
+rel addr 0xbea3aa10
+   str-> _ZN7android12AssetManager12openNonAssetEPKcNS_5Asset10AccessMode
+rel addr 0xbea3aa10
+   str-> _ZN7android10ResXMLTreeC1Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android10ResXMLTree5setToEPKvjb
+rel addr 0xbea3aa10
+   str-> _ZNK7android12ResXMLParser12indexOfStyleEv
+rel addr 0xbea3aa10
+   str-> _ZNK7android12ResXMLParser17getAttributeValueEjPNS_9Res_valueE
+rel addr 0xbea3aa10
+   str-> _ZNK7android12ResXMLParser17getAttributeCountEv
+rel addr 0xbea3aa10
+   str-> _ZNK7android12ResXMLParser21getAttributeNameResIDEj
+rel addr 0xbea3aa10
+   str-> _ZNK7android8ResTable5Theme25resolveAttributeReferenceEPNS_9Res_
+rel addr 0xbea3aa10
+   str-> _ZN7android7RefBase12weakref_type7decWeakEPKv
+rel addr 0xbea3aa10
+   str-> _ZN7android14IPCThreadState4selfEv
+rel addr 0xbea3aa10
+   str-> _ZN7android14IPCThreadState13flushCommandsEv
+rel addr 0xbea3aa10
+   str-> _ZNK7android14IPCThreadState19getStrictModePolicyEv
+rel addr 0xbea3aa10
+   str-> _ZN7android14IPCThreadState19setStrictModePolicyEi
+rel addr 0xbea3aa10
+   str-> _ZN7android14IPCThreadState22restoreCallingIdentityEx
+rel addr 0xbea3aa10
+   str-> _ZN7android14IPCThreadState20clearCallingIdentityEv
+rel addr 0xbea3aa10
+   str-> _ZN7android14IPCThreadState13getCallingUidEv
+rel addr 0xbea3aa10
+   str-> _ZN7android14IPCThreadState13getCallingPidEv
+rel addr 0xbea3aa10
+   str-> android_atomic_and
+rel addr 0xbea3aa10
+   str-> _ZN7android14IPCThreadState27disableBackgroundSchedulingEb
+rel addr 0xbea3aa10
+   str-> _ZN7android12ProcessState4selfEv
+rel addr 0xbea3aa10
+   str-> _ZN7android12ProcessState16getContextObjectERKNS_2spINS_7IBinder
+rel addr 0xbea3aa10
+   str-> _ZN7android14IPCThreadState14joinThreadPoolEb
+rel addr 0xbea3aa10
+   str-> _ZNK7android7RefBase10createWeakEPKv
+rel addr 0xbea3aa10
+   str-> _ZN7android7RefBase12weakref_type16attemptIncStrongEPKv
+rel addr 0xbea3aa10
+   str-> sleep
+rel addr 0xbea3aa10
+   str-> androidGetTid
+rel addr 0xbea3aa10
+   str-> _ZNK7android6Parcel16enforceInterfaceERKNS_8String16EPNS_14IPCTh
+rel addr 0xbea3aa10
+   str-> _ZNK7android6Parcel18hasFileDescriptorsEv
+rel addr 0xbea3aa10
+   str-> _ZN7android6Parcel10appendFromEPS0_jj
+rel addr 0xbea3aa10
+   str-> _ZN7android6Parcel11setDataSizeEj
+rel addr 0xbea3aa10
+   str-> _ZNK7android6Parcel15setDataPositionEj
+rel addr 0xbea3aa10
+   str-> _ZN7android6Parcel12writeInplaceEj
+rel addr 0xbea3aa10
+   str-> _ZNK7android6Parcel8dataSizeEv
+rel addr 0xbea3aa10
+   str-> _ZNK7android6Parcel12objectsCountEv
+rel addr 0xbea3aa10
+   str-> _ZNK7android6Parcel4dataEv
+rel addr 0xbea3aa10
+   str-> _ZN7android6Parcel8freeDataEv
+rel addr 0xbea3aa10
+   str-> _ZNK7android6Parcel16readStrongBinderEv
+rel addr 0xbea3aa10
+   str-> _ZNK7android6Parcel19readString16InplaceEPj
+rel addr 0xbea3aa10
+   str-> _ZNK7android6Parcel10readDoubleEv
+rel addr 0xbea3aa10
+   str-> _ZNK7android6Parcel9readFloatEv
+rel addr 0xbea3aa10
+   str-> _ZNK7android6Parcel9readInt64Ev
+rel addr 0xbea3aa10
+   str-> _ZNK7android6Parcel9dataAvailEv
+rel addr 0xbea3aa10
+   str-> _ZNK7android6Parcel11readInplaceEj
+rel addr 0xbea3aa10
+   str-> _ZN7android6Parcel13writeString16EPKtj
+rel addr 0xbea3aa10
+   str-> _ZN7android6Parcel11writeDoubleEd
+rel addr 0xbea3aa10
+   str-> _ZN7android6Parcel10writeFloatEf
+rel addr 0xbea3aa10
+   str-> _ZN7android6Parcel10writeInt64Ex
+rel addr 0xbea3aa10
+   str-> _ZN7android6Parcel15setDataCapacityEj
+rel addr 0xbea3aa10
+   str-> _ZNK7android6Parcel12dataCapacityEv
+rel addr 0xbea3aa10
+   str-> _ZNK7android6Parcel12dataPositionEv
+rel addr 0xbea3aa10
+   str-> _ZN7android7BBinderC2Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android6Parcel17writeStrongBinderERKNS_2spINS_7IBinderEEE
+rel addr 0xbea3aa10
+   str-> _ZN7android14IPCThreadState29setLastTransactionBinderFlagsEi
+rel addr 0xbea3aa10
+   str-> _ZN7android7BBinderD2Ev
+rel addr 0xbea3aa10
+   str-> lrand48
+rel addr 0xbea3aa10
+   str-> __android_log_bwrite
+rel addr 0xbea3aa10
+   str-> _ZN7android7IBinder19queryLocalInterfaceERKNS_8String16E
+rel addr 0xbea3aa10
+   str-> _ZNK7android7BBinder22getInterfaceDescriptorEv
+rel addr 0xbea3aa10
+   str-> _ZNK7android7BBinder13isBinderAliveEv
+rel addr 0xbea3aa10
+   str-> _ZN7android7BBinder10pingBinderEv
+rel addr 0xbea3aa10
+   str-> _ZN7android7BBinder8transactEjRKNS_6ParcelEPS1_j
+rel addr 0xbea3aa10
+   str-> _ZN7android7BBinder11linkToDeathERKNS_2spINS_7IBinder14DeathReci
+rel addr 0xbea3aa10
+   str-> _ZN7android7BBinder13unlinkToDeathERKNS_2wpINS_7IBinder14DeathRe
+rel addr 0xbea3aa10
+   str-> _ZN7android7BBinder12attachObjectEPKvPvS3_PFvS2_S3_S3_E
+rel addr 0xbea3aa10
+   str-> _ZNK7android7BBinder10findObjectEPKv
+rel addr 0xbea3aa10
+   str-> _ZN7android7BBinder12detachObjectEPKv
+rel addr 0xbea3aa10
+   str-> _ZN7android7BBinder11localBinderEv
+rel addr 0xbea3aa10
+   str-> _ZN7android7IBinder12remoteBinderEv
+rel addr 0xbea3aa10
+   str-> _ZN7android7BBinder4dumpEiRKNS_6VectorINS_8String16EEE
+rel addr 0xbea3aa10
+   str-> _ZNK7android7IBinder13checkSubclassEPKv
+rel addr 0xbea3aa10
+   str-> _ZN7android7BBinderD1Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android7BBinderD0Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android7BBinder10onTransactEjRKNS_6ParcelEPS1_j
+rel addr 0xbea3aa10
+   str-> _ZTv0_n12_N7android7BBinderD1Ev
+rel addr 0xbea3aa10
+   str-> _ZTv0_n12_N7android7BBinderD0Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android7IBinder11localBinderEv
+rel addr 0xbea3aa10
+   str-> _ZN7android7IBinderD1Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android7IBinderD0Ev
+rel addr 0xbea3aa10
+   str-> _ZTv0_n12_N7android7IBinderD1Ev
+rel addr 0xbea3aa10
+   str-> _ZTv0_n12_N7android7IBinderD0Ev
+rel addr 0xbea3aa10
+   str-> select
+rel addr 0xbea3aa10
+   str-> __android_log_buf_write
+rel addr 0xbea3aa10
+   str-> cosf
+rel addr 0xbea3aa10
+   str-> sinf
+rel addr 0xbea3aa10
+   str-> ceilf
+rel addr 0xbea3aa10
+   str-> floorf
+rel addr 0xbea3aa10
+   str-> kill
+rel addr 0xbea3aa10
+   str-> __aeabi_d2f
+rel addr 0xbea3aa10
+   str-> strtol
+rel addr 0xbea3aa10
+   str-> qsort
+rel addr 0xbea3aa10
+   str-> _ZNK7android12ProcessState17supportsProcessesEv
+rel addr 0xbea3aa10
+   str-> setgid
+rel addr 0xbea3aa10
+   str-> setuid
+rel addr 0xbea3aa10
+   str-> _ZN7android12ProcessState8setArgV0EPKc
+rel addr 0xbea3aa10
+   str-> getpriority
+rel addr 0xbea3aa10
+   str-> androidSetThreadPriority
+rel addr 0xbea3aa10
+   str-> androidSetThreadSchedulingGroup
+rel addr 0xbea3aa10
+   str-> getgrnam
+rel addr 0xbea3aa10
+   str-> getpwnam
+rel addr 0xbea3aa10
+   str-> getuid
+rel addr 0xbea3aa10
+   str-> _ZN7android13ResStringPoolC1EPKvjb
+rel addr 0xbea3aa10
+   str-> _ZNK7android13ResStringPool8getErrorEv
+rel addr 0xbea3aa10
+   str-> _ZNK7android13ResStringPool4sizeEv
+rel addr 0xbea3aa10
+   str-> _ZNK7android13ResStringPool7styleAtEj
+rel addr 0xbea3aa10
+   str-> _ZNK7android13ResStringPool13indexOfStringEPKtj
+rel addr 0xbea3aa10
+   str-> _ZN7android13ResStringPoolD1Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android10ResXMLTreeD1Ev
+rel addr 0xbea3aa10
+   str-> _ZNK7android12ResXMLParser12indexOfClassEv
+rel addr 0xbea3aa10
+   str-> _ZNK7android12ResXMLParser25getAttributeValueStringIDEj
+rel addr 0xbea3aa10
+   str-> _ZNK7android12ResXMLParser9indexOfIDEv
+rel addr 0xbea3aa10
+   str-> _ZNK7android12ResXMLParser16indexOfAttributeEPKtjS2_j
+rel addr 0xbea3aa10
+   str-> _ZNK7android12ResXMLParser16getAttributeDataEj
+rel addr 0xbea3aa10
+   str-> _ZNK7android12ResXMLParser20getAttributeDataTypeEj
+rel addr 0xbea3aa10
+   str-> _ZNK7android12ResXMLParser18getAttributeNameIDEj
+rel addr 0xbea3aa10
+   str-> _ZNK7android12ResXMLParser23getAttributeNamespaceIDEj
+rel addr 0xbea3aa10
+   str-> _ZNK7android12ResXMLParser13getLineNumberEv
+rel addr 0xbea3aa10
+   str-> _ZNK7android12ResXMLParser9getTextIDEv
+rel addr 0xbea3aa10
+   str-> _ZNK7android12ResXMLParser16getElementNameIDEv
+rel addr 0xbea3aa10
+   str-> _ZNK7android12ResXMLParser21getElementNamespaceIDEv
+rel addr 0xbea3aa10
+   str-> _ZN7android12ResXMLParser4nextEv
+rel addr 0xbea3aa10
+   str-> _ZN7android12ResXMLParserC1ERKNS_10ResXMLTreeE
+rel addr 0xbea3aa10
+   str-> _ZN7android12ResXMLParser7restartEv
+rel addr 0xbea3aa10
+   str-> _ZNK7android12ResXMLParser10getStringsEv
+rel addr 0xbea3aa10
+   str-> _ZN7android10ResXMLTreeC1EPKvjb
+rel addr 0xbea3aa10
+   str-> _ZNK7android10ResXMLTree8getErrorEv
+rel addr 0xbea3aa10
+   str-> _ZNK8SkBitmap7getAddrEii
+rel addr 0xbea3aa10
+   str-> memcmp
+rel addr 0xbea3aa10
+   str-> _Z18SkPreMultiplyColorj
+rel addr 0xbea3aa10
+   str-> _ZNK8SkBitmap8isOpaqueEv
+rel addr 0xbea3aa10
+   str-> _ZN15SkUnPreMultiply14PMColorToColorEj
+rel addr 0xbea3aa10
+   str-> _ZNK8SkBitmap12extractAlphaEPS_PK7SkPaintP8SkIPoint
+rel addr 0xbea3aa10
+   str-> _Z16Android_SkDebugfPKciS0_S0_z
+rel addr 0xbea3aa10
+   str-> _ZN12SkColorTableC1EPKji
+rel addr 0xbea3aa10
+   str-> _ZNK8SkBitmap9eraseARGBEjjjj
+rel addr 0xbea3aa10
+   str-> _ZN14SkImageEncoder6CreateENS_4TypeE
+rel addr 0xbea3aa10
+   str-> _ZN14SkImageEncoder12encodeStreamEP9SkWStreamRK8SkBitmapi
+rel addr 0xbea3aa10
+   str-> _ZNK8SkBitmap6copyToEPS_NS_6ConfigEPNS_9AllocatorE
+rel addr 0xbea3aa10
+   str-> _ZN8SkBitmapC1ERKS_
+rel addr 0xbea3aa10
+   str-> _ZN7android14Res_png_9patch11deserializeEPKv
+rel addr 0xbea3aa10
+   str-> __aeabi_f2iz
+rel addr 0xbea3aa10
+   str-> _ZN7android14Res_png_9patch14serializedSizeEv
+rel addr 0xbea3aa10
+   str-> _ZN7android14Res_png_9patch12fileToDeviceEv
+rel addr 0xbea3aa10
+   str-> _ZN14SkImageDecoder18setPrefConfigTableEPKN8SkBitmap6ConfigE
+rel addr 0xbea3aa10
+   str-> _ZN17SkImageRef_ashmemC1EP8SkStreamN8SkBitmap6ConfigEi
+rel addr 0xbea3aa10
+   str-> _ZN21SkImageRef_GlobalPoolC1EP8SkStreamN8SkBitmap6ConfigEi
+rel addr 0xbea3aa10
+   str-> _ZN8SkBitmap11setPixelRefEP10SkPixelRefj
+rel addr 0xbea3aa10
+   str-> _ZN10SkImageRef8isOpaqueEP8SkBitmap
+rel addr 0xbea3aa10
+   str-> _ZN14SkImageDecoder7FactoryEP8SkStream
+rel addr 0xbea3aa10
+   str-> _ZN14SkImageDecoder13setSampleSizeEi
+rel addr 0xbea3aa10
+   str-> _ZN14SkImageDecoder9setPeekerEPNS_6PeekerE
+rel addr 0xbea3aa10
+   str-> _ZN14SkImageDecoder12setAllocatorEPN8SkBitmap9AllocatorE
+rel addr 0xbea3aa10
+   str-> _ZN7android14Res_png_9patch9serializeEPv
+rel addr 0xbea3aa10
+   str-> _ZN10SkPixelRef12setImmutableEv
+rel addr 0xbea3aa10
+   str-> _ZN14SkImageDecoder6decodeEP8SkStreamP8SkBitmapNS2_6ConfigENS_4M
+rel addr 0xbea3aa10
+   str-> _ZN14SkMemoryStreamC1EPKvjb
+rel addr 0xbea3aa10
+   str-> _ZN11SkAutoUnrefD1Ev
+rel addr 0xbea3aa10
+   str-> _ZN14SkMemoryStreamC1Ej
+rel addr 0xbea3aa10
+   str-> _ZN10SkFDStreamC1Eib
+rel addr 0xbea3aa10
+   str-> _ZNK8Sk3DView13dotWithNormalEfff
+rel addr 0xbea3aa10
+   str-> _ZNK8Sk3DView13applyToCanvasEP8SkCanvas
+rel addr 0xbea3aa10
+   str-> _ZNK8Sk3DView9getMatrixEP8SkMatrix
+rel addr 0xbea3aa10
+   str-> _ZN8Sk3DView7rotateZEf
+rel addr 0xbea3aa10
+   str-> _ZN8Sk3DView7rotateYEf
+rel addr 0xbea3aa10
+   str-> _ZN8Sk3DView7rotateXEf
+rel addr 0xbea3aa10
+   str-> _ZN8Sk3DView9translateEfff
+rel addr 0xbea3aa10
+   str-> _ZN8Sk3DView7restoreEv
+rel addr 0xbea3aa10
+   str-> _ZN8Sk3DView4saveEv
+rel addr 0xbea3aa10
+   str-> _ZN8Sk3DViewD1Ev
+rel addr 0xbea3aa10
+   str-> _ZN8Sk3DViewC1Ev
+rel addr 0xbea3aa10
+   str-> _ZN15SkBoundaryPatchC1Ev
+rel addr 0xbea3aa10
+   str-> _ZN15SkBoundaryPatch11setBoundaryEP10SkBoundary
+rel addr 0xbea3aa10
+   str-> _ZN15SkBoundaryPatch9evalPatchEP7SkPointii
+rel addr 0xbea3aa10
+   str-> _ZN13SkMeshIndicesC1Ev
+rel addr 0xbea3aa10
+   str-> _ZN13SkMeshIndices4initEP7SkPointPtiiii
+rel addr 0xbea3aa10
+   str-> _ZN13SkMeshIndicesD1Ev
+rel addr 0xbea3aa10
+   str-> _ZN15SkBoundaryPatchD1Ev
+rel addr 0xbea3aa10
+   str-> _ZN10SkGLCanvas17DeleteAllTexturesEv
+rel addr 0xbea3aa10
+   str-> _ZN21SkImageRef_GlobalPool10SetRAMUsedEj
+rel addr 0xbea3aa10
+   str-> _ZN10SkGraphics16SetFontCacheUsedEj
+rel addr 0xbea3aa10
+   str-> _ZN8SkCanvas16drawTextOnPathHVEPKvjRK6SkPathffRK7SkPaint
+rel addr 0xbea3aa10
+   str-> _Znaj
+rel addr 0xbea3aa10
+   str-> _ZdaPv
+rel addr 0xbea3aa10
+   str-> _Z15sk_malloc_flagsjj
+rel addr 0xbea3aa10
+   str-> _ZN7SkPaintaSERKS_
+rel addr 0xbea3aa10
+   str-> _ZN8SkShader18CreateBitmapShaderERK8SkBitmapNS_8TileModeES3_
+rel addr 0xbea3aa10
+   str-> _ZN7SkPaint9setShaderEP8SkShader
+rel addr 0xbea3aa10
+   str-> _Z7sk_freePv
+rel addr 0xbea3aa10
+   str-> _ZN8SkBitmap11allocPixelsEPNS_9AllocatorEP12SkColorTable
+rel addr 0xbea3aa10
+   str-> _ZN7SkPaint15setFilterBitmapEb
+rel addr 0xbea3aa10
+   str-> _ZN8SkCanvas13drawRoundRectERK6SkRectffRK7SkPaint
+rel addr 0xbea3aa10
+   str-> _ZN8SkCanvas7drawArcERK6SkRectffbRK7SkPaint
+rel addr 0xbea3aa10
+   str-> _ZN8SkCanvas10drawCircleEfffRK7SkPaint
+rel addr 0xbea3aa10
+   str-> _ZN8SkCanvas8drawOvalERK6SkRectRK7SkPaint
+rel addr 0xbea3aa10
+   str-> _ZN8SkCanvas14drawRectCoordsEffffRK7SkPaint
+rel addr 0xbea3aa10
+   str-> _ZN8SkCanvas8drawLineEffffRK7SkPaint
+rel addr 0xbea3aa10
+   str-> _ZN8SkCanvas9drawPointEffRK7SkPaint
+rel addr 0xbea3aa10
+   str-> _ZN12SkPorterDuff14ToXfermodeModeENS_4ModeE
+rel addr 0xbea3aa10
+   str-> _ZN8SkCanvas9drawColorEjN10SkXfermode4ModeE
+rel addr 0xbea3aa10
+   str-> _ZN8SkCanvas8drawARGBEjjjjN10SkXfermode4ModeE
+rel addr 0xbea3aa10
+   str-> _ZNK8SkCanvas11quickRejectERK6SkRectNS_8EdgeTypeE
+rel addr 0xbea3aa10
+   str-> _ZNK8SkCanvas11quickRejectERK6SkPathNS_8EdgeTypeE
+rel addr 0xbea3aa10
+   str-> _ZNK8SkCanvas14getTotalMatrixEv
+rel addr 0xbea3aa10
+   str-> _ZNK8SkCanvas13getClipBoundsEP6SkRectNS_8EdgeTypeE
+rel addr 0xbea3aa10
+   str-> _ZN8SkCanvas11resetMatrixEv
+rel addr 0xbea3aa10
+   str-> _ZNK8SkCanvas12getSaveCountEv
+rel addr 0xbea3aa10
+   str-> _ZN8SkCanvas14saveLayerAlphaEPK6SkRectjNS_9SaveFlagsE
+rel addr 0xbea3aa10
+   str-> _ZN10SkGLCanvasC1Ev
+rel addr 0xbea3aa10
+   str-> _ZN8SkCanvasC1ERK8SkBitmap
+rel addr 0xbea3aa10
+   str-> _ZN8SkCanvasC1EP8SkDevice
+rel addr 0xbea3aa10
+   str-> _ZN19SkColorMatrixFilterC1EPKf
+rel addr 0xbea3aa10
+   str-> _ZN13SkColorFilter20CreateLightingFilterEjj
+rel addr 0xbea3aa10
+   str-> _ZN13SkColorFilter16CreateModeFilterEjN10SkXfermode4ModeE
+rel addr 0xbea3aa10
+   str-> _ZN22SkPaintFlagsDrawFilterC1Ejj
+rel addr 0xbea3aa10
+   str-> _ZN9SkWStreamD2Ev
+rel addr 0xbea3aa10
+   str-> _ZN8SkStreamD2Ev
+rel addr 0xbea3aa10
+   str-> _ZN9SkWStream7newlineEv
+rel addr 0xbea3aa10
+   str-> _ZN8SkStream11getFileNameEv
+rel addr 0xbea3aa10
+   str-> _ZN8SkStream13getMemoryBaseEv
+rel addr 0xbea3aa10
+   str-> _Z8sk_throwv
+rel addr 0xbea3aa10
+   str-> _ZN18SkVMMemoryReporterD2Ev
+rel addr 0xbea3aa10
+   str-> _ZN16SkMallocPixelRefC2EPvjP12SkColorTable
+rel addr 0xbea3aa10
+   str-> _ZN16SkMallocPixelRefC1ER23SkFlattenableReadBuffer
+rel addr 0xbea3aa10
+   str-> _ZN16SkMallocPixelRefD2Ev
+rel addr 0xbea3aa10
+   str-> _ZN4Sk646setMulEii
+rel addr 0xbea3aa10
+   str-> _ZN16SkMallocPixelRefC1EPvjP12SkColorTable
+rel addr 0xbea3aa10
+   str-> _ZNK16SkMallocPixelRef7flattenER24SkFlattenableWriteBuffer
+rel addr 0xbea3aa10
+   str-> _ZN16SkMallocPixelRef12onLockPixelsEPP12SkColorTable
+rel addr 0xbea3aa10
+   str-> _ZN16SkMallocPixelRef14onUnlockPixelsEv
+rel addr 0xbea3aa10
+   str-> _ZNK14SkInterpolator12timeToValuesEjPf
+rel addr 0xbea3aa10
+   str-> _ZN14SkInterpolator11setKeyFrameEijPKfS1_
+rel addr 0xbea3aa10
+   str-> _ZN14SkInterpolator5resetEii
+rel addr 0xbea3aa10
+   str-> _ZN18SkInterpolatorBaseD2Ev
+rel addr 0xbea3aa10
+   str-> _ZN14SkInterpolatorC1Eii
+rel addr 0xbea3aa10
+   str-> _ZN17SkLayerRasterizer8addLayerERK7SkPaintff
+rel addr 0xbea3aa10
+   str-> _ZN17SkLayerRasterizerC1Ev
+rel addr 0xbea3aa10
+   str-> _ZN17SkTableMaskFilter14MakeGammaTableEPhf
+rel addr 0xbea3aa10
+   str-> _ZN17SkTableMaskFilterC1EPKh
+rel addr 0xbea3aa10
+   str-> _ZN17SkTableMaskFilter13MakeClipTableEPhhh
+rel addr 0xbea3aa10
+   str-> _ZN16SkBlurMaskFilter12CreateEmbossEPKffff
+rel addr 0xbea3aa10
+   str-> _ZN16SkBlurMaskFilter6CreateEfNS_9BlurStyleE
+rel addr 0xbea3aa10
+   str-> _ZNK8SkMatrix9mapRadiusEf
+rel addr 0xbea3aa10
+   str-> _ZNK8SkMatrix7mapRectEP6SkRectRKS0_
+rel addr 0xbea3aa10
+   str-> _ZNK8SkMatrix9mapPointsEP7SkPointPKS0_i
+rel addr 0xbea3aa10
+   str-> _ZNK8SkMatrix10mapVectorsEP7SkPointPKS0_i
+rel addr 0xbea3aa10
+   str-> _ZNK8SkMatrix6invertEPS_
+rel addr 0xbea3aa10
+   str-> _ZN8SkMatrix13setPolyToPolyEPK7SkPointS2_i
+rel addr 0xbea3aa10
+   str-> _ZN8SkMatrix13setRectToRectERK6SkRectS2_NS_10ScaleToFitE
+rel addr 0xbea3aa10
+   str-> _ZN8SkMatrix10postConcatERKS_
+rel addr 0xbea3aa10
+   str-> _ZN8SkMatrix8postSkewEff
+rel addr 0xbea3aa10
+   str-> _ZN8SkMatrix8postSkewEffff
+rel addr 0xbea3aa10
+   str-> _ZN8SkMatrix10postRotateEf
+rel addr 0xbea3aa10
+   str-> _ZN8SkMatrix10postRotateEfff
+rel addr 0xbea3aa10
+   str-> _ZN8SkMatrix9postScaleEff
+rel addr 0xbea3aa10
+   str-> _ZN8SkMatrix9postScaleEffff
+rel addr 0xbea3aa10
+   str-> _ZN8SkMatrix13postTranslateEff
+rel addr 0xbea3aa10
+   str-> _ZN8SkMatrix9preConcatERKS_
+rel addr 0xbea3aa10
+   str-> _ZN8SkMatrix7preSkewEff
+rel addr 0xbea3aa10
+   str-> _ZN8SkMatrix7preSkewEffff
+rel addr 0xbea3aa10
+   str-> _ZN8SkMatrix9preRotateEf
+rel addr 0xbea3aa10
+   str-> _ZN8SkMatrix9preRotateEfff
+rel addr 0xbea3aa10
+   str-> _ZN8SkMatrix8preScaleEff
+rel addr 0xbea3aa10
+   str-> _ZN8SkMatrix8preScaleEffff
+rel addr 0xbea3aa10
+   str-> _ZN8SkMatrix12preTranslateEff
+rel addr 0xbea3aa10
+   str-> _ZN8SkMatrix9setConcatERKS_S1_
+rel addr 0xbea3aa10
+   str-> _ZN8SkMatrix7setSkewEff
+rel addr 0xbea3aa10
+   str-> _ZN8SkMatrix7setSkewEffff
+rel addr 0xbea3aa10
+   str-> _ZN8SkMatrix9setSinCosEff
+rel addr 0xbea3aa10
+   str-> _ZN8SkMatrix9setSinCosEffff
+rel addr 0xbea3aa10
+   str-> _ZN8SkMatrix9setRotateEf
+rel addr 0xbea3aa10
+   str-> _ZN8SkMatrix9setRotateEfff
+rel addr 0xbea3aa10
+   str-> _ZN8SkMatrix8setScaleEff
+rel addr 0xbea3aa10
+   str-> _ZN8SkMatrix8setScaleEffff
+rel addr 0xbea3aa10
+   str-> _ZN8SkMatrix12setTranslateEff
+rel addr 0xbea3aa10
+   str-> _ZNK8SkMatrix15computeTypeMaskEv
+rel addr 0xbea3aa10
+   str-> _ZN7SkMovie6bitmapEv
+rel addr 0xbea3aa10
+   str-> _ZN7SkMovie7setTimeEj
+rel addr 0xbea3aa10
+   str-> _ZN7SkMovie8durationEv
+rel addr 0xbea3aa10
+   str-> _ZN7SkMovie8isOpaqueEv
+rel addr 0xbea3aa10
+   str-> _ZN7SkMovie6heightEv
+rel addr 0xbea3aa10
+   str-> _ZN7SkMovie5widthEv
+rel addr 0xbea3aa10
+   str-> _ZN7SkMovie12DecodeMemoryEPKvj
+rel addr 0xbea3aa10
+   str-> _ZN7SkMovie12DecodeStreamEP8SkStream
+rel addr 0xbea3aa10
+   str-> _ZN7SkPaint9setDitherEb
+rel addr 0xbea3aa10
+   str-> _ZN11SkNinePatch8DrawMeshEP8SkCanvasRK6SkRectRK8SkBitmapPKiiS9_i
+rel addr 0xbea3aa10
+   str-> _ZN7SkPaint9setLooperEP12SkDrawLooper
+rel addr 0xbea3aa10
+   str-> _ZN16SkBlurDrawLooperC1Efffj
+rel addr 0xbea3aa10
+   str-> _ZNK7SkPaint11measureTextEPKvjP6SkRectf
+rel addr 0xbea3aa10
+   str-> _ZNK7SkPaint13getTextWidthsEPKvjPfP6SkRect
+rel addr 0xbea3aa10
+   str-> _ZNK7SkPaint9breakTextEPKvjfPfNS_19TextBufferDirectionE
+rel addr 0xbea3aa10
+   str-> _ZNK7SkPaint14getFontMetricsEPNS_11FontMetricsEf
+rel addr 0xbea3aa10
+   str-> _ZN7SkPaint12setTextSkewXEf
+rel addr 0xbea3aa10
+   str-> _ZN7SkPaint13setTextScaleXEf
+rel addr 0xbea3aa10
+   str-> _ZN7SkPaint12setTextAlignENS_5AlignE
+rel addr 0xbea3aa10
+   str-> _ZN7SkPaint13setRasterizerEP12SkRasterizer
+rel addr 0xbea3aa10
+   str-> _ZN7SkPaint11setTypefaceEP10SkTypeface
+rel addr 0xbea3aa10
+   str-> _ZN7SkPaint13setMaskFilterEP12SkMaskFilter
+rel addr 0xbea3aa10
+   str-> _ZN7SkPaint13setPathEffectEP12SkPathEffect
+rel addr 0xbea3aa10
+   str-> _ZN7SkPaint11setXfermodeEP10SkXfermode
+rel addr 0xbea3aa10
+   str-> _ZN7SkPaint14setColorFilterEP13SkColorFilter
+rel addr 0xbea3aa10
+   str-> _ZNK7SkPaint11getFillPathERK6SkPathPS0_
+rel addr 0xbea3aa10
+   str-> _ZN7SkPaint13setStrokeJoinENS_4JoinE
+rel addr 0xbea3aa10
+   str-> _ZN7SkPaint12setStrokeCapENS_3CapE
+rel addr 0xbea3aa10
+   str-> _ZN7SkPaint14setStrokeMiterEf
+rel addr 0xbea3aa10
+   str-> _ZN7SkPaint14setStrokeWidthEf
+rel addr 0xbea3aa10
+   str-> _ZN7SkPaint8setAlphaEj
+rel addr 0xbea3aa10
+   str-> _ZN7SkPaint8setStyleENS_5StyleE
+rel addr 0xbea3aa10
+   str-> _ZN7SkPaint15setFakeBoldTextEb
+rel addr 0xbea3aa10
+   str-> _ZN7SkPaint17setStrikeThruTextEb
+rel addr 0xbea3aa10
+   str-> _ZN7SkPaint16setUnderlineTextEb
+rel addr 0xbea3aa10
+   str-> _ZN7SkPaint13setLinearTextEb
+rel addr 0xbea3aa10
+   str-> _ZN7SkPaint15setSubpixelTextEb
+rel addr 0xbea3aa10
+   str-> _ZN7SkPaint8setFlagsEj
+rel addr 0xbea3aa10
+   str-> _ZN7SkPaint5resetEv
+rel addr 0xbea3aa10
+   str-> _ZN7SkPaint15setTextEncodingENS_12TextEncodingE
+rel addr 0xbea3aa10
+   str-> _ZN7SkPaintC1ERKS_
+rel addr 0xbea3aa10
+   str-> _ZNK7SkPaint11getTextPathEPKvjffP6SkPath
+rel addr 0xbea3aa10
+   str-> _ZNK6SkPath9transformERK8SkMatrixPS_
+rel addr 0xbea3aa10
+   str-> _ZN6SkPath9setLastPtEff
+rel addr 0xbea3aa10
+   str-> _ZNK6SkPath6offsetEffPS_
+rel addr 0xbea3aa10
+   str-> _ZN6SkPath7addPathERKS_RK8SkMatrix
+rel addr 0xbea3aa10
+   str-> _ZN6SkPath7addPathERKS_ff
+rel addr 0xbea3aa10
+   str-> _ZN6SkPath12addRoundRectERK6SkRectPKfNS_9DirectionE
+rel addr 0xbea3aa10
+   str-> _ZN6SkPath12addRoundRectERK6SkRectffNS_9DirectionE
+rel addr 0xbea3aa10
+   str-> _ZN6SkPath6addArcERK6SkRectff
+rel addr 0xbea3aa10
+   str-> _ZN6SkPath9addCircleEfffNS_9DirectionE
+rel addr 0xbea3aa10
+   str-> _ZN6SkPath7addOvalERK6SkRectNS_9DirectionE
+rel addr 0xbea3aa10
+   str-> _ZN6SkPath7addRectEffffNS_9DirectionE
+rel addr 0xbea3aa10
+   str-> _ZN6SkPath7addRectERK6SkRectNS_9DirectionE
+rel addr 0xbea3aa10
+   str-> _ZN6SkPath5closeEv
+rel addr 0xbea3aa10
+   str-> _ZN6SkPath5arcToERK6SkRectffb
+rel addr 0xbea3aa10
+   str-> _ZN6SkPath8rCubicToEffffff
+rel addr 0xbea3aa10
+   str-> _ZN6SkPath7cubicToEffffff
+rel addr 0xbea3aa10
+   str-> _ZN6SkPath7rQuadToEffff
+rel addr 0xbea3aa10
+   str-> _ZN6SkPath6quadToEffff
+rel addr 0xbea3aa10
+   str-> _ZN6SkPath7rLineToEff
+rel addr 0xbea3aa10
+   str-> _ZN6SkPath6lineToEff
+rel addr 0xbea3aa10
+   str-> _ZN6SkPath7rMoveToEff
+rel addr 0xbea3aa10
+   str-> _ZN6SkPath6moveToEff
+rel addr 0xbea3aa10
+   str-> _ZN6SkPath10incReserveEj
+rel addr 0xbea3aa10
+   str-> _ZNK6SkPath13computeBoundsEv
+rel addr 0xbea3aa10
+   str-> _ZNK6SkPath6isRectEP6SkRect
+rel addr 0xbea3aa10
+   str-> _ZNK6SkPath7isEmptyEv
+rel addr 0xbea3aa10
+   str-> _ZN6SkPathaSERKS_
+rel addr 0xbea3aa10
+   str-> _ZN6SkPath6rewindEv
+rel addr 0xbea3aa10
+   str-> _ZN6SkPath5resetEv
+rel addr 0xbea3aa10
+   str-> _ZN6SkPathC1ERKS_
+rel addr 0xbea3aa10
+   str-> _ZN6SkPathC1Ev
+rel addr 0xbea3aa10
+   str-> _ZN6SkPathD1Ev
+rel addr 0xbea3aa10
+   str-> _ZN13SkPathMeasureD1Ev
+rel addr 0xbea3aa10
+   str-> _ZN13SkPathMeasure11nextContourEv
+rel addr 0xbea3aa10
+   str-> _ZN13SkPathMeasure8isClosedEv
+rel addr 0xbea3aa10
+   str-> _ZN13SkPathMeasure10getSegmentEffP6SkPathb
+rel addr 0xbea3aa10
+   str-> _ZN13SkPathMeasure9getMatrixEfP8SkMatrixNS_11MatrixFlagsE
+rel addr 0xbea3aa10
+   str-> _ZN13SkPathMeasure9getPosTanEfP7SkPointS1_
+rel addr 0xbea3aa10
+   str-> _ZN13SkPathMeasure9getLengthEv
+rel addr 0xbea3aa10
+   str-> _ZN13SkPathMeasure7setPathEPK6SkPathb
+rel addr 0xbea3aa10
+   str-> _ZN13SkPathMeasureC1ERK6SkPathb
+rel addr 0xbea3aa10
+   str-> _ZN13SkPathMeasureC1Ev
+rel addr 0xbea3aa10
+   str-> _ZN20SkDiscretePathEffectC1Eff
+rel addr 0xbea3aa10
+   str-> _ZN18SkCornerPathEffectC1Ef
+rel addr 0xbea3aa10
+   str-> _ZN18SkPath1DPathEffectC1ERK6SkPathffNS_5StyleE
+rel addr 0xbea3aa10
+   str-> _ZN16SkDashPathEffectC1EPKfifb
+rel addr 0xbea3aa10
+   str-> _ZN16SkPairPathEffectC2EP12SkPathEffectS1_
+rel addr 0xbea3aa10
+   str-> _ZN7android18getPixelFormatInfoEiPNS_15PixelFormatInfoE
+rel addr 0xbea3aa10
+   str-> _ZNK9SkPicture9serializeEP9SkWStream
+rel addr 0xbea3aa10
+   str-> _ZN9SkPicture4drawEP8SkCanvas
+rel addr 0xbea3aa10
+   str-> _ZN9SkPicture12endRecordingEv
+rel addr 0xbea3aa10
+   str-> _ZN9SkPicture14beginRecordingEiij
+rel addr 0xbea3aa10
+   str-> _ZN9SkPictureC1EP8SkStream
+rel addr 0xbea3aa10
+   str-> _ZN9SkPictureC1ERKS_
+rel addr 0xbea3aa10
+   str-> _ZN9SkPictureC1Ev
+rel addr 0xbea3aa10
+   str-> _ZN12SkPorterDuff14CreateXfermodeENS_4ModeE
+rel addr 0xbea3aa10
+   str-> _Z15sk_malloc_throwj
+rel addr 0xbea3aa10
+   str-> _Z16sk_realloc_throwPvj
+rel addr 0xbea3aa10
+   str-> _ZN14SkMemoryStreamC1Ev
+rel addr 0xbea3aa10
+   str-> _ZN14SkImageDecoder11setReporterEP18SkVMMemoryReporter
+rel addr 0xbea3aa10
+   str-> _ZN8SkRegionC1ERKS_
+rel addr 0xbea3aa10
+   str-> _ZN8SkRegion8Iterator5resetERKS_
+rel addr 0xbea3aa10
+   str-> _ZeqRK8SkRegionS1_
+rel addr 0xbea3aa10
+   str-> _ZNK8SkRegion7flattenEPv
+rel addr 0xbea3aa10
+   str-> _ZN8SkRegion9unflattenEPKv
+rel addr 0xbea3aa10
+   str-> _ZNK8SkRegion9translateEiiPS_
+rel addr 0xbea3aa10
+   str-> roundf
+rel addr 0xbea3aa10
+   str-> _ZN8SkRegion4swapERS_
+rel addr 0xbea3aa10
+   str-> _ZNK8SkRegion8containsEii
+rel addr 0xbea3aa10
+   str-> _ZN8SkRegion2opERKS_S1_NS_2OpE
+rel addr 0xbea3aa10
+   str-> _ZN8SkRegion2opERK7SkIRectRKS_NS_2OpE
+rel addr 0xbea3aa10
+   str-> _ZNK8SkRegion15getBoundaryPathEP6SkPath
+rel addr 0xbea3aa10
+   str-> _ZN8SkRegion7setPathERK6SkPathRKS_
+rel addr 0xbea3aa10
+   str-> _ZN8SkRegionaSERKS_
+rel addr 0xbea3aa10
+   str-> _ZN15SkComposeShaderC1EP8SkShaderS1_P10SkXfermode
+rel addr 0xbea3aa10
+   str-> _ZN16SkGradientShader11CreateSweepEffPKjPKfiP12SkUnitMapper
+rel addr 0xbea3aa10
+   str-> _ZN16SkGradientShader12CreateRadialERK7SkPointfPKjPKfiN8SkShader
+rel addr 0xbea3aa10
+   str-> _ZN16SkGradientShader12CreateLinearEPK7SkPointPKjPKfiN8SkShader8
+rel addr 0xbea3aa10
+   str-> _ZN8SkShader16resetLocalMatrixEv
+rel addr 0xbea3aa10
+   str-> _ZN8SkShader14setLocalMatrixERK8SkMatrix
+rel addr 0xbea3aa10
+   str-> _ZNK8SkShader14getLocalMatrixEP8SkMatrix
+rel addr 0xbea3aa10
+   str-> _Z12SkHSVToColorjPKf
+rel addr 0xbea3aa10
+   str-> _Z10SkRGBToHSVjjjPf
+rel addr 0xbea3aa10
+   str-> _Z19skia_set_text_gammaff
+rel addr 0xbea3aa10
+   str-> _ZN10SkTypeface14CreateFromFileEPKc
+rel addr 0xbea3aa10
+   str-> _ZN10SkTypeface16CreateFromStreamEP8SkStream
+rel addr 0xbea3aa10
+   str-> _ZN10SkTypeface18CreateFromTypefaceEPKS_NS_5StyleE
+rel addr 0xbea3aa10
+   str-> _ZN10SkTypeface14CreateFromNameEPKcNS_5StyleE
+rel addr 0xbea3aa10
+   str-> _ZN15SkAvoidXfermodeC1EjjNS_4ModeE
+rel addr 0xbea3aa10
+   str-> jpeg_write_raw_data
+rel addr 0xbea3aa10
+   str-> jpeg_set_defaults
+rel addr 0xbea3aa10
+   str-> jpeg_set_quality
+rel addr 0xbea3aa10
+   str-> jpeg_set_colorspace
+rel addr 0xbea3aa10
+   str-> _ZN22skjpeg_destination_mgrC1EP9SkWStream
+rel addr 0xbea3aa10
+   str-> jpeg_std_error
+rel addr 0xbea3aa10
+   str-> setjmp
+rel addr 0xbea3aa10
+   str-> jpeg_CreateCompress
+rel addr 0xbea3aa10
+   str-> jpeg_start_compress
+rel addr 0xbea3aa10
+   str-> jpeg_finish_compress
+rel addr 0xbea3aa10
+   str-> _ZN7android11AudioRecord16getMinFrameCountEPijii
+rel addr 0xbea3aa10
+   str-> _ZN7android11AudioRecord23getPositionUpdatePeriodEPj
+rel addr 0xbea3aa10
+   str-> _ZN7android11AudioRecord23setPositionUpdatePeriodEj
+rel addr 0xbea3aa10
+   str-> _ZN7android11AudioRecord17getMarkerPositionEPj
+rel addr 0xbea3aa10
+   str-> _ZN7android11AudioRecord17setMarkerPositionEj
+rel addr 0xbea3aa10
+   str-> _ZN7android11AudioRecord4readEPvj
+rel addr 0xbea3aa10
+   str-> _ZNK7android11AudioRecord10frameCountEv
+rel addr 0xbea3aa10
+   str-> _ZNK7android11AudioRecord9frameSizeEv
+rel addr 0xbea3aa10
+   str-> _ZN7android11AudioRecord4stopEv
+rel addr 0xbea3aa10
+   str-> _ZN7android11AudioRecordD1Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android11AudioSystem14isInputChannelEj
+rel addr 0xbea3aa10
+   str-> _ZN7android11AudioSystem8popCountEj
+rel addr 0xbea3aa10
+   str-> _ZN7android11AudioRecordC1Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android11AudioRecord3setEijijijPFviPvS1_ES1_ibi
+rel addr 0xbea3aa10
+   str-> _ZNK7android11AudioRecord9initCheckEv
+rel addr 0xbea3aa10
+   str-> _ZN7android11AudioRecord5startEv
+rel addr 0xbea3aa10
+   str-> _ZN7android11AudioSystem16setErrorCallbackEPFviE
+rel addr 0xbea3aa10
+   str-> _ZN7android11AudioSystem20getStreamVolumeIndexENS0_11stream_type
+rel addr 0xbea3aa10
+   str-> _ZN7android11AudioSystem20setStreamVolumeIndexENS0_11stream_type
+rel addr 0xbea3aa10
+   str-> _ZN7android11AudioSystem16initStreamVolumeENS0_11stream_typeEii
+rel addr 0xbea3aa10
+   str-> _ZN7android11AudioSystem11getForceUseENS0_9force_useE
+rel addr 0xbea3aa10
+   str-> _ZN7android11AudioSystem11setForceUseENS0_9force_useENS0_13force
+rel addr 0xbea3aa10
+   str-> _ZN7android11AudioSystem13setRingerModeEjj
+rel addr 0xbea3aa10
+   str-> _ZN7android11AudioSystem13setPhoneStateEi
+rel addr 0xbea3aa10
+   str-> _ZN7android11AudioSystem24getDeviceConnectionStateENS0_13audio_d
+rel addr 0xbea3aa10
+   str-> _ZN7android11AudioSystem24setDeviceConnectionStateENS0_13audio_d
+rel addr 0xbea3aa10
+   str-> _ZN7android11AudioSystem14isStreamActiveEiPb
+rel addr 0xbea3aa10
+   str-> _ZN7android11AudioSystem17isMicrophoneMutedEPb
+rel addr 0xbea3aa10
+   str-> _ZN7android11AudioSystem14muteMicrophoneEb
+rel addr 0xbea3aa10
+   str-> _ZN7android11AudioSystem13getParametersEiRKNS_7String8E
+rel addr 0xbea3aa10
+   str-> _ZN7android11AudioSystem13setParametersEiRKNS_7String8E
+rel addr 0xbea3aa10
+   str-> _ZN7android10AudioTrack15attachAuxEffectEi
+rel addr 0xbea3aa10
+   str-> _ZN7android10AudioTrack21setAuxEffectSendLevelEf
+rel addr 0xbea3aa10
+   str-> _ZN7android10AudioTrack16getMinFrameCountEPiij
+rel addr 0xbea3aa10
+   str-> _ZN7android11AudioSystem21getOutputSamplingRateEPii
+rel addr 0xbea3aa10
+   str-> _ZN7android10AudioTrack6reloadEv
+rel addr 0xbea3aa10
+   str-> _ZN7android10AudioTrack7setLoopEjji
+rel addr 0xbea3aa10
+   str-> _ZN7android10AudioTrack11getPositionEPj
+rel addr 0xbea3aa10
+   str-> _ZN7android10AudioTrack11setPositionEj
+rel addr 0xbea3aa10
+   str-> _ZN7android10AudioTrack23getPositionUpdatePeriodEPj
+rel addr 0xbea3aa10
+   str-> _ZN7android10AudioTrack23setPositionUpdatePeriodEj
+rel addr 0xbea3aa10
+   str-> _ZN7android10AudioTrack17getMarkerPositionEPj
+rel addr 0xbea3aa10
+   str-> _ZN7android10AudioTrack17setMarkerPositionEj
+rel addr 0xbea3aa10
+   str-> _ZN7android10AudioTrack13getSampleRateEv
+rel addr 0xbea3aa10
+   str-> _ZN7android10AudioTrack13setSampleRateEi
+rel addr 0xbea3aa10
+   str-> _ZNK7android10AudioTrack10frameCountEv
+rel addr 0xbea3aa10
+   str-> _ZN7android10AudioTrack9setVolumeEff
+rel addr 0xbea3aa10
+   str-> _ZN7android10AudioTrack4stopEv
+rel addr 0xbea3aa10
+   str-> _ZN7android10AudioTrackD1Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android11AudioSystem19getOutputFrameCountEPii
+rel addr 0xbea3aa10
+   str-> _ZN7android11AudioSystem15isOutputChannelEj
+rel addr 0xbea3aa10
+   str-> _ZN7android10AudioTrackC1Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android10AudioTrack3setEijiiijPFviPvS1_ES1_iRKNS_2spINS_7IMe
+rel addr 0xbea3aa10
+   str-> _ZNK7android10AudioTrack9initCheckEv
+rel addr 0xbea3aa10
+   str-> _ZN7android10AudioTrack12getSessionIdEv
+rel addr 0xbea3aa10
+   str-> _ZN7android10AudioTrack5flushEv
+rel addr 0xbea3aa10
+   str-> _ZN7android10AudioTrack5pauseEv
+rel addr 0xbea3aa10
+   str-> _ZN7android10AudioTrack5startEv
+rel addr 0xbea3aa10
+   str-> _ZN7android10AudioTrack12sharedBufferEv
+rel addr 0xbea3aa10
+   str-> _ZN7android10AudioTrack5writeEPKvj
+rel addr 0xbea3aa10
+   str-> _ZN7android9JetPlayer10clearQueueEv
+rel addr 0xbea3aa10
+   str-> _ZN7android9JetPlayer11triggerClipEi
+rel addr 0xbea3aa10
+   str-> _ZN7android9JetPlayer11setMuteFlagEibb
+rel addr 0xbea3aa10
+   str-> _ZN7android9JetPlayer12setMuteFlagsEmb
+rel addr 0xbea3aa10
+   str-> _ZN7android9JetPlayer12queueSegmentEiiiimh
+rel addr 0xbea3aa10
+   str-> _ZN7android9JetPlayer5pauseEv
+rel addr 0xbea3aa10
+   str-> _ZN7android9JetPlayer4playEv
+rel addr 0xbea3aa10
+   str-> _ZN7android9JetPlayer9closeFileEv
+rel addr 0xbea3aa10
+   str-> _ZN7android9JetPlayer16setEventCallbackEPFviiiPvE
+rel addr 0xbea3aa10
+   str-> _ZN7android9JetPlayer10loadFromFDEixx
+rel addr 0xbea3aa10
+   str-> _ZN7android9JetPlayer12loadFromFileEPKc
+rel addr 0xbea3aa10
+   str-> _ZN7android9JetPlayer7releaseEv
+rel addr 0xbea3aa10
+   str-> _ZN7android9JetPlayerD1Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android9JetPlayerC1EP8_jobjectii
+rel addr 0xbea3aa10
+   str-> _ZN7android9JetPlayer4initEv
+rel addr 0xbea3aa10
+   str-> _ZN7android13ToneGeneratorD1Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android11AudioSystem11linearToLogEi
+rel addr 0xbea3aa10
+   str-> _ZN7android13ToneGeneratorC1Eifb
+rel addr 0xbea3aa10
+   str-> _ZN7android13ToneGenerator8stopToneEv
+rel addr 0xbea3aa10
+   str-> _ZN7android13ToneGenerator9startToneEii
+rel addr 0xbea3aa10
+   str-> _ZN7android6Camera11sendCommandEiii
+rel addr 0xbea3aa10
+   str-> _ZN7android6Camera6unlockEv
+rel addr 0xbea3aa10
+   str-> _ZN7android6Camera4lockEv
+rel addr 0xbea3aa10
+   str-> _ZN7android6Camera9reconnectEv
+rel addr 0xbea3aa10
+   str-> _ZNK7android6Camera13getParametersEv
+rel addr 0xbea3aa10
+   str-> _ZN7android6Camera13setParametersERKNS_7String8E
+rel addr 0xbea3aa10
+   str-> _ZN7android6Camera11takePictureEv
+rel addr 0xbea3aa10
+   str-> _ZN7android6Camera15cancelAutoFocusEv
+rel addr 0xbea3aa10
+   str-> _ZN7android6Camera9autoFocusEv
+rel addr 0xbea3aa10
+   str-> _ZN7android6Camera14previewEnabledEv
+rel addr 0xbea3aa10
+   str-> _ZN7android6Camera11stopPreviewEv
+rel addr 0xbea3aa10
+   str-> _ZN7android6Camera12startPreviewEv
+rel addr 0xbea3aa10
+   str-> _ZN7android6Camera17setPreviewDisplayERKNS_2spINS_7SurfaceEEE
+rel addr 0xbea3aa10
+   str-> _ZN7android6Camera13getCameraInfoEiPNS_10CameraInfoE
+rel addr 0xbea3aa10
+   str-> _ZN7android6Camera18getNumberOfCamerasEv
+rel addr 0xbea3aa10
+   str-> _ZN7android6Camera23setPreviewCallbackFlagsEi
+rel addr 0xbea3aa10
+   str-> _ZN7android6Camera10disconnectEv
+rel addr 0xbea3aa10
+   str-> _ZN7android6Camera7connectEi
+rel addr 0xbea3aa10
+   str-> _ZN7android6Camera11setListenerERKNS_2spINS_14CameraListenerEEE
+rel addr 0xbea3aa10
+   str-> _ZN7android16SensorEventQueue4readEP12ASensorEventj
+rel addr 0xbea3aa10
+   str-> _ZNK7android16SensorEventQueue12waitForEventEv
+rel addr 0xbea3aa10
+   str-> _ZNK7android16SensorEventQueue12enableSensorEii
+rel addr 0xbea3aa10
+   str-> _ZNK7android16SensorEventQueue13disableSensorEi
+rel addr 0xbea3aa10
+   str-> _ZN7android13SensorManagerC1Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android13SensorManager16createEventQueueEv
+rel addr 0xbea3aa10
+   str-> _ZNK7android13SensorManager13getSensorListEPPKPKNS_6SensorE
+rel addr 0xbea3aa10
+   str-> _ZNK7android6Sensor7getNameEv
+rel addr 0xbea3aa10
+   str-> _ZNK7android6Sensor9getVendorEv
+rel addr 0xbea3aa10
+   str-> _ZNK7android6Sensor9getHandleEv
+rel addr 0xbea3aa10
+   str-> _ZNK7android6Sensor7getTypeEv
+rel addr 0xbea3aa10
+   str-> _ZNK7android6Sensor11getMaxValueEv
+rel addr 0xbea3aa10
+   str-> _ZNK7android6Sensor13getResolutionEv
+rel addr 0xbea3aa10
+   str-> _ZNK7android6Sensor13getPowerUsageEv
+rel addr 0xbea3aa10
+   str-> _ZNK7android6Sensor11getMinDelayEv
+rel addr 0xbea3aa10
+   str-> inotify_rm_watch
+rel addr 0xbea3aa10
+   str-> inotify_add_watch
+rel addr 0xbea3aa10
+   str-> inotify_init
+rel addr 0xbea3aa10
+   str-> SHA1_Final
+rel addr 0xbea3aa10
+   str-> SHA1_Init
+rel addr 0xbea3aa10
+   str-> SHA1_Update
+rel addr 0xbea3aa10
+   str-> get_malloc_leak_info
+rel addr 0xbea3aa10
+   str-> free_malloc_leak_info
+rel addr 0xbea3aa10
+   str-> capget
+rel addr 0xbea3aa10
+   str-> capset
+rel addr 0xbea3aa10
+   str-> dup2
+rel addr 0xbea3aa10
+   str-> getpgid
+rel addr 0xbea3aa10
+   str-> setpgid
+rel addr 0xbea3aa10
+   str-> setregid
+rel addr 0xbea3aa10
+   str-> setreuid
+rel addr 0xbea3aa10
+   str-> _ZNK8SkBitmap10scrollRectEPK7SkIRectiiP8SkRegion
+rel addr 0xbea3aa10
+   str-> _ZN7android16BackupDataReader14SkipEntityDataEv
+rel addr 0xbea3aa10
+   str-> _ZN7android16BackupDataReader14ReadEntityDataEPvj
+rel addr 0xbea3aa10
+   str-> _ZN7android16BackupDataReader14ReadNextHeaderEPbPi
+rel addr 0xbea3aa10
+   str-> _ZN7android16BackupDataReader16ReadEntityHeaderEPNS_7String8EPj
+rel addr 0xbea3aa10
+   str-> _ZN7android16BackupDataReaderD1Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android16BackupDataReaderC1Ei
+rel addr 0xbea3aa10
+   str-> _ZN7android16BackupDataWriter12SetKeyPrefixERKNS_7String8E
+rel addr 0xbea3aa10
+   str-> _ZN7android16BackupDataWriter15WriteEntityDataEPKvj
+rel addr 0xbea3aa10
+   str-> _ZN7android16BackupDataWriter17WriteEntityHeaderERKNS_7String8Ej
+rel addr 0xbea3aa10
+   str-> _ZN7android16BackupDataWriterD1Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android16BackupDataWriterC1Ei
+rel addr 0xbea3aa10
+   str-> _ZN7android17RestoreHelperBase13WriteSnapshotEi
+rel addr 0xbea3aa10
+   str-> _ZN7android17RestoreHelperBase9WriteFileERKNS_7String8EPNS_16Bac
+rel addr 0xbea3aa10
+   str-> _ZN7android13back_up_filesEiPNS_16BackupDataWriterEiPKPKcS5_i
+rel addr 0xbea3aa10
+   str-> _ZN7android17RestoreHelperBaseD1Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android17RestoreHelperBaseC1Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android7String812unlockBufferEj
+rel addr 0xbea3aa10
+   str-> _ZN7android7ObbFileC1Ev
+rel addr 0xbea3aa10
+   str-> _ZN7android7ObbFile8readFromEPKc
+rel addr 0xbea3aa10
+   str-> __cxa_finalize
+[     find_sym_in_rel( 0121 )]  ret                            = 0 (0x00000000)
+[    replace_all_rels( 0230 )]  tmpaddr                        = 0 (0x00000000)
+#### afd00000 r-xp /system/lib/libc.so
+[    replace_all_rels( 0226 )]  base                           = 2949644288 (0xafd00000)
+[        get_elf_info( 0035 )]  einfo->phdr_addr               = 2949644340 (0xafd00034)
+[        get_elf_info( 0036 )]  einfo->ehdr.e_type             = 3 (0x00000003)
+dump 6 phdr
+[        get_elf_info( 0065 )]  einfo->dynaddr                 = -1345055896 (0xafd41368)
+[        get_elf_info( 0073 )]  einfo->got                     = -1345051388 (0xafd42504)
+[        get_elf_info( 0075 )]  einfo->map_addr                = 0 (0x00000000)
+find sym in rel 0xafd00000 connect 
+get_dyn_info 0xafd41368...
+DT_PLTRELSZ
+totalrelsize 48
+DT_JMPREL
+jmprel	 afd0a424
+DT_RELENT
+relsize2 8
+DT_SYMTAB
+DT_STRTAB
+[     find_sym_in_rel( 0096 )]  dinfo.nrels                    = 6 (0x00000006)
+[     find_sym_in_rel( 0097 )]  dinfo.jmprel                   = -1345280988 (0xafd0a424)
+[     find_sym_in_rel( 0098 )]  dinfo.relsize                  = 8 (0x00000008)
+[     find_sym_in_rel( 0099 )]  dinfo.totalrelsize             = 48 (0x00000030)
+rel addr 0xbea3aa10
+   str-> dl_unwind_find_exidx
+rel addr 0xbea3aa10
+   str-> dlopen
+rel addr 0xbea3aa10
+   str-> dlsym
+rel addr 0xbea3aa10
+   str-> dlclose
+rel addr 0xbea3aa10
+   str-> __cxa_begin_cleanup
+rel addr 0xbea3aa10
+   str-> __cxa_type_match
+[     find_sym_in_rel( 0121 )]  ret                            = 0 (0x00000000)
+[    replace_all_rels( 0230 )]  tmpaddr                        = 0 (0x00000000)
