@@ -13,6 +13,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <android/log.h>
 #ifdef ANDROID
 #include <linux/user.h>
 #else
@@ -93,6 +94,11 @@ typedef struct dl_fl dl_fl_t;
 #define pstr(_x)  printf("[%20s( %04d )]  %-30s = %s \n",__FUNCTION__,__LINE__, #_x, (char*)(_x))
 
 
+#define LOG_TAG "inject"
+#define LOGD(fmt, args...) __android_log_print(ANDROID_LOG_DEBUG, LOG_TAG, fmt, ##args)
+
+int hook_entry();
+int find_pid_of( const char *process_name );
 void ptrace_attach(pid_t pid);
 void ptrace_cont(pid_t pid);
 void ptrace_detach(pid_t pid);

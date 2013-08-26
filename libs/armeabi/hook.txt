@@ -7,15 +7,18 @@ G:\workspace\Test\libs\armeabi>adb push inj_dalvik /dev/
 
 G:\workspace\Test\libs\armeabi>adb shell chmod 777 /dev/inj_dalvik 
 
+G:\workspace\Test\libs\armeabi>adb push libhook.so /dev/ 
+
+G:\workspace\Test\libs\armeabi>adb shell chmod 777 /dev/libhook.so 
+
 G:\workspace\Test\libs\armeabi>adb push libmynet.so /dev/ 
+
+G:\workspace\Test\libs\armeabi>adb push libnewfunc.so /dev/ 
 
 G:\workspace\Test\libs\armeabi>adb shell chmod 777 /dev/libmynet.so 
 
-G:\workspace\Test\libs\armeabi>echo "HELLO" 
-"HELLO"
-
 G:\workspace\Test\libs\armeabi>adb shell ./dev/inj_dalvik  
-ptrace_wait_for_signal: 48 1
+ptrace_wait_for_signal: 49 1
 ------regs old regs-----
 r[00]=fffffffc
 r[01]=beaae2e8
@@ -36,12 +39,12 @@ r[15]=afd0c51c
 r[16]=80000010
 r[17]=1c
 waiting.. sigal...
-ptrace_wait_for_signal2: 72 1
+ptrace_wait_for_signal2: 73 1
 ........00008000-00009000 r-xp 00000000 1f:00 618        /system/bin/app_process
  <--
 ........00009000-0000a000 rwxp 00001000 1f:00 618        /system/bin/app_process
  <--
-........0000a000-003fd000 rwxp 0000a000 00:00 0          [heap]
+........0000a000-003cc000 rwxp 0000a000 00:00 0          [heap]
  <--
 ........10000000-10001000 ---p 10000000 00:00 0 
  <--
@@ -51,9 +54,9 @@ ptrace_wait_for_signal2: 72 1
  <--
 ........40008000-40009000 r-xp 40008000 00:00 0 
  <--
-........40009000-4069b000 rwxp 00000000 00:07 350        /dev/ashmem/dalvik-heap (deleted)
+........40009000-4061b000 rwxp 00000000 00:07 350        /dev/ashmem/dalvik-heap (deleted)
  <--
-........4069b000-44009000 ---p 00692000 00:07 350        /dev/ashmem/dalvik-heap (deleted)
+........4061b000-44009000 ---p 00612000 00:07 350        /dev/ashmem/dalvik-heap (deleted)
  <--
 ........44009000-44109000 rwxp 00000000 00:07 351        /dev/ashmem/dalvik-bitmap-1 (deleted)
  <--
@@ -65,9 +68,9 @@ ptrace_wait_for_signal2: 72 1
  <--
 ........4428d000-4428e000 ---p 00000000 00:07 354        /dev/ashmem/dalvik-LinearAlloc (deleted)
  <--
-........4428e000-44479000 rwxp 00001000 00:07 354        /dev/ashmem/dalvik-LinearAlloc (deleted)
+........4428e000-4447a000 rwxp 00001000 00:07 354        /dev/ashmem/dalvik-LinearAlloc (deleted)
  <--
-........44479000-4478d000 ---p 001ec000 00:07 354        /dev/ashmem/dalvik-LinearAlloc (deleted)
+........4447a000-4478d000 ---p 001ed000 00:07 354        /dev/ashmem/dalvik-LinearAlloc (deleted)
  <--
 ........4478d000-4478e000 r-xs 00002000 1f:00 662        /system/framework/core-junit.jar
  <--
@@ -157,7 +160,7 @@ ptrace_wait_for_signal2: 72 1
  <--
 ........4683b000-46842000 r-xs 00019000 1f:01 516        /data/app/com.speedsoftware.rootexplorer-1.apk
  <--
-........46842000-46846000 rwxs 00000000 00:07 3225       /dev/ashmem/4075acf0 com.speedsoftware.rootexplorer/com.speedsoftware.rootexplorer.RootExplorerPhone (deleted)
+........46842000-46846000 rwxs 00000000 00:07 980491     /dev/ashmem/4062cf98 com.speedsoftware.rootexplorer/com.speedsoftware.rootexplorer.RootExplorerPhone (deleted)
  <--
 ........46846000-46849000 rwxp 46846000 00:00 0 
  <--
@@ -165,7 +168,7 @@ ptrace_wait_for_signal2: 72 1
  <--
 ........4684c000-468ec000 r-xp 00000000 1f:01 557        /data/dalvik-cache/data@app@com.speedsoftware.rootexplorer-1.apk@classes.dex
  <--
-........468ec000-468f8000 rwxp 468ec000 00:00 0 
+........468ec000-468f5000 rwxp 468ec000 00:00 0 
  <--
 ........468fa000-46951000 rwxp 468fa000 00:00 0 
  <--
@@ -173,45 +176,43 @@ ptrace_wait_for_signal2: 72 1
  <--
 ........46952000-46a51000 rwxp 46952000 00:00 0 
  <--
-........46a51000-46a52000 ---p 46a51000 00:00 0 
+........46a51000-46ad1000 r-xp 00000000 00:07 980538     /dev/ashmem/dalvik-jit-code-cache (deleted)
  <--
-........46a52000-46b51000 rwxp 46a52000 00:00 0 
+........46ad1000-46ad2000 ---p 46ad1000 00:00 0 
  <--
-........46b51000-46b52000 ---p 46b51000 00:00 0 
+........46ad2000-46bd1000 rwxp 46ad2000 00:00 0 
  <--
-........46b52000-46c51000 rwxp 46b52000 00:00 0 
+........46bd1000-46bd2000 ---p 46bd1000 00:00 0 
  <--
-........46c51000-46c52000 ---p 46c51000 00:00 0 
+........46bd2000-46cd1000 rwxp 46bd2000 00:00 0 
  <--
-........46c52000-46d51000 rwxp 46c52000 00:00 0 
+........46cd1000-46cd2000 ---p 46cd1000 00:00 0 
  <--
-........46d51000-46dd1000 r-xp 00000000 00:07 2098       /dev/ashmem/dalvik-jit-code-cache (deleted)
+........46cd2000-46dd1000 rwxp 46cd2000 00:00 0 
  <--
-........46dd1000-46dd7000 rwxp 46dd1000 00:00 0 
+........46dd1000-46dda000 r-xs 00000000 1f:00 482        /system/fonts/DroidSansArabic.ttf
  <--
 ........46ddf000-46e36000 rwxp 46ddf000 00:00 0 
  <--
-........46e51000-46e80000 r-xs 00000000 1f:00 478        /system/fonts/DroidSans-Bold.ttf
+........46e36000-46e53000 r-xs 00000000 1f:00 479        /system/fonts/DroidSansMono.ttf
  <--
-........46e80000-46e88000 rwxs 00000000 00:07 2092       /dev/ashmem/SurfaceFlinger Client control-block (deleted)
+........46e53000-46e59000 r-xs 00000000 1f:00 476        /system/fonts/DroidSansHebrew.ttf
  <--
-........46e88000-46fff000 rwxs 00000000 00:07 3280       /dev/ashmem/gralloc-buffer (deleted)
+........46e59000-46e62000 r-xs 00000000 1f:00 481        /system/fonts/DroidSansThai.ttf
  <--
-........46fff000-47176000 rwxs 00000000 00:07 3282       /dev/ashmem/gralloc-buffer (deleted)
+........46e62000-46e84000 rwxp 46e62000 00:00 0 
  <--
-........47244000-47245000 ---p 47244000 00:00 0 
+........46ed1000-46f00000 r-xs 00000000 1f:00 478        /system/fonts/DroidSans-Bold.ttf
  <--
-........47245000-47344000 rwxp 47245000 00:00 0 
+........46f00000-47000000 rwxs 00000000 00:07 980543     /dev/ashmem/CursorWindow (deleted)
  <--
-........47344000-47345000 ---p 47344000 00:00 0 
+........47000000-47008000 rwxs 00000000 00:07 980544     /dev/ashmem/SurfaceFlinger Client control-block (deleted)
  <--
-........47345000-47444000 rwxp 47345000 00:00 0 
+........47008000-4717f000 rwxs 00000000 00:07 980602     /dev/ashmem/gralloc-buffer (deleted)
  <--
-........47444000-47445000 ---p 47444000 00:00 0 
+........4717f000-472f6000 rwxs 00000000 00:07 980580     /dev/ashmem/gralloc-buffer (deleted)
  <--
-........47445000-47544000 rwxp 47445000 00:00 0 
- <--
-........47644000-47744000 rwxs 00000000 00:07 3278       /dev/ashmem/CursorWindow (deleted)
+........472f6000-4766f000 r-xs 00000000 1f:00 480        /system/fonts/DroidSansFallback.ttf
  <--
 ........80000000-800a2000 r-xp 00000000 1f:00 311        /system/lib/libdvm.so
  <--
@@ -234,10 +235,6 @@ ptrace_wait_for_signal2: 72 1
 ........80400000-80402000 r-xp 00000000 1f:00 366        /system/lib/hw/gralloc.default.so
  <--
 ........80402000-80403000 rwxp 00002000 1f:00 366        /system/lib/hw/gralloc.default.so
- <--
-........80500000-80503000 r-xp 00000000 00:0a 2127       /dev/libmynet.so (deleted)
- <--
-........80503000-80505000 rwxp 00002000 00:0a 2127       /dev/libmynet.so (deleted)
  <--
 ........9d100000-9d139000 r-xp 00000000 1f:00 361        /system/lib/libstlport.so
  <--
@@ -475,7 +472,6 @@ r[14]=a81211b5
 r[15]=10
 r[16]=80000030
 r[17]=ffffffff
-ptrace_write failed	 -1096097112
 ptrace_write failed	 -1096097108
 ptrace_write failed	 -1096097104
 ptrace_write failed	 -1096097100
@@ -495,8 +491,8 @@ r[08]=beaae450
 r[09]=4428ce1c
 r[10]=4428ce04
 r[11]=44f28bb8
-r[12]=a8127dd4
-r[13]=beaae2a4
+r[12]=80500000
+r[13]=beaae2a8
 r[14]=b0006738
 r[15]=0
 r[16]=80000030
@@ -516,19 +512,19 @@ r[08]=beaae450
 r[09]=4428ce1c
 r[10]=4428ce04
 r[11]=44f28bb8
-r[12]=a8127dd4
-r[13]=beaae2a4
+r[12]=80500000
+r[13]=beaae2a8
 r[14]=b0006738
 r[15]=0
 r[16]=80000030
 r[17]=ffffffff
-ptrace_write failed	 -1096097124
 ptrace_write failed	 -1096097120
 ptrace_write failed	 -1096097116
+ptrace_write failed	 -1096097112
 done 1
 ------regs before return ptrace_dlsym
 -----
-r[00]=80500c25
+r[00]=80501d99
 r[01]=0
 r[02]=b0012064
 r[03]=1
@@ -540,16 +536,130 @@ r[08]=beaae450
 r[09]=4428ce1c
 r[10]=4428ce04
 r[11]=44f28bb8
-r[12]=a8127dd4
-r[13]=beaae298
+r[12]=80500000
+r[13]=beaae29c
 r[14]=b0006738
 r[15]=0
 r[16]=80000030
 r[17]=ffffffff
-my_connect = 80500c25
+new_open = 80501d99
+#### ad100000 r-xp /system/lib/libnativehelper.so
+[    replace_all_rels( 0225 )]  base                           = 2903506944 (0xad100000)
+[        get_elf_info( 0035 )]  einfo->phdr_addr               = 2903506996 (0xad100034)
+[        get_elf_info( 0036 )]  einfo->ehdr.e_type             = 3 (0x00000003)
+dump 6 phdr
+[        get_elf_info( 0065 )]  einfo->dynaddr                 = -1391280096 (0xad12c020)
+[        get_elf_info( 0073 )]  einfo->got                     = -1391271432 (0xad12e1f8)
+[        get_elf_info( 0075 )]  einfo->map_addr                = 1143710348 (0x442ba28c)
+find sym in rel 0xad100000 open 
+get_dyn_info 0xad12c020...
+DT_PLTRELSZ
+totalrelsize 4080
+DT_JMPREL
+jmprel	 ad1083a8
+DT_RELENT
+relsize2 8
+DT_SYMTAB
+DT_STRTAB
+[     find_sym_in_rel( 0096 )]  dinfo.nrels                    = 510 (0x000001fe)
+[     find_sym_in_rel( 0097 )]  dinfo.jmprel                   = -1391426648 (0xad1083a8)
+[     find_sym_in_rel( 0098 )]  dinfo.relsize                  = 8 (0x00000008)
+[     find_sym_in_rel( 0099 )]  dinfo.totalrelsize             = 4080 (0x00000ff0)
+rel addr 0x2c204
+   str-> strerror_r
+rel addr 0x2c208
+   str-> snprintf
+rel addr 0x2c20c
+   str-> strncpy
+rel addr 0x2c210
+   str-> __android_log_print
+rel addr 0x2c214
+   str-> __stack_chk_fail
+rel addr 0x2c218
+   str-> __android_log_write
+rel addr 0x2c21c
+   str-> __cxa_finalize
+rel addr 0x2c220
+   str-> _ZN6icu_4413UnicodeStringD1Ev
+rel addr 0x2c224
+   str-> _ZN6icu_4413UnicodeStringC1Ev
+rel addr 0x2c228
+   str-> _ZN6icu_4413UnicodeString5setToEaPKti
+rel addr 0x2c22c
+   str-> _ZN6icu_448TimeZone14createTimeZoneERKNS_13UnicodeStringE
+rel addr 0x2c230
+   str-> _ZNK6icu_4410DateFormat6formatEdRNS_13UnicodeStringE
+rel addr 0x2c234
+   str-> _ZN6icu_4413UnicodeStringC1EPKcS2_
+rel addr 0x2c238
+   str-> _ZN6icu_4416SimpleDateFormatC1ERKNS_13UnicodeStringERKNS_6Locale¿
+rel addr 0x2c23c
+   str-> _ZN6icu_4410DateFormat11setTimeZoneERKNS_8TimeZoneE
+rel addr 0x2c240
+   str-> _ZN6icu_4416SimpleDateFormatD1Ev
+rel addr 0x2c244
+   str-> _ZN6icu_446LocaleD1Ev
+rel addr 0x2c248
+   str-> _ZN6icu_448TimeZone17createEnumerationEPKc
+rel addr 0x2c24c
+   str-> _ZNK6icu_448TimeZone14getDisplayNameEaNS0_12EDisplayTypeERKNS_6L¿
+rel addr 0x2c250
+   str-> ioctl
+rel addr 0x2c254
+   str-> __errno
+rel addr 0x2c258
+   str-> isatty
+rel addr 0x2c25c
+   str-> stat
+rel addr 0x2c260
+   str-> chmod
+rel addr 0x2c264
+   str-> __aeabi_lmul
+rel addr 0x2c268
+   str-> __aeabi_ldivmod
+rel addr 0x2c26c
+   str-> utime
+rel addr 0x2c270
+   str-> rename
+rel addr 0x2c274
+   str-> _Znaj
+rel addr 0x2c278
+   str-> readlink
+rel addr 0x2c27c
+   str-> _ZdaPv
+rel addr 0x2c280
+   str-> mkdir
+rel addr 0x2c284
+   str-> strlen
+rel addr 0x2c288
+   str-> strcpy
+rel addr 0x2c28c
+   str-> _Znwj
+rel addr 0x2c290
+   str-> opendir
+rel addr 0x2c294
+   str-> strcmp
+rel addr 0x2c298
+   str-> readdir_r
+rel addr 0x2c29c
+   str-> closedir
+rel addr 0x2c2a0
+   str-> _ZdlPv
+rel addr 0x2c2a4
+   str-> statfs
+rel addr 0x2c2a8
+   str-> access
+rel addr 0x2c2ac
+   str-> remove
+rel addr 0x2c2b0
+   str-> open
+[     find_sym_in_rel( 0121 )]  ret                            = -1391279440 (0xad12c2b0)
+[    replace_all_rels( 0229 )]  tmpaddr                        = 2903687856 (0xad12c2b0)
+ptrace_write failed	 -1391279436
+base of /system/lib/libnativehelper.so               ad100000  ad12c2b0 80501d99
 ------regs before call to ptrace_dlsym
 -----
-r[00]=80500c25
+r[00]=80501d99
 r[01]=0
 r[02]=b0012064
 r[03]=1
@@ -561,18 +671,19 @@ r[08]=beaae450
 r[09]=4428ce1c
 r[10]=4428ce04
 r[11]=44f28bb8
-r[12]=a8127dd4
-r[13]=beaae298
+r[12]=80500000
+r[13]=beaae29c
 r[14]=b0006738
 r[15]=0
 r[16]=80000030
 r[17]=ffffffff
 ptrace_write failed	 -1096097132
 ptrace_write failed	 -1096097128
+ptrace_write failed	 -1096097124
 done 1
 ------regs before return ptrace_dlsym
 -----
-r[00]=80500c2d
+r[00]=80502001
 r[01]=0
 r[02]=b0012064
 r[03]=1
@@ -584,56 +695,126 @@ r[08]=beaae450
 r[09]=4428ce1c
 r[10]=4428ce04
 r[11]=44f28bb8
-r[12]=a8127dd4
+r[12]=80500000
 r[13]=beaae290
 r[14]=b0006738
 r[15]=0
 r[16]=80000030
 r[17]=ffffffff
-------regs before call to ptrace_dlsym
------
-r[00]=80500c2d
-r[01]=0
-r[02]=b0012064
-r[03]=1
-r[04]=116d38
-r[05]=ffffffff
-r[06]=beaae2e8
-r[07]=fc
-r[08]=beaae450
-r[09]=4428ce1c
-r[10]=4428ce04
-r[11]=44f28bb8
-r[12]=a8127dd4
-r[13]=beaae290
-r[14]=b0006738
-r[15]=0
-r[16]=80000030
-r[17]=ffffffff
-ptrace_write failed	 -1096097140
-ptrace_write failed	 -1096097136
-done 1
-------regs before return ptrace_dlsym
------
-r[00]=80500c2d
-r[01]=0
-r[02]=b0012064
-r[03]=1
-r[04]=116d38
-r[05]=ffffffff
-r[06]=beaae2e8
-r[07]=fc
-r[08]=beaae450
-r[09]=4428ce1c
-r[10]=4428ce04
-r[11]=44f28bb8
-r[12]=a8127dd4
-r[13]=beaae288
-r[14]=b0006738
-r[15]=0
-r[16]=80000030
-r[17]=ffffffff
-hook = 80500c2d
-hook = 80500c2d
-hook = 80000c2d
-Hello hooking!
+new_close = 80502001
+#### ad100000 r-xp /system/lib/libnativehelper.so
+[    replace_all_rels( 0225 )]  base                           = 2903506944 (0xad100000)
+[        get_elf_info( 0035 )]  einfo->phdr_addr               = 2903506996 (0xad100034)
+[        get_elf_info( 0036 )]  einfo->ehdr.e_type             = 3 (0x00000003)
+dump 6 phdr
+[        get_elf_info( 0065 )]  einfo->dynaddr                 = -1391280096 (0xad12c020)
+[        get_elf_info( 0073 )]  einfo->got                     = -1391271432 (0xad12e1f8)
+[        get_elf_info( 0075 )]  einfo->map_addr                = 1143710348 (0x442ba28c)
+find sym in rel 0xad100000 close 
+get_dyn_info 0xad12c020...
+DT_PLTRELSZ
+totalrelsize 4080
+DT_JMPREL
+jmprel	 ad1083a8
+DT_RELENT
+relsize2 8
+DT_SYMTAB
+DT_STRTAB
+[     find_sym_in_rel( 0096 )]  dinfo.nrels                    = 510 (0x000001fe)
+[     find_sym_in_rel( 0097 )]  dinfo.jmprel                   = -1391426648 (0xad1083a8)
+[     find_sym_in_rel( 0098 )]  dinfo.relsize                  = 8 (0x00000008)
+[     find_sym_in_rel( 0099 )]  dinfo.totalrelsize             = 4080 (0x00000ff0)
+rel addr 0x2c204
+   str-> strerror_r
+rel addr 0x2c208
+   str-> snprintf
+rel addr 0x2c20c
+   str-> strncpy
+rel addr 0x2c210
+   str-> __android_log_print
+rel addr 0x2c214
+   str-> __stack_chk_fail
+rel addr 0x2c218
+   str-> __android_log_write
+rel addr 0x2c21c
+   str-> __cxa_finalize
+rel addr 0x2c220
+   str-> _ZN6icu_4413UnicodeStringD1Ev
+rel addr 0x2c224
+   str-> _ZN6icu_4413UnicodeStringC1Ev
+rel addr 0x2c228
+   str-> _ZN6icu_4413UnicodeString5setToEaPKti
+rel addr 0x2c22c
+   str-> _ZN6icu_448TimeZone14createTimeZoneERKNS_13UnicodeStringE
+rel addr 0x2c230
+   str-> _ZNK6icu_4410DateFormat6formatEdRNS_13UnicodeStringE
+rel addr 0x2c234
+   str-> _ZN6icu_4413UnicodeStringC1EPKcS2_
+rel addr 0x2c238
+   str-> _ZN6icu_4416SimpleDateFormatC1ERKNS_13UnicodeStringERKNS_6Locale
+rel addr 0x2c23c
+   str-> _ZN6icu_4410DateFormat11setTimeZoneERKNS_8TimeZoneE
+rel addr 0x2c240
+   str-> _ZN6icu_4416SimpleDateFormatD1Ev
+rel addr 0x2c244
+   str-> _ZN6icu_446LocaleD1Ev
+rel addr 0x2c248
+   str-> _ZN6icu_448TimeZone17createEnumerationEPKc
+rel addr 0x2c24c
+   str-> _ZNK6icu_448TimeZone14getDisplayNameEaNS0_12EDisplayTypeERKNS_6L
+rel addr 0x2c250
+   str-> ioctl
+rel addr 0x2c254
+   str-> __errno
+rel addr 0x2c258
+   str-> isatty
+rel addr 0x2c25c
+   str-> stat
+rel addr 0x2c260
+   str-> chmod
+rel addr 0x2c264
+   str-> __aeabi_lmul
+rel addr 0x2c268
+   str-> __aeabi_ldivmod
+rel addr 0x2c26c
+   str-> utime
+rel addr 0x2c270
+   str-> rename
+rel addr 0x2c274
+   str-> _Znaj
+rel addr 0x2c278
+   str-> readlink
+rel addr 0x2c27c
+   str-> _ZdaPv
+rel addr 0x2c280
+   str-> mkdir
+rel addr 0x2c284
+   str-> strlen
+rel addr 0x2c288
+   str-> strcpy
+rel addr 0x2c28c
+   str-> _Znwj
+rel addr 0x2c290
+   str-> opendir
+rel addr 0x2c294
+   str-> strcmp
+rel addr 0x2c298
+   str-> readdir_r
+rel addr 0x2c29c
+   str-> closedir
+rel addr 0x2c2a0
+   str-> _ZdlPv
+rel addr 0x2c2a4
+   str-> statfs
+rel addr 0x2c2a8
+   str-> access
+rel addr 0x2c2ac
+   str-> remove
+rel addr 0x2c2b0
+   str-> open
+rel addr 0x2c2b4
+   str-> close
+[     find_sym_in_rel( 0121 )]  ret                            = -1391279436 (0xad12c2b4)
+[    replace_all_rels( 0229 )]  tmpaddr                        = 2903687860 (0xad12c2b4)
+ptrace_write failed	 -1391279432
+base of /system/lib/libnativehelper.so               ad100000  ad12c2b4 80502001

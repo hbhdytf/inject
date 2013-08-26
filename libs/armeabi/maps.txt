@@ -1,6 +1,6 @@
 00008000-00009000 r-xp 00000000 1f:00 618        /system/bin/app_process
 00009000-0000a000 rwxp 00001000 1f:00 618        /system/bin/app_process
-0000a000-00390000 rwxp 0000a000 00:00 0          [heap]
+0000a000-0038a000 rwxp 0000a000 00:00 0          [heap]
 10000000-10001000 ---p 10000000 00:00 0 
 10001000-10100000 rwxp 10001000 00:00 0 
 40000000-40008000 r-xs 00000000 00:0a 198        /dev/__properties__ (deleted)
@@ -58,7 +58,7 @@
 46836000-46839000 rwxp 46836000 00:00 0 
 46839000-4683b000 r-xs 00064000 1f:01 516        /data/app/com.speedsoftware.rootexplorer-1.apk
 4683b000-46842000 r-xs 00019000 1f:01 516        /data/app/com.speedsoftware.rootexplorer-1.apk
-46842000-46846000 rwxs 00000000 00:07 9366       /dev/ashmem/4067bf70 com.speedsoftware.rootexplorer/com.speedsoftware.rootexplorer.RootExplorerPhone (deleted)
+46842000-46846000 rwxs 00000000 00:07 864015     /dev/ashmem/407df278 com.speedsoftware.rootexplorer/com.speedsoftware.rootexplorer.RootExplorerPhone (deleted)
 46846000-46849000 rwxp 46846000 00:00 0 
 4684a000-4684c000 r-xs 00064000 1f:01 516        /data/app/com.speedsoftware.rootexplorer-1.apk
 4684c000-468ec000 r-xp 00000000 1f:01 557        /data/dalvik-cache/data@app@com.speedsoftware.rootexplorer-1.apk@classes.dex
@@ -66,18 +66,18 @@
 468fa000-46951000 rwxp 468fa000 00:00 0 
 46951000-46952000 ---p 46951000 00:00 0 
 46952000-46a51000 rwxp 46952000 00:00 0 
-46a51000-46ad1000 r-xp 00000000 00:07 9406       /dev/ashmem/dalvik-jit-code-cache (deleted)
-46ad1000-46ad2000 ---p 46ad1000 00:00 0 
-46ad2000-46bd1000 rwxp 46ad2000 00:00 0 
-46bd1000-46bd2000 ---p 46bd1000 00:00 0 
-46bd2000-46cd1000 rwxp 46bd2000 00:00 0 
-46cd1000-46cd2000 ---p 46cd1000 00:00 0 
-46cd2000-46dd1000 rwxp 46cd2000 00:00 0 
-46ed1000-46f00000 r-xs 00000000 1f:00 478        /system/fonts/DroidSans-Bold.ttf
-46f00000-46f08000 rwxs 00000000 00:07 9407       /dev/ashmem/SurfaceFlinger Client control-block (deleted)
-46f08000-47008000 rwxs 00000000 00:07 9410       /dev/ashmem/CursorWindow (deleted)
-47008000-4717f000 rwxs 00000000 00:07 9412       /dev/ashmem/gralloc-buffer (deleted)
-4717f000-472f6000 rwxs 00000000 00:07 9413       /dev/ashmem/gralloc-buffer (deleted)
+46a51000-46a52000 ---p 46a51000 00:00 0 
+46a52000-46b51000 rwxp 46a52000 00:00 0 
+46b51000-46b52000 ---p 46b51000 00:00 0 
+46b52000-46c51000 rwxp 46b52000 00:00 0 
+46c51000-46c52000 ---p 46c51000 00:00 0 
+46c52000-46d51000 rwxp 46c52000 00:00 0 
+46d51000-46dd1000 r-xp 00000000 00:07 864057     /dev/ashmem/dalvik-jit-code-cache (deleted)
+46e51000-46e80000 r-xs 00000000 1f:00 478        /system/fonts/DroidSans-Bold.ttf
+46e80000-46e88000 rwxs 00000000 00:07 864051     /dev/ashmem/SurfaceFlinger Client control-block (deleted)
+46e88000-46f88000 rwxs 00000000 00:07 864054     /dev/ashmem/CursorWindow (deleted)
+46f88000-470ff000 rwxs 00000000 00:07 864056     /dev/ashmem/gralloc-buffer (deleted)
+470ff000-47276000 rwxs 00000000 00:07 864058     /dev/ashmem/gralloc-buffer (deleted)
 80000000-800a2000 r-xp 00000000 1f:00 311        /system/lib/libdvm.so
 800a2000-800a9000 rwxp 000a2000 1f:00 311        /system/lib/libdvm.so
 800a9000-800ab000 rwxp 800a9000 00:00 0 
@@ -89,8 +89,6 @@
 80309000-8030a000 rwxp 00009000 1f:00 343        /system/lib/libstagefright_foundation.so
 80400000-80402000 r-xp 00000000 1f:00 366        /system/lib/hw/gralloc.default.so
 80402000-80403000 rwxp 00002000 1f:00 366        /system/lib/hw/gralloc.default.so
-80500000-80503000 r-xp 00000000 00:0a 9442       /dev/libmynet.so
-80503000-80505000 rwxp 00002000 00:0a 9442       /dev/libmynet.so
 9d100000-9d139000 r-xp 00000000 1f:00 361        /system/lib/libstlport.so
 9d139000-9d13b000 rwxp 00039000 1f:00 361        /system/lib/libstlport.so
 9d700000-9d732000 r-xp 00000000 1f:00 370        /system/lib/libjpeg.so

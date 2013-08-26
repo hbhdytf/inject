@@ -1,17 +1,13 @@
 /*
- * ptrace.c
- *
- *  Created on: Jun 4, 2011
- *      Author: d
+ * 该文件主要为ptrace的函数逻辑，将ptrace.h下函数进行了封装
  */
-
 #include <stdio.h>
 #include <sys/ptrace.h>
-
 #include <stdlib.h>
 #include <sys/wait.h>
 #include <string.h>
 #include <errno.h>
+#include <dirent.h>
 #ifdef ANDROID
 #include <linux/user.h>
 #else
@@ -29,6 +25,9 @@ static regs_t oldregs;
 
 dl_fl_t ldl;
 
+/*
+ * 显示寄存器信息
+ */
 void ptrace_dump_regs(regs_t *regs, char *msg) {
     int i = 0;
     printf("------regs %s-----\n", msg);
@@ -459,5 +458,49 @@ dl_fl_t *ptrace_find_dlinfo(int pid) {
     }
     printf("%s not found!\n", LIBDLSO);
     return NULL ;
+}
+int find_pid_of( const char *process_name )
+{
+	int id;
+	pid_t pid = -1;
+	DIR* dir;
+	FILE *fp;
+	char filename[32];
+	char cmdline[256];
+
+	struct dirent * entry;
+
+	if ( process_name == NULL )
+		return -1;
+
+	dir = opendir( "/proc" );
+	if ( dir == NULL )
+		return -1;
+
+	while( (entry = readdir( dir )) != NULL )
+	{
+		id = atoi( entry->d_name );
+		if ( id != 0 )
+		{
+			sprintf( filename, "/proc/%d/cmdline", id );
+			fp = fopen( filename, "r" );
+			if ( fp )
+			{
+				fgets( cmdline, sizeof(cmdline), fp );
+				fclose( fp );
+
+				if ( strcmp( process_name, cmdline ) == 0 )
+				{
+					/* process found */
+					pid = id;
+					break;
+				}
+			}
+		}
+	}
+
+	closedir( dir );
+
+	return pid;
 }
 

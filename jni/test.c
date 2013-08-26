@@ -1,10 +1,4 @@
-/*
- * libmynet.c
- *
- *  Created on: 2013-1-17
- *      Author: d
- */
-
+#include <stdio.h>
 #include <netinet/in.h>
 #include <sys/types.h>
 #include <sys/socket.h>
@@ -22,14 +16,13 @@
 
 #define LOG_TAG "inject"
 #define LOGD(fmt, args...) __android_log_print(ANDROID_LOG_DEBUG, LOG_TAG, fmt, ##args)
-
-int my_connect(int socket, const struct sockaddr *address, socklen_t address_len) {
-    return -1;
-}
-int hook()
+int main()
 {
-	void * handle;
-	LOGD("Hello HOOK HAHAHAH!\n");
-	printf("Hello hooking!\n");
-	return 0;
+	void (*func)();
+	while(1)
+	{
+
+		sleep(2);
+		func();
+	}
 }

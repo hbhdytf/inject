@@ -60,6 +60,8 @@ obj/local/armeabi/objs/mynet/libmynet.o: jni/libmynet.c \
  G:/Android/ndk/platforms/android-14/arch-arm/usr/include/sys/sysconf.h \
  G:/Android/ndk/platforms/android-14/arch-arm/usr/include/linux/capability.h \
  G:/Android/ndk/platforms/android-14/arch-arm/usr/include/pathconf.h \
+ G:/Android/ndk/platforms/android-14/arch-arm/usr/include/asm/ptrace.h \
+ G:/Android/ndk/platforms/android-14/arch-arm/usr/include/dlfcn.h \
  G:/Android/ndk/platforms/android-14/arch-arm/usr/include/android/log.h
 
 G:/Android/ndk/platforms/android-14/arch-arm/usr/include/netinet/in.h:
@@ -183,5 +185,9 @@ G:/Android/ndk/platforms/android-14/arch-arm/usr/include/sys/sysconf.h:
 G:/Android/ndk/platforms/android-14/arch-arm/usr/include/linux/capability.h:
 
 G:/Android/ndk/platforms/android-14/arch-arm/usr/include/pathconf.h:
+
+G:/Android/ndk/platforms/android-14/arch-arm/usr/include/asm/ptrace.h:
+
+G:/Android/ndk/platforms/android-14/arch-arm/usr/include/dlfcn.h:
 
 G:/Android/ndk/platforms/android-14/arch-arm/usr/include/android/log.h:

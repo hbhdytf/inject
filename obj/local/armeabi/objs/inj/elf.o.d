@@ -42,6 +42,7 @@ obj/local/armeabi/objs/inj/elf.o: jni/elf.c \
  G:/Android/ndk/platforms/android-14/arch-arm/usr/include/sys/sysconf.h \
  G:/Android/ndk/platforms/android-14/arch-arm/usr/include/linux/capability.h \
  G:/Android/ndk/platforms/android-14/arch-arm/usr/include/pathconf.h \
+ G:/Android/ndk/platforms/android-14/arch-arm/usr/include/android/log.h \
  G:/Android/ndk/platforms/android-14/arch-arm/usr/include/linux/user.h \
  G:/Android/ndk/platforms/android-14/arch-arm/usr/include/asm/user.h \
  G:/Android/ndk/platforms/android-14/arch-arm/usr/include/asm/ptrace.h \
@@ -135,6 +136,8 @@ G:/Android/ndk/platforms/android-14/arch-arm/usr/include/sys/sysconf.h:
 G:/Android/ndk/platforms/android-14/arch-arm/usr/include/linux/capability.h:
 
 G:/Android/ndk/platforms/android-14/arch-arm/usr/include/pathconf.h:
+
+G:/Android/ndk/platforms/android-14/arch-arm/usr/include/android/log.h:
 
 G:/Android/ndk/platforms/android-14/arch-arm/usr/include/linux/user.h:
 

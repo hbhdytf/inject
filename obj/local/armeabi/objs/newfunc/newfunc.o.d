@@ -1,12 +1,8 @@
-obj/local/armeabi/objs/inj/inject.o: jni/inject.c \
- G:/Android/ndk/platforms/android-14/arch-arm/usr/include/stdlib.h \
+obj/local/armeabi/objs/newfunc/newfunc.o: jni/newfunc.c \
+ G:/Android/ndk/platforms/android-14/arch-arm/usr/include/stdio.h \
  G:/Android/ndk/platforms/android-14/arch-arm/usr/include/sys/cdefs.h \
  G:/Android/ndk/platforms/android-14/arch-arm/usr/include/sys/cdefs_elf.h \
  G:/Android/ndk/platforms/android-14/arch-arm/usr/include/android/api-level.h \
- G:/Android/ndk/platforms/android-14/arch-arm/usr/include/string.h \
- G:/Android/ndk/platforms/android-14/arch-arm/usr/include/malloc.h \
- G:/Android/ndk/platforms/android-14/arch-arm/usr/include/alloca.h \
- G:/Android/ndk/platforms/android-14/arch-arm/usr/include/strings.h \
  G:/Android/ndk/platforms/android-14/arch-arm/usr/include/sys/types.h \
  G:/Android/ndk/platforms/android-14/arch-arm/usr/include/stdint.h \
  G:/Android/ndk/platforms/android-14/arch-arm/usr/include/sys/_types.h \
@@ -19,10 +15,31 @@ obj/local/armeabi/objs/inj/inject.o: jni/inject.c \
  G:/Android/ndk/platforms/android-14/arch-arm/usr/include/linux/types.h \
  G:/Android/ndk/platforms/android-14/arch-arm/usr/include/machine/kernel.h \
  G:/Android/ndk/platforms/android-14/arch-arm/usr/include/sys/sysmacros.h \
+ G:/Android/ndk/platforms/android-14/arch-arm/usr/include/netinet/in.h \
+ G:/Android/ndk/platforms/android-14/arch-arm/usr/include/endian.h \
+ G:/Android/ndk/platforms/android-14/arch-arm/usr/include/sys/endian.h \
+ G:/Android/ndk/platforms/android-14/arch-arm/usr/include/machine/endian.h \
+ G:/Android/ndk/platforms/android-14/arch-arm/usr/include/linux/socket.h \
+ G:/Android/ndk/platforms/android-14/arch-arm/usr/include/asm/socket.h \
+ G:/Android/ndk/platforms/android-14/arch-arm/usr/include/asm/sockios.h \
+ G:/Android/ndk/platforms/android-14/arch-arm/usr/include/linux/sockios.h \
+ G:/Android/ndk/platforms/android-14/arch-arm/usr/include/linux/uio.h \
+ G:/Android/ndk/platforms/android-14/arch-arm/usr/include/linux/in.h \
+ G:/Android/ndk/platforms/android-14/arch-arm/usr/include/asm/byteorder.h \
+ G:/Android/ndk/platforms/android-14/arch-arm/usr/include/linux/byteorder/little_endian.h \
+ G:/Android/ndk/platforms/android-14/arch-arm/usr/include/linux/byteorder/swab.h \
+ G:/Android/ndk/platforms/android-14/arch-arm/usr/include/linux/byteorder/generic.h \
+ G:/Android/ndk/platforms/android-14/arch-arm/usr/include/linux/in6.h \
+ G:/Android/ndk/platforms/android-14/arch-arm/usr/include/linux/ipv6.h \
+ G:/Android/ndk/platforms/android-14/arch-arm/usr/include/netinet/in6.h \
+ G:/Android/ndk/platforms/android-14/arch-arm/usr/include/sys/socket.h \
+ G:/Android/ndk/platforms/android-14/arch-arm/usr/include/stdlib.h \
+ G:/Android/ndk/platforms/android-14/arch-arm/usr/include/string.h \
+ G:/Android/ndk/platforms/android-14/arch-arm/usr/include/malloc.h \
+ G:/Android/ndk/platforms/android-14/arch-arm/usr/include/alloca.h \
+ G:/Android/ndk/platforms/android-14/arch-arm/usr/include/strings.h \
  G:/Android/ndk/platforms/android-14/arch-arm/usr/include/memory.h \
- G:/Android/ndk/platforms/android-14/arch-arm/usr/include/stdio.h \
- G:/Android/ndk/platforms/android-14/arch-arm/usr/include/dlfcn.h \
- jni/utils.h \
+ G:/Android/ndk/platforms/android-14/arch-arm/usr/include/arpa/inet.h \
  G:/Android/ndk/platforms/android-14/arch-arm/usr/include/unistd.h \
  G:/Android/ndk/platforms/android-14/arch-arm/usr/include/sys/select.h \
  G:/Android/ndk/platforms/android-14/arch-arm/usr/include/sys/time.h \
@@ -43,42 +60,17 @@ obj/local/armeabi/objs/inj/inject.o: jni/inject.c \
  G:/Android/ndk/platforms/android-14/arch-arm/usr/include/sys/sysconf.h \
  G:/Android/ndk/platforms/android-14/arch-arm/usr/include/linux/capability.h \
  G:/Android/ndk/platforms/android-14/arch-arm/usr/include/pathconf.h \
- G:/Android/ndk/platforms/android-14/arch-arm/usr/include/android/log.h \
- G:/Android/ndk/platforms/android-14/arch-arm/usr/include/linux/user.h \
- G:/Android/ndk/platforms/android-14/arch-arm/usr/include/asm/user.h \
  G:/Android/ndk/platforms/android-14/arch-arm/usr/include/asm/ptrace.h \
- G:/Android/ndk/platforms/android-14/arch-arm/usr/include/elf.h \
- G:/Android/ndk/platforms/android-14/arch-arm/usr/include/sys/exec_elf.h \
- G:/Android/ndk/platforms/android-14/arch-arm/usr/include/machine/exec.h \
- jni/linker.h \
- G:/Android/ndk/platforms/android-14/arch-arm/usr/include/sys/mman.h \
- G:/Android/ndk/platforms/android-14/arch-arm/usr/include/asm/mman.h \
- G:/Android/ndk/platforms/android-14/arch-arm/usr/include/asm-generic/mman.h \
- G:/Android/ndk/platforms/android-14/arch-arm/usr/include/asm-generic/mman-common.h \
- G:/Android/ndk/platforms/android-14/arch-arm/usr/include/sys/wait.h \
- G:/Android/ndk/platforms/android-14/arch-arm/usr/include/sys/resource.h \
- G:/Android/ndk/platforms/android-14/arch-arm/usr/include/linux/resource.h \
- G:/Android/ndk/platforms/android-14/arch-arm/usr/include/asm/resource.h \
- G:/Android/ndk/platforms/android-14/arch-arm/usr/include/asm-generic/resource.h \
- G:/Android/ndk/platforms/android-14/arch-arm/usr/include/linux/wait.h \
- G:/Android/ndk/platforms/android-14/arch-arm/usr/include/jni.h \
- G:/Android/ndk/platforms/android-14/arch-arm/usr/include/dirent.h
+ G:/Android/ndk/platforms/android-14/arch-arm/usr/include/dlfcn.h \
+ G:/Android/ndk/platforms/android-14/arch-arm/usr/include/android/log.h
 
-G:/Android/ndk/platforms/android-14/arch-arm/usr/include/stdlib.h:
+G:/Android/ndk/platforms/android-14/arch-arm/usr/include/stdio.h:
 
 G:/Android/ndk/platforms/android-14/arch-arm/usr/include/sys/cdefs.h:
 
 G:/Android/ndk/platforms/android-14/arch-arm/usr/include/sys/cdefs_elf.h:
 
 G:/Android/ndk/platforms/android-14/arch-arm/usr/include/android/api-level.h:
-
-G:/Android/ndk/platforms/android-14/arch-arm/usr/include/string.h:
-
-G:/Android/ndk/platforms/android-14/arch-arm/usr/include/malloc.h:
-
-G:/Android/ndk/platforms/android-14/arch-arm/usr/include/alloca.h:
-
-G:/Android/ndk/platforms/android-14/arch-arm/usr/include/strings.h:
 
 G:/Android/ndk/platforms/android-14/arch-arm/usr/include/sys/types.h:
 
@@ -104,13 +96,55 @@ G:/Android/ndk/platforms/android-14/arch-arm/usr/include/machine/kernel.h:
 
 G:/Android/ndk/platforms/android-14/arch-arm/usr/include/sys/sysmacros.h:
 
+G:/Android/ndk/platforms/android-14/arch-arm/usr/include/netinet/in.h:
+
+G:/Android/ndk/platforms/android-14/arch-arm/usr/include/endian.h:
+
+G:/Android/ndk/platforms/android-14/arch-arm/usr/include/sys/endian.h:
+
+G:/Android/ndk/platforms/android-14/arch-arm/usr/include/machine/endian.h:
+
+G:/Android/ndk/platforms/android-14/arch-arm/usr/include/linux/socket.h:
+
+G:/Android/ndk/platforms/android-14/arch-arm/usr/include/asm/socket.h:
+
+G:/Android/ndk/platforms/android-14/arch-arm/usr/include/asm/sockios.h:
+
+G:/Android/ndk/platforms/android-14/arch-arm/usr/include/linux/sockios.h:
+
+G:/Android/ndk/platforms/android-14/arch-arm/usr/include/linux/uio.h:
+
+G:/Android/ndk/platforms/android-14/arch-arm/usr/include/linux/in.h:
+
+G:/Android/ndk/platforms/android-14/arch-arm/usr/include/asm/byteorder.h:
+
+G:/Android/ndk/platforms/android-14/arch-arm/usr/include/linux/byteorder/little_endian.h:
+
+G:/Android/ndk/platforms/android-14/arch-arm/usr/include/linux/byteorder/swab.h:
+
+G:/Android/ndk/platforms/android-14/arch-arm/usr/include/linux/byteorder/generic.h:
+
+G:/Android/ndk/platforms/android-14/arch-arm/usr/include/linux/in6.h:
+
+G:/Android/ndk/platforms/android-14/arch-arm/usr/include/linux/ipv6.h:
+
+G:/Android/ndk/platforms/android-14/arch-arm/usr/include/netinet/in6.h:
+
+G:/Android/ndk/platforms/android-14/arch-arm/usr/include/sys/socket.h:
+
+G:/Android/ndk/platforms/android-14/arch-arm/usr/include/stdlib.h:
+
+G:/Android/ndk/platforms/android-14/arch-arm/usr/include/string.h:
+
+G:/Android/ndk/platforms/android-14/arch-arm/usr/include/malloc.h:
+
+G:/Android/ndk/platforms/android-14/arch-arm/usr/include/alloca.h:
+
+G:/Android/ndk/platforms/android-14/arch-arm/usr/include/strings.h:
+
 G:/Android/ndk/platforms/android-14/arch-arm/usr/include/memory.h:
 
-G:/Android/ndk/platforms/android-14/arch-arm/usr/include/stdio.h:
-
-G:/Android/ndk/platforms/android-14/arch-arm/usr/include/dlfcn.h:
-
-jni/utils.h:
+G:/Android/ndk/platforms/android-14/arch-arm/usr/include/arpa/inet.h:
 
 G:/Android/ndk/platforms/android-14/arch-arm/usr/include/unistd.h:
 
@@ -152,42 +186,8 @@ G:/Android/ndk/platforms/android-14/arch-arm/usr/include/linux/capability.h:
 
 G:/Android/ndk/platforms/android-14/arch-arm/usr/include/pathconf.h:
 
-G:/Android/ndk/platforms/android-14/arch-arm/usr/include/android/log.h:
-
-G:/Android/ndk/platforms/android-14/arch-arm/usr/include/linux/user.h:
-
-G:/Android/ndk/platforms/android-14/arch-arm/usr/include/asm/user.h:
-
 G:/Android/ndk/platforms/android-14/arch-arm/usr/include/asm/ptrace.h:
 
-G:/Android/ndk/platforms/android-14/arch-arm/usr/include/elf.h:
+G:/Android/ndk/platforms/android-14/arch-arm/usr/include/dlfcn.h:
 
-G:/Android/ndk/platforms/android-14/arch-arm/usr/include/sys/exec_elf.h:
-
-G:/Android/ndk/platforms/android-14/arch-arm/usr/include/machine/exec.h:
-
-jni/linker.h:
-
-G:/Android/ndk/platforms/android-14/arch-arm/usr/include/sys/mman.h:
-
-G:/Android/ndk/platforms/android-14/arch-arm/usr/include/asm/mman.h:
-
-G:/Android/ndk/platforms/android-14/arch-arm/usr/include/asm-generic/mman.h:
-
-G:/Android/ndk/platforms/android-14/arch-arm/usr/include/asm-generic/mman-common.h:
-
-G:/Android/ndk/platforms/android-14/arch-arm/usr/include/sys/wait.h:
-
-G:/Android/ndk/platforms/android-14/arch-arm/usr/include/sys/resource.h:
-
-G:/Android/ndk/platforms/android-14/arch-arm/usr/include/linux/resource.h:
-
-G:/Android/ndk/platforms/android-14/arch-arm/usr/include/asm/resource.h:
-
-G:/Android/ndk/platforms/android-14/arch-arm/usr/include/asm-generic/resource.h:
-
-G:/Android/ndk/platforms/android-14/arch-arm/usr/include/linux/wait.h:
-
-G:/Android/ndk/platforms/android-14/arch-arm/usr/include/jni.h:
-
-G:/Android/ndk/platforms/android-14/arch-arm/usr/include/dirent.h:
+G:/Android/ndk/platforms/android-14/arch-arm/usr/include/android/log.h:

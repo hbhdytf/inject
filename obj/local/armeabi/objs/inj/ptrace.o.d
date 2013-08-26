@@ -49,6 +49,7 @@ obj/local/armeabi/objs/inj/ptrace.o: jni/ptrace.c \
  G:/Android/ndk/platforms/android-14/arch-arm/usr/include/asm/errno.h \
  G:/Android/ndk/platforms/android-14/arch-arm/usr/include/asm-generic/errno.h \
  G:/Android/ndk/platforms/android-14/arch-arm/usr/include/asm-generic/errno-base.h \
+ G:/Android/ndk/platforms/android-14/arch-arm/usr/include/dirent.h \
  G:/Android/ndk/platforms/android-14/arch-arm/usr/include/linux/user.h \
  G:/Android/ndk/platforms/android-14/arch-arm/usr/include/asm/user.h \
  jni/utils.h \
@@ -58,6 +59,7 @@ obj/local/armeabi/objs/inj/ptrace.o: jni/ptrace.c \
  G:/Android/ndk/platforms/android-14/arch-arm/usr/include/sys/sysconf.h \
  G:/Android/ndk/platforms/android-14/arch-arm/usr/include/linux/capability.h \
  G:/Android/ndk/platforms/android-14/arch-arm/usr/include/pathconf.h \
+ G:/Android/ndk/platforms/android-14/arch-arm/usr/include/android/log.h \
  G:/Android/ndk/platforms/android-14/arch-arm/usr/include/elf.h \
  G:/Android/ndk/platforms/android-14/arch-arm/usr/include/sys/exec_elf.h \
  G:/Android/ndk/platforms/android-14/arch-arm/usr/include/machine/exec.h \
@@ -163,6 +165,8 @@ G:/Android/ndk/platforms/android-14/arch-arm/usr/include/asm-generic/errno.h:
 
 G:/Android/ndk/platforms/android-14/arch-arm/usr/include/asm-generic/errno-base.h:
 
+G:/Android/ndk/platforms/android-14/arch-arm/usr/include/dirent.h:
+
 G:/Android/ndk/platforms/android-14/arch-arm/usr/include/linux/user.h:
 
 G:/Android/ndk/platforms/android-14/arch-arm/usr/include/asm/user.h:
@@ -180,6 +184,8 @@ G:/Android/ndk/platforms/android-14/arch-arm/usr/include/sys/sysconf.h:
 G:/Android/ndk/platforms/android-14/arch-arm/usr/include/linux/capability.h:
 
 G:/Android/ndk/platforms/android-14/arch-arm/usr/include/pathconf.h:
+
+G:/Android/ndk/platforms/android-14/arch-arm/usr/include/android/log.h:
 
 G:/Android/ndk/platforms/android-14/arch-arm/usr/include/elf.h:
 

@@ -81,7 +81,7 @@ void get_elf_info(int pid, Elf32_Addr base, struct elf_info *einfo) {
 }
 
 /**
- * 查找符号的重定位地址
+ * 鏌ユ壘绗﹀彿鐨勯噸瀹氫綅鍦板潃
  */
 unsigned long find_sym_in_rel(struct elf_info *einfo, char *sym_name) {
     Elf32_Rel rel;
@@ -99,7 +99,7 @@ unsigned long find_sym_in_rel(struct elf_info *einfo, char *sym_name) {
     pint(dinfo.totalrelsize);
     for (i = 0; i < dinfo.nrels; i++) {
         ptrace_read(einfo->pid, (unsigned long) (dinfo.jmprel + i * sizeof(Elf32_Rel)), &rel, sizeof(Elf32_Rel));
-        printf("rel addr %p\n", &rel);
+        printf("rel addr %p\n", rel);
 
         if (ELF32_R_SYM(rel.r_info)) {
             ptrace_read(einfo->pid, dinfo.symtab + ELF32_R_SYM(rel.r_info) * sizeof(Elf32_Sym), &sym, sizeof(Elf32_Sym));
@@ -125,8 +125,7 @@ unsigned long find_sym_in_rel(struct elf_info *einfo, char *sym_name) {
 
 
 /*
- * 在进程自身的映象中（即不包括动态共享库，无须遍历link_map链表）获得各种动态信息
- */
+ * 鍦ㄨ繘绋嬭嚜韬殑鏄犺薄涓紙鍗充笉鍖呮嫭鍔ㄦ�鍏变韩搴擄紝鏃犻』閬嶅巻link_map閾捐〃锛夎幏寰楀悇绉嶅姩鎬佷俊鎭� */
 void get_dyn_info(struct elf_info *einfo, struct dyn_info *dinfo) {
     Elf32_Dyn dyn;
     int i = 0;

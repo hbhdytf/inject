@@ -34,51 +34,8 @@ char *sos[] = {
         "libc.so",
         NULL
 };
-int find_pid_of( const char *process_name )
-{
-	int id;
-	pid_t pid = -1;
-	DIR* dir;
-	FILE *fp;
-	char filename[32];
-	char cmdline[256];
 
-	struct dirent * entry;
-
-	if ( process_name == NULL )
-		return -1;
-
-	dir = opendir( "/proc" );
-	if ( dir == NULL )
-		return -1;
-
-	while( (entry = readdir( dir )) != NULL )
-	{
-		id = atoi( entry->d_name );
-		if ( id != 0 )
-		{
-			sprintf( filename, "/proc/%d/cmdline", id );
-			fp = fopen( filename, "r" );
-			if ( fp )
-			{
-				fgets( cmdline, sizeof(cmdline), fp );
-				fclose( fp );
-
-				if ( strcmp( process_name, cmdline ) == 0 )
-				{
-					/* process found */
-					pid = id;
-					break;
-				}
-			}
-		}
-	}
-
-	closedir( dir );
-
-	return pid;
-}
-
+/*
 
 void call_shit(struct elf_info *einfo) {
     unsigned long addr2 = 0;
@@ -120,6 +77,7 @@ void call_shit(struct elf_info *einfo) {
     ptrace_dump_regs(&regs,"before return call_shit\n");
 }
 
+*/
 
 
 
@@ -144,12 +102,13 @@ int main(int argc, char *argv[]) {
 
     handle = ptrace_dlopen(pid, "/dev/libmynet.so",1);
     printf("ptrace_dlopen handle %p\n",handle);
-    proc = (long)ptrace_dlsym(pid, handle, "my_connect");
+    proc = (long)ptrace_dlsym(pid, handle, "hook");
     printf("my_connect = %lx\n",proc);
     int (*hook)();
     hook=ptrace_dlsym(pid,handle,"hook");
     proc = (long)ptrace_dlsym(pid, handle, "hook");
     printf("hook = %lx\n",proc);
+    replace_all_rels(pid, "connect", proc, sos);
     printf("hook = %lx\n",hook);
     handle=dlopen("/dev/libmynet.so", RTLD_NOW);
     hook = dlsym(handle, "hook");
