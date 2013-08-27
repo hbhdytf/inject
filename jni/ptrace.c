@@ -36,13 +36,21 @@ void ptrace_dump_regs(regs_t *regs, char *msg) {
     }
 }
 
+/*
+ * 根据pid附加停止进程
+ */
 void ptrace_attach(int pid) {
     regs_t regs;
     int status = 0;
+    /*
+     * 形式：ptrace(PTRACE_ATTACH,pid)
+     * 描述：跟踪指定pid 进程。pid表示被跟踪进程。被跟踪进程将成为当前进程的子进程，并进入中止状态。
+     */
     if (ptrace(PTRACE_ATTACH, pid, NULL, NULL ) < 0) {
         perror("ptrace_attach");
         exit(-1);
     }
+    /*判断子进程停止是否由SIGSTOP引起*/
     status = ptrace_wait_for_signal(pid, SIGSTOP);
     printf("ptrace_wait_for_signal: %d %d\n", __LINE__, status);
     //waitpid(pid, NULL, WUNTRACED);
@@ -67,11 +75,19 @@ void ptrace_attach(int pid) {
 
     printf("waiting.. sigal...\n");
 
+    /*
+     * 异常捕获,SIGSEGV是当一个进程执行了一个无效的内存引用,或发生段错误时发送给它的信号
+     * 否则执行后会发生signal 11 被注入进程失去响应而崩溃
+     */
     status = ptrace_wait_for_signal(pid, SIGSEGV);
     printf("ptrace_wait_for_signal2: %d %d\n", __LINE__, status);
 
 }
 
+/*
+ * 形式：ptrace(PTRACE_CONT, pid, 0, signal)
+ * 描述：继续执行。pid表示被跟踪的子进程，signal为0则忽略引起调试进程中止的信号，若不为0则继续处理信号signal。
+ */
 void ptrace_cont(int pid) {
     //int stat;
 
@@ -93,6 +109,11 @@ void ptrace_detach(int pid) {
     }
 }
 
+/*
+ * 形式：ptrace(PTRACE_POKETEXT, pid, addr, data)
+      ptrace(PTRACE_POKEDATA, pid, addr, data)
+ * 描述：往内存地址中写入一个字节。pid表示被跟踪的子进程，内存地址由addr给出，data为所要写入的数据。
+ */
 void ptrace_write(int pid, unsigned long addr, void *vptr, int len) {
     int count;
     long word;
@@ -109,6 +130,9 @@ void ptrace_write(int pid, unsigned long addr, void *vptr, int len) {
     }
 }
 
+/*
+ *从pid的addr开始读取len个字节
+ */
 void ptrace_read(int pid, unsigned long addr, void *vptr, int len) {
     int i, count;
     long word;
@@ -116,6 +140,12 @@ void ptrace_read(int pid, unsigned long addr, void *vptr, int len) {
 
     i = count = 0;
 
+    /*
+     * 形式：ptrace(PTRACE_PEEKTEXT, pid, addr, data)
+     * 	   ptrace(PTRACE_PEEKDATA, pid, addr, data)
+     * 描述：从内存地址中读取一个字节，pid表示被跟踪的子进程，内存地址由addr给出，data为用户变量地址用于返回读到的数据。
+     * 在Linux（i386）中用户代码段与用户数据段重合所以读取代码段和数据段数据处理是一样的。
+     */
     while (count < len) {
         word = ptrace(PTRACE_PEEKTEXT, pid, (void*) (addr + count), NULL );
         count += 4;
@@ -163,6 +193,9 @@ char * ptrace_readstr(int pid, unsigned long addr) {
     return str;
 }
 
+/*
+ * 读取寄存器的值并打印
+ */
 void ptrace_readreg(int pid, regs_t *regs) {
     if (ptrace(PTRACE_GETREGS, pid, NULL, regs))
         printf("*** ptrace_readreg error ***\n");
@@ -174,6 +207,9 @@ void ptrace_writereg(int pid, regs_t *regs) {
         printf("*** ptrace_writereg error ***\n");
 }
 
+/*
+ * 参数压栈
+ */
 unsigned long ptrace_push(int pid, regs_t *regs, void *paddr, int size) {
 #ifdef ANDROID
     unsigned long arm_sp;
@@ -181,6 +217,8 @@ unsigned long ptrace_push(int pid, regs_t *regs, void *paddr, int size) {
     arm_sp -= size;
     arm_sp = arm_sp - arm_sp % 4;
     regs->ARM_sp= arm_sp;
+
+    //开辟空间写入参数
     ptrace_write(pid, arm_sp, paddr, size);
     return arm_sp;
 #else
@@ -206,6 +244,9 @@ long ptrace_stack_alloc(pid_t pid, regs_t *regs, int size) {
     return arm_sp;
 }
 
+/*
+ * 使子进程加载自定义库
+ */
 void *ptrace_dlopen(pid_t pid, const char *filename, int flag) {
 #ifdef ANDROID
     regs_t regs;
@@ -220,23 +261,31 @@ void *ptrace_dlopen(pid_t pid, const char *filename, int flag) {
     regs.ARM_lr= 0;
 #endif
 
+    //设置dlopen参数，r0是/dev/libhook.so的栈基址
     regs.ARM_r0= (long)ptrace_push(pid,&regs, (void*)filename,strlen(filename)+1);
     regs.ARM_r1= flag;
     regs.ARM_pc= ldl.l_dlopen;
     ptrace_writereg(pid, &regs);
+
+    ptrace_dump_regs(&regs, "before continue ptrace_dlopen\n");
     ptrace_cont(pid);
+
+    //捕捉异常，中断子进程
     printf("done %d\n", ptrace_wait_for_signal(pid, SIGSEGV));
     ptrace_readreg(pid, &regs);
-    ptrace_dump_regs(&regs, "before return ptrace_call\n");
+    ptrace_dump_regs(&regs, "before return ptrace_dlopen\n");
     return (void*) regs.ARM_r0;
 #endif
 }
 
+/*
+ * 在库中查找符号，handle 指向的值为加载地址
+ */
 void *ptrace_dlsym(pid_t pid, void *handle, const char *symbol) {
 
 #ifdef ANDROID
     regs_t regs;
-    //int stat;
+    //int stat;读取子进程的寄存器值
     ptrace_readreg(pid, &regs);
     ptrace_dump_regs(&regs, "before call to ptrace_dlsym\n");
 
@@ -252,10 +301,13 @@ void *ptrace_dlsym(pid_t pid, void *handle, const char *symbol) {
 
     regs.ARM_pc= ldl.l_dlsym;
     ptrace_writereg(pid, &regs);
+    ptrace_dump_regs(&regs, "before continue ptrace_dlsym\n");
     ptrace_cont(pid);
     printf("done %d\n", ptrace_wait_for_signal(pid, SIGSEGV));
     ptrace_readreg(pid, &regs);
     ptrace_dump_regs(&regs, "before return ptrace_dlsym\n");
+
+    //dlsym的返回值在r0中，即查到的符号的地址
     return (void*) regs.ARM_r0;
 #endif
 }
@@ -282,6 +334,7 @@ int ptrace_mymath_add(pid_t pid, long mymath_add_addr, int a, int b) {
     printf("done %d\n", ptrace_wait_for_signal(pid, SIGSEGV));
     ptrace_readreg(pid, &regs);
     ptrace_dump_regs(&regs, "before return ptrace_mymath_add\n");
+
     return regs.ARM_r0;
 #endif
 }
@@ -352,31 +405,47 @@ int ptrace_call(int pid, long proc, int argc, ptrace_arg *argv) {
     return regs.ARM_r0;
 }
 
+/*
+ * waitpid()的封装，用于等待子进程返回，并返回结束状态
+ */
 int ptrace_wait_for_signal(int pid, int signal) {
     int status;
     pid_t res;
+    /*
+     * waitpid()会暂时停止目前进程的执行,直到有信号来到或子进程结束。返回子进程结束状态值。
+     * 子进程的结束状态值会由参数 status 返回
+     * WIFSTOPPED(status) 若为当前暂停子进程返回的状态，则为真；
+     * 对于这种情况可执行WSTOPSIG(status)，取使子进程暂停的信号编号。
+     */
     res = waitpid(pid, &status, 0);
     if (res != pid || !WIFSTOPPED (status))
         return 0;
     return WSTOPSIG (status) == signal;
 }
 
+/*
+ * 获取/system/bin/linker的开始基址和结束地址
+ */
 static Elf32_Addr get_linker_base(int pid, Elf32_Addr *base_start, Elf32_Addr *base_end) {
     unsigned long base = 0;
     char mapname[FILENAME_MAX];
     memset(mapname, 0, FILENAME_MAX);
+
+    /*查看进程的虚拟地址空间是如何使用的*/
     snprintf(mapname, FILENAME_MAX, "/proc/%d/maps", pid);
     FILE *file = fopen(mapname, "r");
     *base_start = *base_end = 0;
     if (file) {
         //400a4000-400b9000 r-xp 00000000 103:00 139       /system/bin/linker
         while (1) {
-            unsigned int atleast = 32;
+            unsigned int atleast = 32;//到偏移量正好32
             int xpos = 20;
             char startbuf[9];
             char endbuf[9];
             char line[FILENAME_MAX];
             memset(line, 0, FILENAME_MAX);
+
+            /*fgets 正好读取一行*/
             char *linestr = fgets(line, FILENAME_MAX, file);
             if (!linestr) {
                 break;
@@ -389,7 +458,7 @@ static Elf32_Addr get_linker_base(int pid, Elf32_Addr *base_start, Elf32_Addr *b
                 memcpy(startbuf, line, 8);
                 memcpy(endbuf, &line[8 + 1], 8);
                 if (*base_start == 0) {
-                    *base_start = strtoul(startbuf, NULL, 16);
+                    *base_start = strtoul(startbuf, NULL, 16);//字符串转为无符号数
                     *base_end = strtoul(endbuf, NULL, 16);
                     base = *base_start;
                 } else {
@@ -403,6 +472,10 @@ static Elf32_Addr get_linker_base(int pid, Elf32_Addr *base_start, Elf32_Addr *b
     return base;
 
 }
+
+/*
+ *在libdl.so中查找dlopen、dlclose、dlsym的函数
+ */
 dl_fl_t *ptrace_find_dlinfo(int pid) {
     Elf32_Sym sym;
     Elf32_Addr addr;
@@ -410,6 +483,8 @@ dl_fl_t *ptrace_find_dlinfo(int pid) {
 #define LIBDLSO "libdl.so"
     Elf32_Addr base_start = 0;
     Elf32_Addr base_end = 0;
+
+    /*linker 主要用于实现共享库的加载与链接。它支持应用程序对库函数的隐式和显式调用。*/
     Elf32_Addr base = get_linker_base(pid, &base_start, &base_end);
 
     if (base == 0) {
@@ -423,30 +498,72 @@ dl_fl_t *ptrace_find_dlinfo(int pid) {
         char soname[strlen(LIBDLSO)];
         Elf32_Addr off = 0;
 
+        //查找/system/bin/linker中加载的libdl.so,加载位置固定,定义了dlopen,dlcose,dlsym,dlerror
         ptrace_read(pid, addr, soname, strlen(LIBDLSO));
         if (strncmp(LIBDLSO, soname, strlen(LIBDLSO))) {
             continue;
         }
 
+        //找到libdl.so的加载位置，并读取libdl.so的动态库信息
         printf("soinfo found at %08u\n", addr);
-        printf("symtab: %p\n", lsi.symtab);
         ptrace_read(pid, addr, &lsi, sizeof(lsi));
+        printf("symtab: %p\n", lsi.symtab);
 
+        //符号表，保存了一个程序在定位和重定位时需要的定义和引用的信息。
+        /*
+         * 在符号表”.symtab“中，其也是像段表的结构一样，是一个数组，每个数组元素是一个固定的结构来保存符号的相关信息，
+         * 比如符号名（不是字符串，而是该符号名在字符串表的下标）、符号对应的值（可能是段中的偏移，也可能是符号的虚拟地址）、符号大小（数据类型的大小）等等。
+         * 符号表中记录的一般是全局符号，比如全局变量、全局函数等等。
+         *
+         * 每个object要想使它对其他的ELF文件可用，就要用到符号表(symbol table)中
+         * symbol entry.事实上，一个symbol entry 是个symbol结构，它描述了这个
+         * symbol的名字和该symbol的value.symbol name被编码作为dynamic string
+         * table的索引(index). The value of a symbol是在ELF OBJECT文件内该
+         * symbol的地址。该地址通常需要被重新定位（加上该object装载到内存的基地址(base load address)）.
+         */
         off = (Elf32_Addr)lsi.symtab;
 
+        /*
+         * 理解此段程序的难度在于lsi.symtab其实指的就是libdl.so加载到内存中的 .dynsym
+         * 在查看模拟器导出的libdl.so发现只有动态符号表
+         * symtab 和 .dynsym 里存放符号信息(这些符号包括文件名，函数名，变量名等等)，前者一般是静态符号，后者则是动态链接相关符号；
+         *
+         * sh_flag 成员用来表示节区的相关标志。取不同的值有不同的意义，比如可以表示该节区是不是存放可执行代码，该节区是否包含有在进程执行时可写的数据等。
+         * 其中有一个 A 标志，是 Allocable 之意，表示在程序运行时，进程需要使用它们，所以它们会被加载到内存中去，比如 .data 一般就是 allocable 的。 反之，则是 non-Allocable，这类型的节区只是被链接器、调试器或者其他类似工具所使用，不会参与程序运行时的内存中去，如 .symtab 和 .strtab 以及各种 .debug 相关节区就属于这种类型。在可执行文件执行时，allocable 部分会被加载到内存中，而 non-Allocable 部分则仍留在文件内。
+         *
+         */
         ptrace_read(pid, off, &sym, sizeof(sym));
         //just skip
         off += sizeof(sym);
 
+        /*
+         * 关于顺序的问题，显示打印.dynsym节，在android2.3.3发现顺序其实是这样的
+         * Symbol table '.dynsym' contains 28 entries:
+   	   	   Num:    Value  Size Type    Bind   Vis      Ndx Name
+     	 	 0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND
+     	 	 1: 00001a0d     4 FUNC    GLOBAL DEFAULT    7 dlopen
+     	 	 2: 00001a11     4 FUNC    GLOBAL DEFAULT    7 dlerror
+     	 	 3: 00001a15     4 FUNC    GLOBAL DEFAULT    7 dlsym
+     	 	 4: 00001a19     4 FUNC    GLOBAL DEFAULT    7 dladdr
+     	 	 5: 00001a1d     4 FUNC    GLOBAL DEFAULT    7 dlclose
+     	 * 由于dlclose没有用到，所以该程序相对位置还是对的。
+     	 */
+
         ptrace_read(pid, off, &sym, sizeof(sym));
+        printf("name2:%d\n",sym.st_name);
+        printf("value2:%d\n",sym.st_value);
         ldl.l_dlopen = sym.st_value;
         off += sizeof(sym);
 
         ptrace_read(pid, off, &sym, sizeof(sym));
+        printf("name3:%d\n",sym.st_name);
+        printf("value3:%d\n",sym.st_value);
         ldl.l_dlclose = sym.st_value;
         off += sizeof(sym);
 
         ptrace_read(pid, off, &sym, sizeof(sym));
+        printf("name4:%d\n",sym.st_name);
+        printf("value4:%d\n",sym.st_value);
         ldl.l_dlsym = sym.st_value;
         off += sizeof(sym);
 
@@ -459,6 +576,10 @@ dl_fl_t *ptrace_find_dlinfo(int pid) {
     printf("%s not found!\n", LIBDLSO);
     return NULL ;
 }
+
+/*
+ * 根据进程名称查找进程的pid
+ */
 int find_pid_of( const char *process_name )
 {
 	int id;
@@ -468,6 +589,7 @@ int find_pid_of( const char *process_name )
 	char filename[32];
 	char cmdline[256];
 
+	/*为了获取某文件夹目录内容，所使用的结构体。*/
 	struct dirent * entry;
 
 	if ( process_name == NULL )
@@ -482,6 +604,7 @@ int find_pid_of( const char *process_name )
 		id = atoi( entry->d_name );
 		if ( id != 0 )
 		{
+			/*/proc/pid/cmdline存放启动进程时执行的命令，一般为进程名称*/
 			sprintf( filename, "/proc/%d/cmdline", id );
 			fp = fopen( filename, "r" );
 			if ( fp )
